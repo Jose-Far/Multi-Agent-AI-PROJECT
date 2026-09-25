@@ -1,0 +1,127 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://eisenrafluxtrade.de/",
+            "final_url": "https://eisenrafluxtrade.de/",
+            "response_time_sec": 1.409437,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "Date": "Tue, 11 Aug 2026 15:36:12 GMT",
+                "Content-Type": "text/html; charset=utf-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "CF-Ray": "a2985087edbf3d15-BOS",
+                "CF-Cache-Status": "DYNAMIC",
+                "Cache-Control": "public, max-age=300, s-maxage=600",
+                "Server": "cloudflare",
+                "Vary": "accept-encoding",
+                "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=RYiQk8udlTdk4c59%2FLgFWUfHIU7LFrA3RXFJPrFKPaVqJ%2FR6eo6WonF8pMn5H4jXvY9L3QqINO%2FcDLWcbVI%2BQg%2Bs3I8JBULU2dRAN7z4MvaQ%2B4mos1RzvW6K20lfYl%2Fqu7cVIVnI4PWSxPtzgyWjBrqPilE%3D\"}]}",
+                "X-Content-Type-Options": "nosniff",
+                "Content-Encoding": "zstd",
+                "alt-svc": "h3=\":443\"; ma=86400"
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": "Eisenra Flux - KI-Trading & automatisierte Marktanalyse",
+                "html_length_bytes": 80956,
+                "form_count": 0,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "iframe_count": 0,
+                "iframe_sources": [],
+                "script_count": 6,
+                "external_scripts_count": 0,
+                "suspicious_inline_scripts": 0,
+                "total_links": 45,
+                "hidden_elements_count": 0
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_eisenrafluxtrade.de_1786462583.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAOgCAIAAAB6CMF2AAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png"
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "issuer_organization": "Google Trust Services",
+                "issuer_common_name": "WE1",
+                "subject_common_name": "eisenrafluxtrade.de",
+                "not_before": "2026-07-28T07:22:37",
+                "not_after": "2026-10-26T08:21:08",
+                "cert_age_days": 14,
+                "days_until_expiry": 75,
+                "is_expired": false
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "A": [
+                    "172.67.222.167",
+                    "104.21.38.126"
+                ],
+                "MX": [],
+                "TXT": [
+                    "google-site-verification=_hqQUnsLhQE1G2PPy3rtXmyE2bO8vZFAyenrZyUEC5I"
+                ],
+                "NS": [
+                    "cheryl.ns.cloudflare.com",
+                    "quentin.ns.cloudflare.com"
+                ]
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "data": {
+                "domain": "eisenrafluxtrade.de",
+                "registrar": null,
+                "creation_date": null,
+                "expiration_date": null,
+                "updated_date": "2026-07-28T10:19:08",
+                "domain_age_days": null,
+                "name_servers": [
+                    "cheryl.ns.cloudflare.com",
+                    "quentin.ns.cloudflare.com"
+                ]
+            },
+            "error": null
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": true,
+                "stats": {
+                    "malicious": 17,
+                    "suspicious": 3,
+                    "harmless": 44,
+                    "undetected": 28
+                },
+                "last_analysis_date": 1785656928,
+                "reputation_score": 0
+            }
+        }
+    }
+}

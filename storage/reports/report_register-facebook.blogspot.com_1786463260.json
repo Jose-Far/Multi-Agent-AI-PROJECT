@@ -1,0 +1,112 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "http://register-facebook.blogspot.com",
+            "final_url": "http://register-facebook.blogspot.com/",
+            "response_time_sec": 0.680132,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "Content-Type": "text/html; charset=UTF-8",
+                "Expires": "Tue, 11 Aug 2026 15:47:22 GMT",
+                "Date": "Tue, 11 Aug 2026 15:47:22 GMT",
+                "Cache-Control": "private, max-age=0",
+                "Last-Modified": "Fri, 06 Sep 2024 21:22:53 GMT",
+                "ETag": "W/\"774fe9097c6869c37f560350d7361ec7b6cb2a54452a155c4b3e2c9396cbadde\"",
+                "Content-Encoding": "gzip",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block",
+                "Content-Length": "5212",
+                "Server": "GSE"
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": "facebook",
+                "html_length_bytes": 18457,
+                "form_count": 0,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "iframe_count": 0,
+                "iframe_sources": [],
+                "script_count": 8,
+                "external_scripts_count": 3,
+                "suspicious_inline_scripts": 3,
+                "total_links": 6,
+                "hidden_elements_count": 1
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_register-facebook.blogspot.com_1786463253.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAOgCAIAAAB6CMF2AAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png"
+            }
+        },
+        "ssl_analysis": {
+            "success": false,
+            "error": "Network error (Site may not support HTTPS): [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions",
+            "data": {
+                "has_ssl": false
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "A": [
+                    "142.250.66.1"
+                ],
+                "MX": [],
+                "TXT": [],
+                "NS": []
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "data": {
+                "domain": "blogspot.com",
+                "registrar": "MarkMonitor, Inc.",
+                "creation_date": "2000-07-31T21:38:58",
+                "expiration_date": "2027-07-31T21:38:58",
+                "updated_date": "2026-06-29T10:34:06",
+                "domain_age_days": 9506,
+                "name_servers": [
+                    "ns1.google.com",
+                    "ns2.google.com",
+                    "ns3.google.com",
+                    "ns4.google.com"
+                ]
+            },
+            "error": null
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": true,
+                "stats": {
+                    "malicious": 16,
+                    "suspicious": 1,
+                    "harmless": 47,
+                    "undetected": 28
+                },
+                "last_analysis_date": 1786056141,
+                "reputation_score": 0
+            }
+        }
+    }
+}

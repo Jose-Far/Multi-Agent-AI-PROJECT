@@ -1,0 +1,285 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "execution_time_sec": 16.025,
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://chatgpt.com/g/g-p-6a59a8ce238481918bc00c79ef12fe0b-multi-agent-ai-cybersecurity-analyst/c/6a59ae74-ec6c-83e8-b072-aad69b858c8e",
+            "final_url": "https://chatgpt.com/auth/login/?next=%2Fg%2Fg-p-6a59a8ce238481918bc00c79ef12fe0b-multi-agent-ai-cybersecurity-analyst%2Fproject",
+            "domain_resolved": "chatgpt.com",
+            "response_time_sec": 2.4708,
+            "status_code": 200,
+            "redirect_count": 3,
+            "redirect_history": [
+                {
+                    "url": "https://chatgpt.com/g/g-p-6a59a8ce238481918bc00c79ef12fe0b-multi-agent-ai-cybersecurity-analyst/c/6a59ae74-ec6c-83e8-b072-aad69b858c8e",
+                    "status_code": 302,
+                    "headers": {
+                        "Date": "Fri, 14 Aug 2026 15:38:04 GMT",
+                        "Content-Length": "0",
+                        "Connection": "keep-alive",
+                        "location": "/g/g-p-6a59a8ce238481918bc00c79ef12fe0b-multi-agent-ai-cybersecurity-analyst",
+                        "Server": "cloudflare",
+                        "X-Content-Type-Options": "nosniff",
+                        "cf-cache-status": "DYNAMIC",
+                        "Set-Cookie": "oai-did=0e26c914-e8e7-4e60-aa5f-001e0b3c1b6c; Path=/; Domain=chatgpt.com; Max-Age=31104000; SameSite=Lax, __cf_bm=P5HS47sMHA_ZwGO7UQDjDLOIBhSSo.KU..WpBVt34s0-1786721884.2489774-1.0.1.1-Q6OA1rA3xeZOhJCt8NrP9zKr5nLI4pQBEzBkPH0zKvzgrH3gDZJBmfHyPrbaxCtkIAdRTfnj8QEkdTvOllgkRpTU_z4.Bm3Yxjz.RhrJsGdVuAYlvKts5zF1eaH6Ibm4; HttpOnly; SameSite=None; Secure; Path=/; Domain=chatgpt.com; Expires=Fri, 14 Aug 2026 16:08:04 GMT, __cflb=0H28vzvP5FJafnkHxisrbiRY5cr2pUeVeKmzswUftxT; HttpOnly; SameSite=None; Secure; Path=/; Expires=Fri, 14 Aug 2026 16:38:04 GMT, _cfuvid=zdvR9EQ5ND7Q.q5OKmyZqugYhMzv5z8T9u1kbgISZAU-1786721884.2489774-1.0.1.1-4xMFIagemybCQtFCwBask5QoWTnZofv30kcjfefsBp8; HttpOnly; SameSite=None; Secure; Path=/; Domain=chatgpt.com",
+                        "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+                        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+                        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+                        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=Lmq14DoIHfmzXX%2BqV6qpdNR4BjKbRqbVLrkwHqo4IVLXSdRj%2Fw7mdPmzyvA2vI0ihONWwJKtE8ywkJC1xUIk%2B1v9UL4LAc5%2FqemqOBs3h%2FKrvbGGdr0izAkN48fT\"}]}",
+                        "Referrer-Policy": "strict-origin-when-cross-origin",
+                        "CF-RAY": "a2b10b608f11b85f-BOM"
+                    },
+                    "is_https": true
+                },
+                {
+                    "url": "https://chatgpt.com/g/g-p-6a59a8ce238481918bc00c79ef12fe0b-multi-agent-ai-cybersecurity-analyst",
+                    "status_code": 302,
+                    "headers": {
+                        "Date": "Fri, 14 Aug 2026 15:38:05 GMT",
+                        "Content-Length": "0",
+                        "Connection": "keep-alive",
+                        "Set-Cookie": "__Host-next-auth.csrf-token=2824509ae5c19f005413a9c137620d25eacff9e4904c325d77c344decf923b8c%7C63c9d128daa17dc52f45e885ea5ecd8edf3a9b9ac6c2c956f3bbf499e7d7111e; Path=/; HttpOnly; Secure; SameSite=Lax, __Secure-next-auth.callback-url=https%3A%2F%2Fchatgpt.com%2Cchat.gateway.unified-200.api.openai.com; Path=/; HttpOnly; Secure; SameSite=Lax",
+                        "location": "/g/g-p-6a59a8ce238481918bc00c79ef12fe0b-multi-agent-ai-cybersecurity-analyst/project",
+                        "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+                        "Server": "cloudflare",
+                        "Referrer-Policy": "strict-origin-when-cross-origin",
+                        "cf-cache-status": "DYNAMIC",
+                        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+                        "X-Content-Type-Options": "nosniff",
+                        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tuUhKRYuSPl0CrNj0d%2BJ%2FRAv7k6SRd9S5RsbQGhCqmVWWAYTbRwtYT1EdcbpqeAzhZlv1er1FSRseXDVIcxbzV39SWuntuAW3uN5rQ190ZT%2BBbQ0E8rODj%2Fo4x91\"}]}",
+                        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+                        "CF-RAY": "a2b10b61c9f4b85f-BOM"
+                    },
+                    "is_https": true
+                },
+                {
+                    "url": "https://chatgpt.com/g/g-p-6a59a8ce238481918bc00c79ef12fe0b-multi-agent-ai-cybersecurity-analyst/project",
+                    "status_code": 302,
+                    "headers": {
+                        "Date": "Fri, 14 Aug 2026 15:38:05 GMT",
+                        "Content-Length": "0",
+                        "Connection": "keep-alive",
+                        "Set-Cookie": "__Secure-next-auth.callback-url=https%3A%2F%2Fchatgpt.com%2Cchat.gateway.unified-200.api.openai.com%2F; Path=/; HttpOnly; Secure; SameSite=Lax",
+                        "location": "/auth/login/?next=%2Fg%2Fg-p-6a59a8ce238481918bc00c79ef12fe0b-multi-agent-ai-cybersecurity-analyst%2Fproject",
+                        "x-robots-tag": "noindex, nofollow",
+                        "Server": "cloudflare",
+                        "cf-cache-status": "DYNAMIC",
+                        "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+                        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+                        "X-Content-Type-Options": "nosniff",
+                        "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=TQeYRGU2%2FsajS7JTrylRMph9mT4BFh8lRfk4q87Vu6HOtN46iqp7P4vPCaCmln72b%2FZrMQIwMLomqbTXeOZwDJMAmDXNJShX63b2nQweexvmnXW618jPZnrYB%2Bh%2B\"}]}",
+                        "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.01,\"max_age\":604800}",
+                        "Referrer-Policy": "strict-origin-when-cross-origin",
+                        "CF-RAY": "a2b10b69cdc3b85f-BOM"
+                    },
+                    "is_https": true
+                }
+            ],
+            "headers": {
+                "Date": "Fri, 14 Aug 2026 15:38:06 GMT",
+                "Content-Type": "text/html; charset=utf-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Set-Cookie": "oai-asli=; Max-Age=-1; Path=/, oai-asli=4c5ed7cd-66c6-416d-9b18-d6308013ed77; Path=/; SameSite=Lax",
+                "content-security-policy": "default-src 'self'; script-src 'nonce-978c8155-c49e-4f03-83de-54588c774856' 'self' 'sha256-Z5we4+MWtdDkWs67HhZwjrbqNxc9ymzHYfHGNEF7JoM=' 'wasm-unsafe-eval' chatgpt.com/ces https://*.chatgpt.com https://*.chatgpt.com/ https://*.js.stripe.com https://*.oaistatic.com https://accounts.google.com/gsi/client https://cdn.plaid.com/link/v2/stable/link-initialize.js https://cdn.withpersona.com https://chat.openai.com https://chatgpt.com https://chatgpt.com/ https://chatgpt.com/backend-anon https://chatgpt.com/backend-api https://chatgpt.com/backend/se https://chatgpt.com/public-api https://js.stripe.com https://oaistatic.com https://snc.apps.openai.com wss://*.chatgpt.com wss://*.chatgpt.com/; script-src-elem 'nonce-978c8155-c49e-4f03-83de-54588c774856' 'self' 'sha256-Z5we4+MWtdDkWs67HhZwjrbqNxc9ymzHYfHGNEF7JoM=' 'sha256-eMuh8xiwcX72rRYNAGENurQBAcH7kLlAUQcoOri3BIo=' 'sha384-Sr5xwyR0H5rcDXa7/iDJDM3qBBvtHuR97A8ELbd+DFBDi32Caf72to9UVqvI8R95' auth0.openai.com blob: challenges.cloudflare.com chatgpt.com/ces https://*.chatgpt.com https://*.chatgpt.com/ https://*.js.stripe.com https://*.oaistatic.com https://analytics.tiktok.com https://apis.google.com https://bat.bing.com https://cdn.openaimerge.com/initialize.js https://cdn.plaid.com/link/v2/stable/link-initialize.js https://cdn.platform.openai.com https://cdn.withpersona.com https://chat.openai.com https://chatgpt.com https://chatgpt.com/ https://chatgpt.com/backend-anon https://chatgpt.com/backend-api https://chatgpt.com/backend/se https://chatgpt.com/public-api https://connect.facebook.net https://docs.google.com https://js.live.net/v7.2/OneDrive.js https://js.stripe.com https://oaistatic.com https://pixel-config.reddit.com https://snap.licdn.com https://snc.apps.openai.com https://www-onepick-opensocial.googleusercontent.com https://www.redditstatic.com https://www.youtube.com wss://*.chatgpt.com wss://*.chatgpt.com/; img-src 'self' * blob: data: https: https://docs.google.com https://drive-thirdparty.googleusercontent.com https://ssl.gstatic.com; style-src 'self' 'unsafe-inline' blob: chatgpt.com/ces https://*.chatgpt.com https://*.chatgpt.com/ https://*.oaistatic.com https://accounts.google.com/gsi/style https://chat.openai.com https://chatgpt.com https://chatgpt.com/ https://chatgpt.com/backend-anon https://chatgpt.com/backend-api https://chatgpt.com/backend/se https://chatgpt.com/public-api https://oaistatic.com https://snc.apps.openai.com wss://*.chatgpt.com wss://*.chatgpt.com/; font-src 'self' data: https://*.oaistatic.com https://cdn.openai.com https://fonts.gstatic.com; connect-src 'self' *.blob.core.windows.net *.oaiusercontent.com api.mapbox.com browser-intake-datadoghq.com chatgpt.com/ces events.mapbox.com https://*.chatgpt.com https://*.chatgpt.com/ https://*.oaistatic.com https://accounts.google.com https://analytics.tiktok.com https://api.atlassian.com https://api.oaistatsig.com https://api.onedrive.com https://api.stripe.com https://bat.bing.com https://bzr.openai.com https://cdn.openai.com/common/fonts/openai-sans/v2/openai-sans-regular.full.typeface.json https://cdn.openai.com/emojibase/ https://cdn.openai.com/pdf/ https://cdn.platform.openai.com https://chat.openai.com https://chatgpt.com https://chatgpt.com/ https://chatgpt.com/backend-anon https://chatgpt.com/backend-api https://chatgpt.com/backend/se https://chatgpt.com/public-api https://content.googleapis.com https://docs.google.com https://events.statsigapi.net https://featuregates.org https://graph.microsoft.com https://js.verygoodvault.com https://js3.verygoodvault.com https://oaistatic.com https://pixel-config.reddit.com https://production.plaid.com https://px.ads.linkedin.com/ https://realtime.chatgpt-staging.com https://realtime.chatgpt.com https://sandbox.plaid.com https://snc.apps.openai.com https://test-drive-20-1053047382554.us-central1.run.app https://transceiver.api.openai.com https://transceiver.api.openai.org https://vgs-collect-keeper.apps.verygood.systems https://www.googleadservices.com https://www.googleapis.com https://www.googletagmanager.com https://www.redditstatic.com statsigapi.net wss://*.chatgpt.com wss://*.chatgpt.com/ wss://*.webpubsub.azure.com; frame-src 'self' challenges.cloudflare.com https://*.embed.chatgpt.site https://*.js.stripe.com https://*.sharepoint.com https://*.web-sandbox.oaiusercontent.com https://*.withpersona.com https://504-SWE-347.mktoweb.com https://accounts.google.com/gsi https://accounts.google.com/gsi/iframe/select https://auth.openai.com https://cdn.openaimerge.com https://cdn.plaid.com https://cdn.platform.openai.com https://content.googleapis.com https://docs.google.com https://drive.google.com https://file-frame.oaistatic.com https://hooks.stripe.com https://js.stripe.com https://js.verygoodvault.com https://js3.verygoodvault.com https://onedrive.live.com https://web-sandbox.oaiusercontent.com js.stripe.com player.vimeo.com www.youtube.com; worker-src 'self' blob:; media-src 'self' *.oaiusercontent.com blob: https://cdn.oaistatic.com https://cdn.openai.com https://persistent.oaistatic.com; frame-ancestors 'self' chrome-extension://iaiigpefkbhgjcmcmffmfkpmhemdhdnj chrome-extension://lfkehkpjohcoelkpembgemeipeppanef; base-uri 'none'; report-to chatgpt-csp; report-uri https://chatgpt.com/ces/v1/telemetry/intake?ddsource=csp-report&dd-api-key=dummy-token",
+                "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+                "link": "</cdn/assets/root-k3gn5nou.css>; rel=preload; as=style, </cdn/assets/conversation-small-beufh8ne.css#>; rel=preload; as=style, </cdn/assets/global-modals-dgfy4wm4.css#>; rel=preload; as=style",
+                "report-to": "{\"group\":\"chatgpt-csp\",\"max_age\":10886400,\"endpoints\":[{\"url\":\"https://chatgpt.com/ces/v1/telemetry/intake?ddsource=csp-report&dd-api-key=dummy-token\"}]}",
+                "reporting-endpoints": "chatgpt-csp=\"https://chatgpt.com/ces/v1/telemetry/intake?ddsource=csp-report&dd-api-key=dummy-token\"",
+                "Server": "cloudflare",
+                "Referrer-Policy": "strict-origin-when-cross-origin",
+                "X-Content-Type-Options": "nosniff",
+                "cf-cache-status": "DYNAMIC",
+                "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+                "Content-Encoding": "br",
+                "CF-RAY": "a2b10b6b08b5b85f-BOM"
+            },
+            "cookies_dropped": {
+                "oai-did": "0e26c914-e8e7-4e60-aa5f-001e0b3c1b6c",
+                "__cf_bm": "P5HS47sMHA_ZwGO7UQDjDLOIBhSSo.KU..WpBVt34s0-1786721884.2489774-1.0.1.1-Q6OA1rA3xeZOhJCt8NrP9zKr5nLI4pQBEzBkPH0zKvzgrH3gDZJBmfHyPrbaxCtkIAdRTfnj8QEkdTvOllgkRpTU_z4.Bm3Yxjz.RhrJsGdVuAYlvKts5zF1eaH6Ibm4",
+                "_cfuvid": "zdvR9EQ5ND7Q.q5OKmyZqugYhMzv5z8T9u1kbgISZAU-1786721884.2489774-1.0.1.1-4xMFIagemybCQtFCwBask5QoWTnZofv30kcjfefsBp8",
+                "__cflb": "0H28vzvP5FJafnkHxisrbiRY5cr2pUeVeKmzswUftxT",
+                "__Host-next-auth.csrf-token": "2824509ae5c19f005413a9c137620d25eacff9e4904c325d77c344decf923b8c%7C63c9d128daa17dc52f45e885ea5ecd8edf3a9b9ac6c2c956f3bbf499e7d7111e",
+                "__Secure-next-auth.callback-url": "https%3A%2F%2Fchatgpt.com%2Cchat.gateway.unified-200.api.openai.com%2F",
+                "oai-asli": "4c5ed7cd-66c6-416d-9b18-d6308013ed77"
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": null,
+                "favicon_url": "https://chatgpt.com/favicon.ico",
+                "html_length_bytes": 134396,
+                "form_count": 0,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "cross_domain_form_actions": 0,
+                "iframe_count": 0,
+                "invisible_iframes": 0,
+                "iframe_sources": [],
+                "script_count": 0,
+                "external_scripts_count": 0,
+                "suspicious_inline_scripts": 0,
+                "total_links": 0,
+                "external_links_count": 0,
+                "empty_links_count": 0,
+                "hidden_elements_count": 0,
+                "right_click_disabled": false,
+                "has_meta_refresh": false,
+                "html_comments_count": 3
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_chatgpt.com_1786721897.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAPYCAIAAACdeU7aAAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png",
+                "timestamp": 1786721897
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "tls_version": "TLSv1.3",
+                "cipher_suite": "TLS_AES_256_GCM_SHA384",
+                "cipher_strength_bits": 256,
+                "issuer_organization": "Google Trust Services",
+                "issuer_common_name": "WE1",
+                "issuer_country": "US",
+                "subject_common_name": "chatgpt.com",
+                "subject_alt_names": [
+                    "chatgpt.com",
+                    "amb-staging.chatgpt.com",
+                    "*.amb-staging.chatgpt.com"
+                ],
+                "not_before": "2026-07-23T20:05:49+00:00",
+                "not_after": "2026-10-21T21:05:44+00:00",
+                "cert_age_days": 21,
+                "days_until_expiry": 68,
+                "is_expired": false,
+                "is_self_signed": false,
+                "is_free_ca": true
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "queried_domain": "chatgpt.com",
+                "records": {
+                    "A": [
+                        "104.18.32.47",
+                        "172.64.155.209"
+                    ],
+                    "AAAA": [
+                        "2606:4700:9642:7cbc:c2d7:0:5ff2:75c4"
+                    ],
+                    "MX": [],
+                    "TXT": [
+                        "cerner-client-id=ff69e1b6-5936-420e-92dd-f14f67869424",
+                        "google-site-verification=3p_zWfTXlQ4Mbxvq51ylW59LjgneYCB_vXpS-DLIEwM",
+                        "google-site-verification=HJikIAHI_Z6zkRXg-TWAceem39v2AhOSwPwUWaTNt9E",
+                        "google-site-verification=qz8yKZH1f2h4Dl7S-nRAo0immoInmiosRhyjUxXuUOs",
+                        "google-site-verification=rZodbEw8Hlw3gg7Z7mxkmQUNPnO_1khlohRX5D6qeUo",
+                        "google-site-verification=u3JFUrrlvyiaVlGsdIRMgmuvDluR6gC-TIPBEQLbl8c",
+                        "google-site-verification=vHr-4wFDXLd3wze6i0YimpiGHC1u0Hy3x1dGAiyeHWs",
+                        "v=spf1 -all"
+                    ],
+                    "NS": [
+                        "hassan.ns.cloudflare.com",
+                        "savanna.ns.cloudflare.com"
+                    ],
+                    "CNAME": [],
+                    "SOA": [
+                        {
+                            "mname": "hassan.ns.cloudflare.com",
+                            "rname": "dns.cloudflare.com",
+                            "serial": 2412148467,
+                            "refresh": 10000,
+                            "retry": 2400,
+                            "expire": 604800,
+                            "minimum": 1800
+                        }
+                    ]
+                },
+                "ttl_statistics": {
+                    "A_TTL": 29,
+                    "AAAA_TTL": 28,
+                    "TXT_TTL": 300,
+                    "NS_TTL": 72065
+                },
+                "record_counts": {
+                    "a_count": 2,
+                    "mx_count": 0,
+                    "ns_count": 2,
+                    "txt_count": 8
+                }
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "domain": "chatgpt.com",
+                "registrar": "MarkMonitor, Inc.",
+                "registrant_country": "US",
+                "registrant_org": "OpenAI",
+                "creation_date": "2022-11-30T23:59:19+00:00",
+                "expiration_date": "2026-11-30T23:59:19+00:00",
+                "updated_date": "2024-10-17T22:20:15+00:00",
+                "domain_age_days": 1352,
+                "days_until_expiry": 108,
+                "is_expired": false,
+                "name_servers": [
+                    "hassan.ns.cloudflare.com",
+                    "savanna.ns.cloudflare.com"
+                ],
+                "status_codes": [
+                    "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+                    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+                    "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+                    "serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited",
+                    "serverTransferProhibited https://icann.org/epp#serverTransferProhibited",
+                    "serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited",
+                    "clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)",
+                    "clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)",
+                    "clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)",
+                    "serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)",
+                    "serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)",
+                    "serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)"
+                ]
+            }
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": false,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": false,
+                "reputation_score": 0,
+                "stats": {
+                    "malicious": 0,
+                    "suspicious": 0,
+                    "harmless": 0,
+                    "undetected": 0
+                },
+                "flagged_by": [],
+                "categories": [],
+                "last_analysis_date": null,
+                "first_submission_date": null,
+                "message": "URL not found in VirusTotal database (potential new/zero-day infrastructure)."
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "status": "failed",
+    "message": "Network request timed out.",
+    "execution_time_sec": 16.634,
+    "data": {
+        "url_analysis": {
+            "success": false,
+            "status": "error",
+            "initial_url": "https://eisenrafluxtrade.de/",
+            "final_url": null,
+            "domain_resolved": null,
+            "response_time_sec": 16.6303,
+            "status_code": null,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {},
+            "cookie_analysis": {
+                "cookie_count": 0,
+                "secure_count": 0,
+                "httponly_count": 0,
+                "samesite_count": 0,
+                "raw_values_stored": false
+            },
+            "error": {
+                "type": "Timeout",
+                "message": "Network request timed out."
+            }
+        }
+    }
+}

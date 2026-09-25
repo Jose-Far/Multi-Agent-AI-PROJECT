@@ -1,0 +1,21 @@
+{
+    "status": "failed",
+    "message": "Failed to connect to the domain. It may be broken or offline.",
+    "data": {
+        "url_analysis": {
+            "success": false,
+            "status": "error",
+            "initial_url": "https://luminarymerge.com/",
+            "final_url": null,
+            "response_time_sec": 0.0,
+            "status_code": null,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {},
+            "error": {
+                "type": "ConnectionError",
+                "message": "Failed to connect to the domain. It may be broken or offline."
+            }
+        }
+    }
+}

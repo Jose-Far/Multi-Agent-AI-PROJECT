@@ -1,0 +1,209 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "execution_time_sec": 59.6,
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://sp0m.net/",
+            "final_url": "https://sp0m.net/",
+            "domain_resolved": "sp0m.net",
+            "response_time_sec": 1.7054,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "Date": "Thu, 13 Aug 2026 15:02:05 GMT",
+                "Content-Type": "text/html;charset=utf-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "x-powered-by": "Nuxt",
+                "cf-cache-status": "DYNAMIC",
+                "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                "Server-Timing": "cfCacheStatus;desc=\"DYNAMIC\", cfEdge;dur=6,cfOrigin;dur=246",
+                "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=2963u7b3PPtiVR4RA%2BpQxB9piYNpJpphm%2BfZWn4p1muVMiPUxBjOYUEjDpwsqC9bO3Ox2%2BDI7PdXbZNUDAMxI9NR51avoA7b72L67pNbkh8zZUBBcuQu4OgsSw%3D%3D\"}]}",
+                "Content-Encoding": "br",
+                "Server": "cloudflare",
+                "CF-RAY": "a2a89948ea18b15f-BOS",
+                "alt-svc": "h3=\":443\"; ma=86400"
+            },
+            "cookies_dropped": {},
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": null,
+                "favicon_url": "https://sp0m.net/favicon.ico",
+                "html_length_bytes": 3122,
+                "form_count": 0,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "cross_domain_form_actions": 0,
+                "iframe_count": 0,
+                "invisible_iframes": 0,
+                "iframe_sources": [],
+                "script_count": 0,
+                "external_scripts_count": 0,
+                "suspicious_inline_scripts": 0,
+                "total_links": 0,
+                "external_links_count": 0,
+                "empty_links_count": 0,
+                "hidden_elements_count": 0,
+                "right_click_disabled": false,
+                "has_meta_refresh": false,
+                "html_comments_count": 1
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_sp0m.net_1786633379.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAPYCAIAAACdeU7aAAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png",
+                "timestamp": 1786633379
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "tls_version": "TLSv1.3",
+                "cipher_suite": "TLS_AES_256_GCM_SHA384",
+                "cipher_strength_bits": 256,
+                "issuer_organization": "Google Trust Services",
+                "issuer_common_name": "WE1",
+                "issuer_country": "US",
+                "subject_common_name": "sp0m.net",
+                "subject_alt_names": [
+                    "sp0m.net",
+                    "*.sp0m.net"
+                ],
+                "not_before": "2026-06-26T01:47:37+00:00",
+                "not_after": "2026-09-24T02:43:41+00:00",
+                "cert_age_days": 48,
+                "days_until_expiry": 41,
+                "is_expired": false,
+                "is_self_signed": false,
+                "is_free_ca": true
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "queried_domain": "sp0m.net",
+                "records": {
+                    "A": [
+                        "104.21.39.217",
+                        "172.67.148.232"
+                    ],
+                    "AAAA": [
+                        "2606:4700:3037::6815:27d9",
+                        "2606:4700:3036::ac43:94e8"
+                    ],
+                    "MX": [],
+                    "TXT": [
+                        "google-site-verification=kEf7RDSEYZp7vIxE3fwnE6NYQZyz5DM5Do7W4enPFt4"
+                    ],
+                    "NS": [
+                        "josh.ns.cloudflare.com",
+                        "mckinley.ns.cloudflare.com"
+                    ],
+                    "CNAME": [],
+                    "SOA": [
+                        {
+                            "mname": "josh.ns.cloudflare.com",
+                            "rname": "dns.cloudflare.com",
+                            "serial": 2409352147,
+                            "refresh": 10000,
+                            "retry": 2400,
+                            "expire": 604800,
+                            "minimum": 1800
+                        }
+                    ]
+                },
+                "ttl_statistics": {
+                    "A_TTL": 300,
+                    "AAAA_TTL": 300,
+                    "TXT_TTL": 300,
+                    "NS_TTL": 86400
+                },
+                "record_counts": {
+                    "a_count": 2,
+                    "mx_count": 0,
+                    "ns_count": 2,
+                    "txt_count": 1
+                }
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "domain": "sp0m.net",
+                "registrar": "GoDaddy.com, LLC",
+                "registrant_country": "Unknown",
+                "registrant_org": "Unknown",
+                "creation_date": "2025-06-09T17:46:41+00:00",
+                "expiration_date": "2027-06-09T17:46:41+00:00",
+                "updated_date": "2026-03-23T13:17:03+00:00",
+                "domain_age_days": 429,
+                "days_until_expiry": 300,
+                "is_expired": false,
+                "name_servers": [
+                    "josh.ns.cloudflare.com",
+                    "mckinley.ns.cloudflare.com"
+                ],
+                "status_codes": [
+                    "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+                    "clientRenewProhibited https://icann.org/epp#clientRenewProhibited",
+                    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+                    "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"
+                ]
+            }
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": true,
+                "reputation_score": 0,
+                "stats": {
+                    "malicious": 9,
+                    "suspicious": 2,
+                    "harmless": 47,
+                    "undetected": 34
+                },
+                "flagged_by": [
+                    "Lionic (phishing)",
+                    "alphaMountain.ai (phishing)",
+                    "BitDefender (phishing)",
+                    "Chong Lua Dao (malicious)",
+                    "ESET (suspicious)",
+                    "G-Data (phishing)",
+                    "Gridinsoft (suspicious)",
+                    "Kaspersky (phishing)",
+                    "Rising (phishing)",
+                    "Sophos (phishing)",
+                    "Webroot (malicious)"
+                ],
+                "categories": [
+                    "Phishing and Other Frauds",
+                    "hacking",
+                    "Phishing (alphaMountain.ai)",
+                    "phishing and fraud"
+                ],
+                "last_analysis_date": "2026-08-01T07:19:51+00:00",
+                "first_submission_date": "2021-12-15T17:12:32+00:00"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "status": "failed",
+    "message": "Network request timed out after 15 seconds.",
+    "execution_time_sec": 18.507,
+    "data": {
+        "url_analysis": {
+            "success": false,
+            "status": "error",
+            "initial_url": "https://google28.m4ntapaset.ink",
+            "final_url": null,
+            "domain_resolved": null,
+            "response_time_sec": 18.5047,
+            "status_code": null,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {},
+            "cookies_dropped": {},
+            "error": {
+                "type": "Timeout",
+                "message": "Network request timed out after 15 seconds."
+            }
+        }
+    }
+}

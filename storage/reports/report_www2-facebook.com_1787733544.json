@@ -1,0 +1,217 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "execution_time_sec": 36.304,
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://www2-facebook.com",
+            "final_url": "https://www2-facebook.com/",
+            "domain_resolved": "www2-facebook.com",
+            "response_time_sec": 1.6367,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "date": "Wed, 26 Aug 2026 08:38:29 GMT",
+                "server": "Apache",
+                "upgrade": "h2,h2c",
+                "connection": "Upgrade",
+                "vary": "Accept-Encoding",
+                "content-encoding": "gzip",
+                "content-length": "1108",
+                "content-type": "text/html; charset=UTF-8"
+            },
+            "cookie_analysis": {
+                "cookie_count": 0,
+                "secure_count": 0,
+                "httponly_count": 0,
+                "samesite_count": 0,
+                "raw_values_stored": false
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "signal_available": true,
+            "collection_mode": "full",
+            "navigation_timeout": false,
+            "data": {
+                "page_title": "Phishing Simulation Landing Page",
+                "favicon_url": "https://www2-facebook.com/favicon.ico",
+                "html_length_bytes": 2413,
+                "status_code": 200,
+                "final_url": "https://www2-facebook.com/",
+                "raw_html": "<!DOCTYPE html><html><head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n<title>Phishing Simulation Landing Page</title>\n<meta name=\"description\" content=\"Phishing simulation landing page for security awareness training.\">\n<meta name=\"author\" content=\"PhishingBox, LLC.\">\n<meta name=\"Copyright\" content=\"Copyright (c) 2006-2021 PhishingBox, LLC.\">\n<link href=\"assets/css/bootstrap.css\" rel=\"stylesheet\">\n<style>\n.pbox-box-row {\n    margin-top:50px;\n    margin-left:25px;\n    margin-right:25px;\n}\n.pbox-box {\n    border:2px solid #cecece;\n    padding:25px;\n}\n.pbox-copyright{\n    padding-top:15px;\n    font-size:11px;\n    text-align:center;\n    color:#cecece;\n}\n.bg {\n    animation:slide 3s ease-in-out infinite alternate;\n    background-image: linear-gradient(-60deg, #00b3e5 50%, #1177bb 50%);\n    bottom:0;\n    left:-50%;\n    opacity:.5;\n    position:fixed;\n    right:-50%;\n    top:0;\n    z-index:-1;\n}\n.bg2 {\n    animation-direction:alternate-reverse;\n    animation-duration:4s;\n}\n.bg3 {\n    animation-duration:5s;\n}\n.content {\n    background-color:rgba(255,255,255,.9);\n    border-radius:.25em;\n    box-shadow:0 0 .25em rgba(0,0,0,.25);\n    box-sizing:border-box;\n    left:50%;\n    padding:8vmin;\n    position:fixed;\n    text-align:center;\n    top:50%;\n    transform:translate(-50%, -50%);\n}\nbody {\n    font-family:Helvetica;\n}\nh1 {\n    font-family:Helvetica;\n    font-size:22px;\n    margin-top: 0px;\n    margin-bottom: 40px;\n}\n@keyframes slide {\n    0% {\n        transform:translateX(-25%);\n    }\n    100% {\n        transform:translateX(25%);\n    }\n}\n</style>\n</head>\n<body>\n    <div class=\"bg\"></div>\n    <div class=\"bg bg2\"></div>\n    <div class=\"bg bg3\"></div>\n    <div class=\"content\">\n        <img src=\"/assets/img/phishingbox_logo.png\" style=\"max-height:125px;\" alt=\"PhishingBox\">\n        <h1>Phishing Simulation</h1>\n        This web site (www2-facebook.com) is hosted and managed for phishing simulation purposes.\n        <br><br>\n        This domain and many others are used to teach employees how to recognize and avoid phishing attacks.\n        <br><br>\n        This web site is not malicious and is most likely sent by your employer as part of a phishing test.<br>If you have any questions, please contact your employer's IT Administrator.\n    </div>\n\n    <script src=\"/assets/js/jquery.js\"></script>\n    <script src=\"/assets/js/bootstrap.min.js\"></script>\n\n\n</body></html>",
+                "form_count": 0,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "cross_domain_form_actions": 0,
+                "iframe_count": 0,
+                "invisible_iframes": 0,
+                "iframe_sources": [],
+                "script_count": 2,
+                "external_scripts_count": 2,
+                "suspicious_inline_scripts": 0,
+                "total_links": 0,
+                "external_links_count": 0,
+                "empty_links_count": 0,
+                "hidden_elements_count": 0,
+                "right_click_disabled": false,
+                "has_meta_refresh": false,
+                "html_comments_count": 0,
+                "local_filepath": "C:\\Users\\farde\\Desktop\\Multi-Agent AI PROJECT\\storage\\html\\dom_www2-facebook.com_1787733544.html"
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_www2-facebook.com_1787733524.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAPYCAIAAACdeU7aAAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png",
+                "timestamp": 1787733524
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "tls_version": "TLSv1.3",
+                "cipher_suite": "TLS_AES_128_GCM_SHA256",
+                "cipher_strength_bits": 128,
+                "issuer_organization": "Let's Encrypt",
+                "issuer_common_name": "YE2",
+                "issuer_country": "US",
+                "subject_common_name": "www2-facebook.com",
+                "subject_alt_names": [
+                    "www2-facebook.com"
+                ],
+                "not_before": "2026-08-12T04:06:52+00:00",
+                "not_after": "2026-11-10T04:06:51+00:00",
+                "cert_age_days": 14,
+                "days_until_expiry": 75,
+                "is_expired": false,
+                "is_self_signed": false,
+                "is_free_ca": true
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "queried_domain": "www2-facebook.com",
+                "records": {
+                    "A": [
+                        "64.191.166.205"
+                    ],
+                    "AAAA": [],
+                    "MX": [
+                        {
+                            "preference": 10,
+                            "exchange": "mail.www2-facebook.com"
+                        }
+                    ],
+                    "TXT": [
+                        "google-site-verification=LsMLd5GDnAsyTKGQfomdjLQ3SSjyznC_c2ezbUASEmI",
+                        "v=spf1 ip4:64.191.166.196 -all"
+                    ],
+                    "NS": [
+                        "ns2.intelliwire.net",
+                        "ns1.intelliwire.net"
+                    ],
+                    "CNAME": [],
+                    "SOA": [
+                        {
+                            "mname": "ns1.intelliwire.net",
+                            "rname": "hostmaster.www2-facebook.com",
+                            "serial": 1787729705,
+                            "refresh": 16384,
+                            "retry": 2048,
+                            "expire": 1048576,
+                            "minimum": 2560
+                        }
+                    ]
+                },
+                "ttl_statistics": {
+                    "A_TTL": 600,
+                    "MX_TTL": 82780,
+                    "TXT_TTL": 600,
+                    "NS_TTL": 255580
+                },
+                "record_counts": {
+                    "a_count": 1,
+                    "mx_count": 1,
+                    "ns_count": 2,
+                    "txt_count": 2
+                }
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "domain": "www2-facebook.com",
+                "registrar": "GoDaddy.com, LLC",
+                "registrant_country": "Unknown",
+                "registrant_org": "Unknown",
+                "creation_date": "2013-08-08T19:31:51+00:00",
+                "expiration_date": "2027-08-08T19:31:51+00:00",
+                "updated_date": "2026-08-09T15:00:43+00:00",
+                "domain_age_days": 4765,
+                "days_until_expiry": 347,
+                "is_expired": false,
+                "name_servers": [
+                    "ns1.intelliwire.net",
+                    "ns2.intelliwire.net",
+                    "ns3.intelliwire.com"
+                ],
+                "status_codes": [
+                    "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+                    "clientRenewProhibited https://icann.org/epp#clientRenewProhibited",
+                    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+                    "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited"
+                ]
+            }
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": true,
+                "reputation_score": 0,
+                "stats": {
+                    "malicious": 11,
+                    "suspicious": 0,
+                    "harmless": 51,
+                    "undetected": 30
+                },
+                "flagged_by": [
+                    "Lionic (phishing)",
+                    "alphaMountain.ai (phishing)",
+                    "BitDefender (phishing)",
+                    "Chong Lua Dao (malicious)",
+                    "CyRadar (phishing)",
+                    "Fortinet (malware)",
+                    "G-Data (phishing)",
+                    "Gridinsoft (phishing)",
+                    "SOCRadar (phishing)",
+                    "Sophos (phishing)",
+                    "VIPRE (malware)"
+                ],
+                "categories": [
+                    "phishing and fraud",
+                    "Information/Computer Security, Phishing (alphaMountain.ai)"
+                ],
+                "last_analysis_date": "2026-08-07T09:54:44+00:00",
+                "first_submission_date": "2021-03-20T15:13:54+00:00"
+            }
+        }
+    }
+}

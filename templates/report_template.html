@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PhishDec Report</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+            @frame footer_frame {
+                -pdf-frame-content: footer_content;
+                left: 50pt; width: 512pt; top: 772pt; height: 20pt;
+            }
+        }
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 11pt;
+            color: #1e293b;
+            line-height: 1.5;
+        }
+        h1, h2, h3, h4 { color: #0f172a; margin-bottom: 12px; }
+        h1 { font-size: 24pt; font-weight: bold; margin-bottom: 0px; color: #1e293b;}
+        h2 { font-size: 16pt; border-bottom: 2px solid #38bdf8; padding-bottom: 4px; margin-top: 30px; color: #0f172a; }
+        h3 { font-size: 13pt; margin-top: 20px; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .subtitle { font-size: 11pt; color: #64748b; margin-top: 4px; font-weight: bold; letter-spacing: 1px; }
+        .report-title { font-size: 14pt; background-color: #0f172a; color: white; padding: 10px; text-align: center; margin-top: 20px; border-radius: 4px; }
+        
+        table.layout-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table.layout-table td {
+            padding: 10px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        table.layout-table td.label {
+            font-weight: bold;
+            color: #475569;
+            width: 30%;
+            background-color: #f8fafc;
+        }
+        table.layout-table td.value {
+            color: #0f172a;
+            width: 70%;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+        
+        .critical { color: #e11d48; font-weight: bold; }
+        .high { color: #f43f5e; font-weight: bold; }
+        .medium { color: #f59e0b; font-weight: bold; }
+        .low { color: #10b981; font-weight: bold; }
+
+        table.data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            border: 1px solid #cbd5e1;
+        }
+        table.data-table th, table.data-table td {
+            border: 1px solid #cbd5e1;
+            padding: 10px;
+            text-align: left;
+        }
+        table.data-table th { background-color: #f1f5f9; font-weight: bold; font-size: 10pt; color: #475569; }
+        table.data-table td { font-size: 10pt; }
+
+        .evidence-box { margin-bottom: 15px; background-color: #f8fafc; border-left: 4px solid #38bdf8; padding: 10px 15px; }
+        .evidence-title { font-weight: bold; color: #0f172a; margin-bottom: 8px; font-size: 11pt; }
+        ul { margin: 0; padding-left: 20px; }
+        li { margin-bottom: 4px; font-size: 10pt; color: #334155; }
+        
+        .footer { text-align: center; font-size: 9pt; color: #94a3b8; }
+        .page-break { pdf-pagebreak: true; }
+        .badge { display: inline; padding: 3px 8px; font-size: 9pt; font-weight: bold; color: white; border-radius: 4px; }
+        .badge-phishing { background-color: #e11d48; }
+        .badge-suspicious { background-color: #f59e0b; }
+        .badge-legitimate { background-color: #10b981; }
+        .badge-unknown { background-color: #94a3b8; }
+    </style>
+</head>
+<body>
+    <div id="footer_content" class="footer">
+        PhishDec | Automated Threat Analysis Report | Page <pdf:pagenumber> of <pdf:pagecount>
+    </div>
+
+    <div class="header">
+        <h1>PHISHDEC</h1>
+        <div class="subtitle">MULTI-AGENT AI CYBERSECURITY ANALYST</div>
+        <div class="report-title">SECURITY INVESTIGATION REPORT</div>
+    </div>
+
+    <table class="layout-table">
+        <tr><td class="label">Analysis ID:</td><td class="value">{{ report.metadata.analysis_id }}</td></tr>
+        <tr><td class="label">Date:</td><td class="value">{{ report.metadata.date }}</td></tr>
+        <tr><td class="label">Target:</td><td class="value"><strong>{{ report.metadata.target }}</strong></td></tr>
+    </table>
+
+    <h2>Executive Summary</h2>
+    <table class="layout-table">
+        <tr>
+            <td class="label">Final Verdict:</td>
+            <td class="value">
+                <span class="{% if report.summary.verdict == 'PHISHING' %}critical{% elif report.summary.verdict == 'SUSPICIOUS' %}medium{% elif report.summary.verdict == 'LEGITIMATE' %}low{% else %}unknown{% endif %}">
+                    {{ report.summary.verdict }}
+                </span>
+            </td>
+        </tr>
+        <tr><td class="label">Risk Score:</td><td class="value">{{ report.summary.risk_score|default('N/A') }} / 100</td></tr>
+        <tr><td class="label">Risk Level:</td><td class="value"><span class="{{ report.summary.risk_level|lower }}">{{ report.summary.risk_level|upper }}</span></td></tr>
+        <tr><td class="label">Confidence:</td><td class="value">{{ (report.summary.confidence * 100)|round(1) }}%</td></tr>
+        <tr><td class="label">Evidence Coverage:</td><td class="value">{{ report.summary.coverage }} Agents</td></tr>
+        {% if report.summary.is_partial %}
+        <tr><td class="label">Status:</td><td class="value"><span class="medium">PARTIAL INVESTIGATION</span></td></tr>
+        {% endif %}
+    </table>
+
+    <p style="margin-top: 15px; font-size: 10pt; color: #475569;">
+        The target was analyzed using independent security analysis agents. The final assessment was generated by the PhishDec Decision Fusion Engine based on available evidence and cross-agent corroboration.
+    </p>
+    
+    <h2>Investigation Timeline</h2>
+    <table class="layout-table">
+        <tr><td class="label">Investigation Start:</td><td class="value">{{ report.timeline.created_at }}</td></tr>
+    </table>
+    <ul>
+        {% for event in report.timeline.events %}
+        <li>{{ event }}</li>
+        {% endfor %}
+    </ul>
+
+    <div class="page-break"></div>
+
+    <h2>Agent Analysis</h2>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Agent</th>
+                <th>Status</th>
+                <th>Prediction</th>
+                <th>Risk Score</th>
+                <th>Confidence</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for name, agent in report.agents.items() %}
+            <tr>
+                <td><strong>{{ name|replace('_', ' ')|title }}</strong></td>
+                <td>{{ agent.status|title }}</td>
+                <td>{{ agent.prediction|title if agent.prediction else 'Unknown' }}</td>
+                <td>{{ agent.risk_score|default('-') }}</td>
+                <td>{% if agent.confidence is not none %}{{ (agent.confidence * 100)|round(1) }}%{% else %}-{% endif %}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Decision Fusion</h2>
+    <table class="layout-table">
+        <tr><td class="label">Consensus Achieved:</td><td class="value">{{ 'Yes' if report.fusion.consensus_satisfied else 'No' }}</td></tr>
+        <tr><td class="label">Evidence State:</td><td class="value">{{ report.fusion.evidence_state|title }}</td></tr>
+        <tr><td class="label">Conflict Detected:</td><td class="value">{{ 'Yes' if report.fusion.conflict_detected else 'No' }}</td></tr>
+    </table>
+    {% if report.fusion.conflict_detected %}
+    <p style="color: #e11d48; font-weight: bold; border-left: 4px solid #e11d48; padding-left: 10px; background-color: #fff1f2; padding: 10px;">
+        Agent disagreement was observed. The final assessment should be interpreted in the context of the available evidence.
+    </p>
+    {% endif %}
+
+    <h2>Risk Factors & Explainability</h2>
+    <div class="card">
+        <div style="font-weight: bold; margin-bottom: 12px; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px;">Identified Risk Factors:</div>
+        {% if report.risk_factors %}
+        <ul>
+            {% for factor in report.risk_factors %}
+            <li><strong>{{ factor.agent|title }}:</strong> {{ factor.factor }} ({{ factor.severity }})</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p style="font-size: 10pt; color: #64748b; margin-top: 5px;">No critical risk factors identified.</p>
+        {% endif %}
+        
+        <div style="font-weight: bold; margin-top: 20px; margin-bottom: 12px; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding-bottom: 4px;">Decision Basis (SHAP/LIME logic):</div>
+        <ul style="font-size: 10pt;">
+            {% for k, v in report.explainability.decision_basis.items() %}
+            <li><strong>{{ k|replace('_', ' ')|title }}:</strong> {{ v }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <h2>Evidence & Telemetry</h2>
+    {% for name, ev_list in report.evidence.items() %}
+    <div class="evidence-box">
+        <div class="evidence-title">{{ name }}</div>
+        {% if ev_list %}
+        <ul>
+            {% for item in ev_list %}
+            <li>{{ item|striptags }}</li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <p style="font-size: 10pt; color: #64748b; margin-top: 5px;">No detailed evidence returned.</p>
+        {% endif %}
+    </div>
+    {% endfor %}
+    {% if not report.evidence %}
+    <p style="font-size: 10pt; color: #64748b;">No evidence items were logged for this investigation.</p>
+    {% endif %}
+
+    <h2>Analyst Notes</h2>
+    <div class="card">
+        {% if report.notes %}
+        <p style="margin:0; white-space: pre-wrap; font-family: monospace;">{{ report.notes|striptags }}</p>
+        {% else %}
+        <p style="margin:0; color: #64748b; font-style: italic;">No analyst notes were added to this investigation.</p>
+        {% endif %}
+    </div>
+
+    <h2>Technical Details</h2>
+    <table class="layout-table">
+        <tr><td class="label">Fusion Engine:</td><td class="value">{{ report.technical.fusion_engine }}</td></tr>
+        <tr><td class="label">Database:</td><td class="value">{{ report.technical.database }}</td></tr>
+        <tr><td class="label">Execution Time:</td><td class="value">{{ report.technical.execution_time_ms|round(1) }} ms</td></tr>
+    </table>
+</body>
+</html>

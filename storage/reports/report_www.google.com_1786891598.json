@@ -1,0 +1,308 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "execution_time_sec": 14.003,
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://www.google.com",
+            "final_url": "https://www.google.com/",
+            "domain_resolved": "www.google.com",
+            "response_time_sec": 1.095,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "Content-Type": "text/html; charset=UTF-8",
+                "Date": "Sun, 16 Aug 2026 14:46:24 GMT",
+                "Expires": "-1",
+                "Cache-Control": "private, max-age=0",
+                "Strict-Transport-Security": "max-age=31536000",
+                "Content-Security-Policy-Report-Only": "object-src 'none';base-uri 'self';script-src 'nonce-TFf0EdBFLtgW1R6kKrcyKA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp",
+                "Cross-Origin-Opener-Policy": "same-origin-allow-popups; report-to=\"gws\"",
+                "Report-To": "{\"group\":\"gws\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/gws/other\"}]}",
+                "Accept-CH": "Sec-CH-Prefers-Color-Scheme, Downlink, RTT, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Arch, Sec-CH-UA-Model, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64",
+                "Permissions-Policy": "unload=()",
+                "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+                "Content-Encoding": "br",
+                "Server": "gws",
+                "Content-Length": "64231",
+                "X-XSS-Protection": "0",
+                "X-Frame-Options": "SAMEORIGIN",
+                "Set-Cookie": "__Secure-STRP=ANmZwa0ok--P-gkbDbYa7iEuneXCUGH5rlqKKZZGwg37877iJDGy143aUJU4W-1ZXS-rrgWLK2fuBrfIbWKvAu7k5e5mHVCj8WIu; expires=Sun, 16-Aug-2026 14:51:24 GMT; path=/; domain=.google.com; Secure; SameSite=strict, SEARCH_SAMESITE=CgQIyaEB; expires=Fri, 12-Feb-2027 14:46:24 GMT; path=/; domain=.google.com; SameSite=strict, AEC=AdJVEatiawBNd_-MUvudptWwj4iL0T1vW9Lp_EtbvlND2g5EBhrtewgru1M; expires=Fri, 12-Feb-2027 14:46:24 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, NID=534=C2h0pgcdnY1ipPpOwFtawrpIf5Jree5vC3AZFyqMsiQA7fAo5j0YArBCxdsJaLNYHU8kEQ5qu2YYLeGdyNw81fp-WRcZ7PO4BCF70csXVI-7w6tWd5V7GH2_xuvGqBtII-jwg0WtLQxHAbQhxuVhgzD7cGo0D6zjaJ01xyI5WjPnm_IpKrPoSxiRehqVnngc87jt8f_H0FCs1kCKa3d0H8g; expires=Mon, 15-Feb-2027 14:46:24 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=none",
+                "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            "cookies_dropped": {
+                "__Secure-STRP": "ANmZwa0ok--P-gkbDbYa7iEuneXCUGH5rlqKKZZGwg37877iJDGy143aUJU4W-1ZXS-rrgWLK2fuBrfIbWKvAu7k5e5mHVCj8WIu",
+                "SEARCH_SAMESITE": "CgQIyaEB",
+                "AEC": "AdJVEatiawBNd_-MUvudptWwj4iL0T1vW9Lp_EtbvlND2g5EBhrtewgru1M",
+                "NID": "534=C2h0pgcdnY1ipPpOwFtawrpIf5Jree5vC3AZFyqMsiQA7fAo5j0YArBCxdsJaLNYHU8kEQ5qu2YYLeGdyNw81fp-WRcZ7PO4BCF70csXVI-7w6tWd5V7GH2_xuvGqBtII-jwg0WtLQxHAbQhxuVhgzD7cGo0D6zjaJ01xyI5WjPnm_IpKrPoSxiRehqVnngc87jt8f_H0FCs1kCKa3d0H8g"
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": null,
+                "favicon_url": "https://www.google.com/favicon.ico",
+                "html_length_bytes": 55373,
+                "form_count": 0,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "cross_domain_form_actions": 0,
+                "iframe_count": 0,
+                "invisible_iframes": 0,
+                "iframe_sources": [],
+                "script_count": 0,
+                "external_scripts_count": 0,
+                "suspicious_inline_scripts": 0,
+                "total_links": 0,
+                "external_links_count": 0,
+                "empty_links_count": 0,
+                "hidden_elements_count": 0,
+                "right_click_disabled": false,
+                "has_meta_refresh": false,
+                "html_comments_count": 2
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_www.google.com_1786891595.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAPYCAIAAACdeU7aAAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png",
+                "timestamp": 1786891595
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "tls_version": "TLSv1.3",
+                "cipher_suite": "TLS_AES_256_GCM_SHA384",
+                "cipher_strength_bits": 256,
+                "issuer_organization": "Google Trust Services",
+                "issuer_common_name": "WR2",
+                "issuer_country": "US",
+                "subject_common_name": "*.google.com",
+                "subject_alt_names": [
+                    "*.google.com",
+                    "*.appengine.google.com",
+                    "*.bdn.dev",
+                    "*.origin-test.bdn.dev",
+                    "*.cloud.google.com",
+                    "*.crowdsource.google.com",
+                    "*.datacompute.google.com",
+                    "*.google.ca",
+                    "*.google.cl",
+                    "*.google.co.in",
+                    "*.google.co.jp",
+                    "*.google.co.uk",
+                    "*.google.com.ar",
+                    "*.google.com.au",
+                    "*.google.com.br",
+                    "*.google.com.co",
+                    "*.google.com.mx",
+                    "*.google.com.tr",
+                    "*.google.com.vn",
+                    "*.google.de",
+                    "*.google.es",
+                    "*.google.fr",
+                    "*.google.hu",
+                    "*.google.it",
+                    "*.google.nl",
+                    "*.google.pl",
+                    "*.google.pt",
+                    "*.gemini.cloud.google.com",
+                    "*.gstatic.com",
+                    "*.metric.gstatic.com",
+                    "*.gvt1.com",
+                    "*.gcpcdn.gvt1.com",
+                    "*.gvt2.com",
+                    "*.gcp.gvt2.com",
+                    "*.url.google.com",
+                    "*.youtube-nocookie.com",
+                    "*.ytimg.com",
+                    "ai.android",
+                    "android.com",
+                    "*.android.com",
+                    "*.flash.android.com",
+                    "g.co",
+                    "*.g.co",
+                    "goo.gl",
+                    "www.goo.gl",
+                    "google-analytics.com",
+                    "*.google-analytics.com",
+                    "google.com",
+                    "googlecommerce.com",
+                    "*.googlecommerce.com",
+                    "urchin.com",
+                    "*.urchin.com",
+                    "youtu.be",
+                    "youtube.com",
+                    "*.youtube.com",
+                    "music.youtube.com",
+                    "*.music.youtube.com",
+                    "youtubeeducation.com",
+                    "*.youtubeeducation.com",
+                    "youtubekids.com",
+                    "*.youtubekids.com",
+                    "yt.be",
+                    "*.yt.be",
+                    "android.clients.google.com",
+                    "*.aistudio.google.com"
+                ],
+                "not_before": "2026-07-20T18:05:56+00:00",
+                "not_after": "2026-10-12T18:05:55+00:00",
+                "cert_age_days": 26,
+                "days_until_expiry": 57,
+                "is_expired": false,
+                "is_self_signed": false,
+                "is_free_ca": true
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "queried_domain": "google.com",
+                "records": {
+                    "A": [
+                        "192.178.193.100",
+                        "192.178.193.113",
+                        "192.178.193.102",
+                        "192.178.193.138",
+                        "192.178.193.139",
+                        "192.178.193.101"
+                    ],
+                    "AAAA": [
+                        "2404:6800:4000:1017::64",
+                        "2404:6800:4000:1017::8a",
+                        "2404:6800:4000:1017::71",
+                        "2404:6800:4000:1017::8b"
+                    ],
+                    "MX": [
+                        {
+                            "preference": 10,
+                            "exchange": "smtp.google.com"
+                        }
+                    ],
+                    "TXT": [
+                        "google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0",
+                        "work-accounts-domain-verification=Tcj6JjIMZOw2KsSEw2Nt2rLae89tN6",
+                        "google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ",
+                        "cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b",
+                        "globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=",
+                        "MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB",
+                        "Z29vZ2xl",
+                        "docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e",
+                        "facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95",
+                        "apple-domain-verification=30afIBcvSuDV2PLX",
+                        "onetrust-domain-verification=6d685f1d41a94696ad7ef771f68993e0",
+                        "onetrust-domain-verification=0d477fe608074e6f9c12bca7826035cc",
+                        "docusign=1b0a6754-49b1-4db5-8540-d2c12664b289",
+                        "v=spf1 include:_spf.google.com ~all",
+                        "google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o"
+                    ],
+                    "NS": [
+                        "ns4.google.com",
+                        "ns1.google.com",
+                        "ns2.google.com",
+                        "ns3.google.com"
+                    ],
+                    "CNAME": [],
+                    "SOA": [
+                        {
+                            "mname": "ns1.google.com",
+                            "rname": "dns-admin.google.com",
+                            "serial": 965142848,
+                            "refresh": 900,
+                            "retry": 900,
+                            "expire": 1800,
+                            "minimum": 60
+                        }
+                    ]
+                },
+                "ttl_statistics": {
+                    "A_TTL": 242,
+                    "AAAA_TTL": 180,
+                    "MX_TTL": 139,
+                    "TXT_TTL": 139,
+                    "NS_TTL": 332590
+                },
+                "record_counts": {
+                    "a_count": 6,
+                    "mx_count": 1,
+                    "ns_count": 4,
+                    "txt_count": 15
+                }
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "domain": "google.com",
+                "registrar": "MarkMonitor, Inc.",
+                "registrant_country": "US",
+                "registrant_org": "Google LLC",
+                "creation_date": "1997-09-15T04:00:00+00:00",
+                "expiration_date": "2028-09-14T04:00:00+00:00",
+                "updated_date": "2019-09-09T15:39:04+00:00",
+                "domain_age_days": 10562,
+                "days_until_expiry": 759,
+                "is_expired": false,
+                "name_servers": [
+                    "ns1.google.com",
+                    "ns2.google.com",
+                    "ns3.google.com",
+                    "ns4.google.com"
+                ],
+                "status_codes": [
+                    "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+                    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+                    "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+                    "serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited",
+                    "serverTransferProhibited https://icann.org/epp#serverTransferProhibited",
+                    "serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited",
+                    "clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)",
+                    "clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)",
+                    "clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)",
+                    "serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)",
+                    "serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)",
+                    "serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)"
+                ]
+            }
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": false,
+                "reputation_score": 408,
+                "stats": {
+                    "malicious": 0,
+                    "suspicious": 0,
+                    "harmless": 63,
+                    "undetected": 29
+                },
+                "flagged_by": [],
+                "categories": [
+                    "search engines and portals",
+                    "search engines",
+                    "searchengines",
+                    "search engines & portals"
+                ],
+                "last_analysis_date": "2026-08-16T14:16:50+00:00",
+                "first_submission_date": "2010-08-11T10:56:00+00:00"
+            }
+        }
+    }
+}

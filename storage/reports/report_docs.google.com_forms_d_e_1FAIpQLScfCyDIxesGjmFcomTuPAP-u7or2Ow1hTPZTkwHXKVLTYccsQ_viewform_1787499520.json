@@ -1,0 +1,262 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "execution_time_sec": 27.621,
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://docs.google.com/forms/d/e/1FAIpQLScfCyDIxesGjmFcomTuPAP-u7or2Ow1hTPZTkwHXKVLTYccsQ/viewform",
+            "final_url": "https://docs.google.com/forms/d/e/1FAIpQLScfCyDIxesGjmFcomTuPAP-u7or2Ow1hTPZTkwHXKVLTYccsQ/viewform",
+            "domain_resolved": "docs.google.com",
+            "response_time_sec": 1.429,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "Content-Type": "text/html; charset=utf-8",
+                "X-Robots-Tag": "noindex, nofollow, nosnippet",
+                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+                "Date": "Sun, 23 Aug 2026 15:38:13 GMT",
+                "Content-Security-Policy-Report-Only": "report-uri https://csp.withgoogle.com/csp/forms/prod;frame-ancestors 'none'",
+                "Content-Encoding": "gzip",
+                "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+                "Content-Security-Policy": "require-trusted-types-for 'script';report-uri https://csp.withgoogle.com/csp/docs-tt, base-uri 'self';object-src 'none';report-uri https://csp.withgoogle.com/csp/forms/prod;script-src 'report-sample' 'nonce-eLNeBQo3OHudCQaLdOrKQg' 'unsafe-inline' 'strict-dynamic' https: http: 'unsafe-eval'",
+                "Reporting-Endpoints": "default=\"/forms/d/e/1FAIpQLScfCyDIxesGjmFcomTuPAP-u7or2Ow1hTPZTkwHXKVLTYccsQ/web-reports?bl=apps-forms.freebird_20260816.08_p0&app=27&clss=1&context=eJwV03lczIkbB_Ax853n6dZM95RpZrpmosPxS1TIpAaLdfxMji1H5SZK5I7kWBJWi92l3Ef6YWsti1hy1-a-rSglKlG6tvp99o_36_m8Pq_Pv49ZqqpBZBTtNTGKTpgbRfutjSKl3CgqtDeKfByMoiUeRlFXH6Nom69RNK-XUfR4slFUAaYxRpETPFllFFVC4GajyADtO40iq11GUVyJUZQEVfVGUQskNRhFaXDSOVJ0Ce5OiBSVwlfdB3E7nLhSJ86H2tLP4kYoH_JFXA0HuzeIT4BkdYPYHOpmNYqbQRrSJLaEN7FN4ipYubFJvA7abzaL6VazeFxJs3gyfC9vEW8HZXaL2BOk49vFlmAm6hDLocylQ_wRIpM7xJNg4oFOkhjwLhRLekDXFImkJ7isk0jcIb1cIsmEb2v7CpHw7Mdg4Q2YnggWZLAzMETIAs8uoYIvrDeEChmweUiosAO6Lhso9ITN_fTCDjgarxdOwYgkvWAE75N6oQe8z9cLdZAzY5CQB4XzBwlFUHJhkPAEKt8NEj6B_3_ChUBQLw4XukPvpgihP4hnGQQzMLcZLNjAAcfBQjAPEcJgxOi9UiMkntkrXQa2n_dK3WFp3yzpGviuPksaC31e7JeGwtna_dLL0GP2AWlfmFl2QLoAlg8_JF0LtecPSRvhYvVhaTGcdT0ivQw3xh2RlkBAzhGpuOqY1Aw8PhyT-kDDsOPSNpj9NEeaCEOm5kpHQUFSlfQ6rOr_Uboe5p77KE2Cgj8_Sq_D-8hqaR0U7K6WXodxLeYUBb2PWFB_WN_ZkjIg_1dLugDx-Za0GB6dsaRX4PXekvzAxN6KHMGm0Iqc4fKeznQTFLly0sCIPDkZYdtFOe2DU2obOgtBvW1ID5-gCUZPsaEJEP7SlobD02F2VAqRyXY0CRRL7EgDs_bZUwJ8_8KetkPmbAfaA_s6HOgY2KkdqQsMi3Sk72BMriNNhMD9TjQAajcqqBHCMpzpG3gw2IWeQvZVFzoKaY-6UDpwjpJqnympHo68UNIJSK5T0goohvvwdoIrCStdyRQaJCpqgZ9YRftBG60if3g8Q0XXfldRMSTsUNNS-LJfTa2QVqqmdBjTTUMTIdJPQ5NAH6EhA0SnaWgaTNigoanAWRrqDHVFGvoKicUaSoYSeAjCXxqSlGjIBGbDfAhp19AgkIW4kROUJrrRe3iU7EbPYeUSN0qF5UvdaDWMX-ZG0TDvgRstgvtN2MG9Y-70BhJuu9MayNriQSch74UHnYfp7p4UDwuMnrQEvBu8yA8UgpY0cIm0dAPISktWoJdpyQCzIB6iumkpDhbt09JKiHmspdngWaElX1CV9SV_uCMKon9UQaTPCaKhMP9UECWB9-kg8oPlsBo2_BpE6XB_eDA9h6crgulvMGSG0LdQXhxCDRCxoR-NgCum_ek2RF8dQNNAdjeUnOBCVSgVQskAPb2G7Nl6Ogq2CXpygfzFeroAA9boyQAh9mE0CJK_DaMU8K0NowB4JA-nM6vCqQDWHwinDAiOj6BQ2JAYQVshICeC-sHUpxE0C1SlEaQFZ18DucGi1wZaCT0z3lAgrK15S5shaWQZrYCuo8qoJ4Q3l9Fw6HujnIZAjc87qofj29_RKdAdfUfdQXH8HWkgueYdrYDQoRU0GLqPqKA-UHamgt6DtriC_CEnppLyIGRpJTUfqKROByvp2YVK-huGlrynkfCmuYqq4JjsA52G5d0_0Bqomf6BUs58pA2QYqimgLhq6gd2T6qpC_wSXEMHIWNmLcnyaskJrG7Wkg0ERH2iftAR-4k4Dox11CmyjkafqqM31-uoAta9rKPNsET4TGXBn-kj9M79TMHQOvILSUZ9obtH6-kxtJ2sJ-mpeurj20D9IQKGwX9hAkyFGTAfFsFKWAuqbQ107WYD3YHsmgY6DNtaGuhH8H76lfzg4Zev9Ax-CG6kXbBsYSOlwPnljXQFAusbyZybSN_aREMhw6mZdsLwsGYaCzE3mmkmpD5ppk1gebyF2rq1kuDTShcXt9IVkG9uJUc4c_ofKgCnKW2khqU_t9Eq0BxuI28wy28jORTda6N7cKyjjU6DvaSdlLDPuZ2Owfbz7bQL_EvbKQCCHDtIDxF-HTQM5GEiVsCMVBHPhex6ER8Fv2YR94b8fZ34AmzoK-Z0iEsT8yxwviVmNeQ4SDgPIp0kPAmujxS4CDxiBPaBgu0CF8KhnwXOBfPLAsugfCzxB1h4mngJOH4hVsH4pczRUG5jwlVww2DCRZD9jwkfhspeplwNyw2mnArTZpryHKh8aso1UNViyrWQ2ceM90DCRDNOhmVLzTgFvlww4ybwv2TGgRBTYcaz4Dbchace5ryvpzkfBsvh5mwD638w53SYe9GcE-DObXO-C9vEFrwTjF4WHA2ePS24G_SeZ8HBsCnRgrfD8oMWvBpe37fgSvDswA56QV-4Z7Dkx2DpYcU2IPOyYieo11nxPxAeZcXDIL3CijPB6rMV24Je1pkHw6vyzvwOmlXW3AGSadZsCjXx1lwPiausORmyD1hznyJrDoX0x9a8A-ZLZZwMlX4yrofYsTLWT5GxAU5ny_gMbPifjLfC3jwZr7SS8zp4uEnOzyB-i5wXQvo1Of8AoiY5S2HMYRseB3Mv23Ai3GBbLoFIZ1uOgokLbXkyFG6w5SKoybHlesi9bct5YO1qx3bQUmLHNfftWBloz24wdI49j4TWZ_bc6bk9X-vqwMXQ1MOBRT0d-Be9A--DF_ccuBQSWx14CeRoHDkPVkxw5DSYnOvIcTDkoiOPgilljjwd3BsdWQfrmh15C3gvduIeUB2lYG2sgn3AOU3BNtm44JaLHvrmK7g_PHqj4Ffwtk7B7yHmq4Jnwik3Z_4NPk515jowzHbmYRCf6MwZt5x5J_T2ceGQfwW78ECQhbmwPZyLcOECyB-NDFEfXHgq_OHWhS9B8NIuPBCUKV3YHTZWduEMeCBW8jN4a6fkrf5KzoQmaIOtk5QcvVvJsZB_Vsnn4OdzSs6GkwVK_h2iS5UcA2PNXDkKBk525QgYv8iVo8HkL1e2hNXPXXkjjBRUHAl_aFX8J8jnqVgBP81XcTa82Knit1BaqOJ34PVJxXEmap4Lq23UvB6S1Gp-303NtVDor-ZbcK2HmpWD1TwgU80GcPtFzTo46qvhk-Cs17Aa7izT8AMISdXwIBiQpmED_Hlfw9chukKDf9fwzOluPA_mJrpxEqyvcuPNkGXtzkcgwdOdF0P5CHfOmObOO-BlljvfOOjOxXDmvjufB8Xf7uwKhQoPLoIjwR58Albd8OA0qL7nwQ2wvt2DN8N49uRoOKTx5FyYa-vFC8FM58Vy2D3fi_fCuiIv3gInfLX8K0zx1_J0CBuh5cHwaouW30LzCy13wPZXWt4Fv5nq-DxchVtwD57Arl463gPpwTreARP66XgyOETq2AUyU3X8E1Rs0vFHWHNex9-D-JaOTcD4WMcT4XKZjq_DmHodjwPLFh3LQe3qzefivbkA3s735ucp3lwK47d78yS4le_N96DPa2_uB8MbvXkMpAR05arQrlwLt-Z05b_g9p5uXAI3I3y4-F-JPvwQHsNLCEz34X4QDt_ARJgM8ZAEKyAVNsE22A1ZEPmbD0dB0FUfHgAed3zYG0KkvjwQFPm-rIHGEl9uB5MYP7aEra_9-LKkO18DuYVJ-eGcB2R9cm1DtkRhMnZG7KLweQvmaDST4-MTfOIQE3zjFsTGTpmxICa6h3-PAP_A7gG-_oHR8f7_BwEBfEE&build-label=apps-forms.freebird_20260816.08_p0&imp-sid=CP2S-MKKt5YDFSqbwggdVJQqQg&is-cached-offline=false&wcrumsspbp=true\"",
+                "Document-Policy": "include-js-call-stacks-in-crash-reports",
+                "Referrer-Policy": "strict-origin-when-cross-origin",
+                "X-Content-Type-Options": "nosniff",
+                "X-XSS-Protection": "1; mode=block",
+                "Server": "GSE",
+                "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+                "Transfer-Encoding": "chunked"
+            },
+            "cookie_analysis": {
+                "cookie_count": 3,
+                "secure_count": 3,
+                "httponly_count": 3,
+                "samesite_count": 3,
+                "raw_values_stored": false
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": false,
+            "error": "Browser timed out after 15.0 seconds waiting for network idle.",
+            "data": {}
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_docs.google.com_1787499503.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAPYCAIAAACdeU7aAAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png",
+                "timestamp": 1787499503
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "tls_version": "TLSv1.3",
+                "cipher_suite": "TLS_AES_256_GCM_SHA384",
+                "cipher_strength_bits": 256,
+                "issuer_organization": "Google Trust Services",
+                "issuer_common_name": "WR2",
+                "issuer_country": "US",
+                "subject_common_name": "*.google.com",
+                "subject_alt_names": [
+                    "*.google.com",
+                    "*.appengine.google.com",
+                    "*.bdn.dev",
+                    "*.origin-test.bdn.dev",
+                    "*.cloud.google.com",
+                    "*.crowdsource.google.com",
+                    "*.datacompute.google.com",
+                    "*.google.ca",
+                    "*.google.cl",
+                    "*.google.co.in",
+                    "*.google.co.jp",
+                    "*.google.co.uk",
+                    "*.google.com.ar",
+                    "*.google.com.au",
+                    "*.google.com.br",
+                    "*.google.com.co",
+                    "*.google.com.mx",
+                    "*.google.com.tr",
+                    "*.google.com.vn",
+                    "*.google.de",
+                    "*.google.es",
+                    "*.google.fr",
+                    "*.google.hu",
+                    "*.google.it",
+                    "*.google.nl",
+                    "*.google.pl",
+                    "*.google.pt",
+                    "*.gemini.cloud.google.com",
+                    "*.gstatic.com",
+                    "*.metric.gstatic.com",
+                    "*.gvt1.com",
+                    "*.gcpcdn.gvt1.com",
+                    "*.gvt2.com",
+                    "*.gcp.gvt2.com",
+                    "*.url.google.com",
+                    "*.youtube-nocookie.com",
+                    "*.ytimg.com",
+                    "ai.android",
+                    "android.com",
+                    "*.android.com",
+                    "*.flash.android.com",
+                    "g.co",
+                    "*.g.co",
+                    "goo.gl",
+                    "www.goo.gl",
+                    "google-analytics.com",
+                    "*.google-analytics.com",
+                    "google.com",
+                    "googlecommerce.com",
+                    "*.googlecommerce.com",
+                    "urchin.com",
+                    "*.urchin.com",
+                    "youtu.be",
+                    "youtube.com",
+                    "*.youtube.com",
+                    "music.youtube.com",
+                    "*.music.youtube.com",
+                    "youtubeeducation.com",
+                    "*.youtubeeducation.com",
+                    "youtubekids.com",
+                    "*.youtubekids.com",
+                    "yt.be",
+                    "*.yt.be",
+                    "android.clients.google.com",
+                    "*.aistudio.google.com"
+                ],
+                "not_before": "2026-08-05T20:42:14+00:00",
+                "not_after": "2026-10-28T20:42:13+00:00",
+                "cert_age_days": 17,
+                "days_until_expiry": 66,
+                "is_expired": false,
+                "is_self_signed": false,
+                "is_free_ca": true
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "queried_domain": "docs.google.com",
+                "records": {
+                    "A": [
+                        "142.250.77.110"
+                    ],
+                    "AAAA": [
+                        "2404:6800:4009:80e::200e"
+                    ],
+                    "MX": [
+                        {
+                            "preference": 20,
+                            "exchange": "alt2.gmr-smtp-in.l.google.com"
+                        },
+                        {
+                            "preference": 5,
+                            "exchange": "gmr-smtp-in.l.google.com"
+                        },
+                        {
+                            "preference": 30,
+                            "exchange": "alt3.gmr-smtp-in.l.google.com"
+                        },
+                        {
+                            "preference": 10,
+                            "exchange": "alt1.gmr-smtp-in.l.google.com"
+                        },
+                        {
+                            "preference": 40,
+                            "exchange": "alt4.gmr-smtp-in.l.google.com"
+                        }
+                    ],
+                    "TXT": [
+                        "google-site-verification=Ea9DtyEruwUPQhZm6VkAeu8Ww7RdLyfV-ounIdQlkuY"
+                    ],
+                    "NS": [],
+                    "CNAME": [],
+                    "SOA": []
+                },
+                "ttl_statistics": {
+                    "A_TTL": 102,
+                    "AAAA_TTL": 155,
+                    "MX_TTL": 85570,
+                    "TXT_TTL": 85570
+                },
+                "record_counts": {
+                    "a_count": 1,
+                    "mx_count": 5,
+                    "ns_count": 0,
+                    "txt_count": 1
+                }
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "domain": "google.com",
+                "registrar": "MarkMonitor, Inc.",
+                "registrant_country": "US",
+                "registrant_org": "Google LLC",
+                "creation_date": "1997-09-15T04:00:00+00:00",
+                "expiration_date": "2028-09-14T04:00:00+00:00",
+                "updated_date": "2019-09-09T15:39:04+00:00",
+                "domain_age_days": 10569,
+                "days_until_expiry": 752,
+                "is_expired": false,
+                "name_servers": [
+                    "ns1.google.com",
+                    "ns2.google.com",
+                    "ns3.google.com",
+                    "ns4.google.com"
+                ],
+                "status_codes": [
+                    "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+                    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+                    "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+                    "serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited",
+                    "serverTransferProhibited https://icann.org/epp#serverTransferProhibited",
+                    "serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited",
+                    "clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)",
+                    "clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)",
+                    "clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)",
+                    "serverUpdateProhibited (https://www.icann.org/epp#serverUpdateProhibited)",
+                    "serverTransferProhibited (https://www.icann.org/epp#serverTransferProhibited)",
+                    "serverDeleteProhibited (https://www.icann.org/epp#serverDeleteProhibited)"
+                ]
+            }
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": false,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": false,
+                "reputation_score": 0,
+                "stats": {
+                    "malicious": 0,
+                    "suspicious": 0,
+                    "harmless": 0,
+                    "undetected": 0
+                },
+                "flagged_by": [],
+                "categories": [],
+                "last_analysis_date": null,
+                "first_submission_date": null,
+                "message": "URL not found in VirusTotal database (potential new/zero-day infrastructure)."
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "execution_time_sec": 123.867,
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://www-google.cn",
+            "final_url": "https://www-google.cn/",
+            "domain_resolved": "www-google.cn",
+            "response_time_sec": 3.7419,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "Server": "nginx",
+                "Date": "Wed, 26 Aug 2026 06:46:14 GMT",
+                "Content-Type": "text/html; charset=utf-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "Vary": "Accept-Encoding",
+                "X-Request-ID": "730ab1d392f2072e0116abdf278bc7cd",
+                "Strict-Transport-Security": "max-age=31536000",
+                "Content-Encoding": "gzip"
+            },
+            "cookie_analysis": {
+                "cookie_count": 0,
+                "secure_count": 0,
+                "httponly_count": 0,
+                "samesite_count": 0,
+                "raw_values_stored": false
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "signal_available": true,
+            "collection_mode": "full",
+            "navigation_timeout": false,
+            "data": {
+                "page_title": "谷歌浏览器下载中心",
+                "favicon_url": "https://www-google.cn/favicon-16x16.png",
+                "html_length_bytes": 12519,
+                "status_code": 200,
+                "final_url": "https://www-google.cn/",
+                "raw_html": "<!DOCTYPE html><html class=\"no-js no-ie\" lang=\"zh\" data-dpr=\"1\" style=\"font-size: 16px;\"><head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n    <title>谷歌浏览器下载中心</title>\n    <meta name=\"keywords\" content=\"谷歌浏览器下载，Chrome下载，谷歌浏览器全平台下载，Chrome多版本下载，谷歌浏览器下载入口\">\n    <meta name=\"description\" content=\"本站聚合Chrome浏览器全平台安装包，覆盖电脑、手机、平板多终端，提供各版本下载入口与安装指引，一站式获取所需版本。\">\n    <meta http-equiv=\"content-language\" content=\"zh-cn\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <meta name=\"robots\" content=\"index,follow\">\n    <meta property=\"og:type\" content=\"soft\">\n    <meta property=\"og:description\" content=\"本站聚合Chrome浏览器全平台安装包，覆盖电脑、手机、平板多终端，提供各版本下载入口与安装指引，一站式获取所需版本。\">\n    <meta property=\"og:soft:file_size\" content=\"222.21 MB\">\n    <meta property=\"og:soft:version\" content=\"122.0.3.623\">\n    <meta property=\"og:soft:operating_system\" content=\"Windows系统\">\n    <meta property=\"og:image\" content=\"https://www-google.cn/statics/2025/img/banner-float.png\">\n    <meta property=\"og:soft:language\" content=\"简体中文\">\n    <meta property=\"og:soft:license\" content=\"免费软件\">\n    <meta property=\"og:soft:url\" content=\"https://www-google.cn/\">\n    <link rel=\"canonical\" href=\"https://www-google.cn/\">\n    <link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\">\n    <link rel=\"shortcut icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\">\n    <link rel=\"preload\" type=\"text/css\" href=\"/statics/2025/css/index.css\" as=\"style\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/statics/2025/css/index.css\">\n    <link rel=\"preload\" type=\"text/css\" href=\"/statics/2025/css/complaint.css\" as=\"style\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"/statics/2025/css/complaint.css\">\n    <script src=\"https://hm.baidu.com/hm.js?6eeaccb466b0c9a863365062ea6a8151\"></script><script src=\"https://lf1-cdn-tos.bytegoofy.com/goofy/ttzz/push.js?a88a4d7c081a2c1a36fdb6473800c2b7308ad1fb2f7b912a6c6fdcbd851f93a83d72cd14f8a76432df3935ab77ec54f830517b3cb210f7fd334f50ccb772134a\" id=\"ttzz\"></script><script src=\"/statics/2025/js/rem.js\"></script>\n    <script src=\"/statics/2025/js/jquery-1.9.1.min.js\" defer=\"\"></script>\n    <script src=\"/statics/2025/js/qrcode.js\" defer=\"\"></script>\n    <script src=\"/statics/2025/js/common.js\" defer=\"\"></script>\n    <script>\n        var az_url = \"https://download.kuaimaxt.cn/android/apk/com.android.aichrome_v122.0.3.623.apk\"\n        var ios_url = \"https://apps.apple.com/cn/app/id535886823\"\n        var az_filesize = \"222.21 MB\"\n        var az_version = \"122.0.3.623\"\n        var ios_filesize = \"222.21 MB\"\n        var ios_version = \"122.0.3.623\"\n    </script>\n    <script type=\"application/ld+json\">\n        {\n            \"@context\": \"https://schema.org\",\n            \"@type\": \"WebPage\",\n            \"name\": \"www-google.cn\",\n            \"url\": \"https://www-google.cn/\",\n            \"datePublished\": \"2026-06-09T10:27:04+00:00\",\n            \"dateModified\": \"2026-08-26T11:18:57+00:00\",\n            \"publisher\": {\n                \"@type\": \"Organization\",\n                \"name\": \"Google\",\n                \"logo\": {\n                    \"@type\": \"ImageObject\",\n                    \"url\": \"https://www-google.cn/statics/2025/img/logo.png\"\n                }\n            },\n            \"softwareVersion\": \"122.0.3.623\",\n            \"operatingSystem\": \"Windows\"\n        }\n    </script>\n<script>\n(function(){\nvar el = document.createElement(\"script\");\nel.src = \"https://lf1-cdn-tos.bytegoofy.com/goofy/ttzz/push.js?a88a4d7c081a2c1a36fdb6473800c2b7308ad1fb2f7b912a6c6fdcbd851f93a83d72cd14f8a76432df3935ab77ec54f830517b3cb210f7fd334f50ccb772134a\";\nel.id = \"ttzz\";\nvar s = document.getElementsByTagName(\"script\")[0];\ns.parentNode.insertBefore(el, s);\n})(window)\n</script>\n</head>\n<body style=\"font-size: 16px;\">\n    <div class=\"head\">\n        <header>\n            <div style=\"max-width:1200px;margin:auto;display: flex;align-items: center;column-gap: 128px;\">\n                <h1 class=\"logo_box\">\n                    <img src=\"/statics/2025/img/logo.png\" alt=\"www-google.cn\" width=\"164\" height=\"40\" onclick=\"home()\">\n                </h1>\n                <div class=\"nav\">\n                    <a href=\"/\">首页</a>\n                    <a href=\"/help/\">帮助中心</a>\n                </div>\n            </div>\n        </header>\n        <div class=\"sec-one\">\n            <img class=\"banner\" src=\"/statics/2025/img/banner.webp\" alt=\"Chrome Interface\">\n            <div class=\"info\">\n                <div class=\"banner-name\">谷歌浏览器</div>\n                <div class=\"banner-name2\">最新版功能全面升级</div>\n                <div class=\"banner-desc\">即刻开启高效移动生活</div>\n                <div class=\"index-btn_wrap\">\n                <a href=\"https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AFF1-A69D9E530F96%7D%26iid%3D%7B9AB93668-2B83-3A01-F070-128C14314117%7D%26lang%3Dzh-CN%26browser%3D4%26usagestats%3D1%26appname%3DGoogle%2520Chrome%26needsadmin%3Dprefers%26ap%3Dx64-statsdef_1%26installdataindex%3Dempty/update2/installers/ChromeSetup.exe\" rel=\"nofollow\" onclick=\"tongji()\" class=\"banner-btn\"><i></i>立即下载</a>\n                <div class=\"index-code-box\">\n                    <span class=\"index-code\">\n                    <span class=\"index-qrcode\" id=\"index-qrcode\" url=\"https://www-google.cn/\"><canvas width=\"136\" height=\"136\" style=\"display: none;\"></canvas><img alt=\"手机扫码下载\" title=\"手机扫码下载\" src=\"data:image/png;base64,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\" style=\"display: block;\"></span>\n                    </span>\n                </div>\n                </div>\n                <span class=\"ios-desc\">前往App Store官网下载最新版本</span>\n                <p class=\"index-device-desc\">请访问手机页面下载对应版本安装包</p>\n                <div class=\"banner-device\">\n                    <span> 版本：<em class=\"version\">122.0.3.623</em></span>\n                    <span> 大小：<em class=\"filesize\">222.21 MB</em></span>\n                    <span class=\"updatetime\">更新：2026-08-25</span>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"sec-three\">\n        <div class=\"sub-name\"></div>\n        <div class=\"sec-1\">\n            <div class=\"info\">\n                <h3>数据同步，随时访问</h3>\n                <p>在手机上收藏的网页、保存的密码，都能通过您的谷歌账号，安全同步到电脑端的Chrome浏览器上。无论使用哪个设备，工作与娱乐都能无缝衔接。</p>\n            </div>\n            <img src=\"/statics/2025/img/func-1.webp\" alt=\"Data Synchronization\">\n        </div>\n        <div class=\"sec-2\">\n            <div class=\"info\">\n                <h3>安全隐私，防护升级</h3>\n                <p>从您下载安装包的那一刻起，安全防护就已启动。最新版浏览器提供恶意软件和网络钓鱼的主动防护、安全的自动升级，以及“隐身模式”浏览，为您的上网筑起坚固的隐私防线。</p>\n            </div>\n            <img src=\"/statics/2025/img/func-2.webp\" alt=\"Security Protection Upgrade\">\n        </div>\n        <div class=\"sec-3\">\n            <div class=\"info\">\n                <h3>语言障碍，一键跨越</h3>\n                <p>面对外文网站无需再犯难。无论您在手机上浏览何种语言的内容，只需轻点，内置的谷歌翻译即可实时翻译整个页面或段落，让语言障碍不复存在。</p>\n            </div>\n            <img src=\"/statics/2025/img/func-3.webp\" alt=\"Crossing Language Barriers\">\n        </div>\n        <div class=\"sec-4\">\n            <div class=\"info\">\n                <h3>个性背景，支持定制</h3>\n                <p>谷歌浏览器手机App最新版现已支持个性化背景定制。您可以从相册、图库或艺术作品中挑选图片，打造独一无二的浏览主页。立即下载安装包，让您的手机浏览器既美观又高效。</p>\n            </div>\n            <img src=\"/statics/2025/img/func-4.webp\" alt=\"Customize Personalized Background\">\n        </div>\n    </div>\n    <div class=\"sec-two\">\n        <div class=\"sub-name\"></div>\n        <div class=\"lists\">\n            <div class=\"item\">\n                <img src=\"/statics/2025/img/feature-1.webp\" alt=\"More Open\">\n                <div class=\"info\">\n                    <span>更开放</span>\n                    <p>谷歌浏览器手机App打破生态壁垒，与任何网页服务无缝兼容，支持拓展插件生态，让您在手机端也能享受开放网络的全部自由与可能性。</p>\n                </div>\n            </div>\n            <div class=\"item\">\n                <img src=\"/statics/2025/img/feature-2.webp\" alt=\"Simpler\">\n                <div class=\"info\">\n                    <span>更简单</span>\n                    <p>界面直观无冗余，搜索与导航一体化。语音搜索、一键翻译，复杂操作化繁为简，从新手到高手都能即刻上手，体验极简浏览之美。</p>\n                </div>\n            </div>\n            <div class=\"item\">\n                <img src=\"/statics/2025/img/feature-3.webp\" alt=\"More Convenient\">\n                <div class=\"info\">\n                    <span>更便捷</span>\n                    <p>通过二维码快速分享网页，内置离线阅读与页面预加载。支持桌面版视图切换与智能地址栏建议，大幅缩短信息获取路径，浏览高效流畅。</p>\n                </div>\n            </div>\n            <div class=\"item\">\n                <img src=\"/statics/2025/img/feature-4.webp\" alt=\"Better To Use\">\n                <div class=\"info\">\n                    <span>更好用</span>\n                    <p>基于强大V8引擎带来疾速页面加载，智能填充表单与密码。通过Material You设计适配主题，个性化背景与排版设置，打造沉浸视觉体验。</p>\n                </div>\n            </div>\n        </div>\n    </div>\n    <footer>\n        <div class=\"friend-link\">\n                                    友情链接：\n                        <a href=\"https://www-google.cn/\">谷歌浏览器官网</a>\n                                    <a href=\"/privacy.html\" class=\"beian\" target=\"_blank\" rel=\"nofollow\" style=\"color:#636363;margin-left:0.75rem;\">隐私政策</a>\n        </div><p class=\"complainttips\">本站资源仅供个人学习，禁止商用。请在24小时内移除下载内容，违规后果自行承担。</p>\n    </footer>\n    <span id=\"to_top\"><img src=\"/statics/2025/img/to_top.webp\" alt=\"TOP\" width=\"60\" height=\"60\"></span>\n\n</body></html>",
+                "form_count": 0,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "cross_domain_form_actions": 0,
+                "iframe_count": 0,
+                "invisible_iframes": 0,
+                "iframe_sources": [],
+                "script_count": 9,
+                "external_scripts_count": 6,
+                "suspicious_inline_scripts": 0,
+                "total_links": 5,
+                "external_links_count": 1,
+                "empty_links_count": 0,
+                "hidden_elements_count": 1,
+                "right_click_disabled": false,
+                "has_meta_refresh": false,
+                "html_comments_count": 0,
+                "local_filepath": "C:\\Users\\farde\\Desktop\\Multi-Agent AI PROJECT\\storage\\html\\dom_www-google.cn_1787726894.html"
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_www-google.cn_1787726889.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAPYCAIAAACdeU7aAAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png",
+                "timestamp": 1787726889
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "tls_version": "TLSv1.3",
+                "cipher_suite": "TLS_AES_256_GCM_SHA384",
+                "cipher_strength_bits": 256,
+                "issuer_organization": "TrustAsia Technologies, Inc.",
+                "issuer_common_name": "TrustAsia DV TLS RSA CA 2024",
+                "issuer_country": "CN",
+                "subject_common_name": "www-google.cn",
+                "subject_alt_names": [
+                    "www-google.cn",
+                    "www.www-google.cn"
+                ],
+                "not_before": "2026-07-03T08:00:00+00:00",
+                "not_after": "2026-10-01T07:59:59+00:00",
+                "cert_age_days": 53,
+                "days_until_expiry": 36,
+                "is_expired": false,
+                "is_self_signed": false,
+                "is_free_ca": false
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "queried_domain": "www-google.cn",
+                "records": {
+                    "A": [
+                        "8.212.18.107"
+                    ],
+                    "AAAA": [],
+                    "MX": [],
+                    "TXT": [],
+                    "NS": [
+                        "ns2.bdydns.cn",
+                        "ns1.bdydns.cn"
+                    ],
+                    "CNAME": [],
+                    "SOA": [
+                        {
+                            "mname": "ns1.bdydns.cn",
+                            "rname": "sa.dudns.com",
+                            "serial": 2018080105,
+                            "refresh": 3600,
+                            "retry": 300,
+                            "expire": 2592000,
+                            "minimum": 120
+                        }
+                    ]
+                },
+                "ttl_statistics": {
+                    "A_TTL": 300,
+                    "NS_TTL": 86400
+                },
+                "record_counts": {
+                    "a_count": 1,
+                    "mx_count": 0,
+                    "ns_count": 2,
+                    "txt_count": 0
+                }
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "domain": "www-google.cn",
+                "registrar": "厦门易名科技股份有限公司",
+                "registrant_country": "Unknown",
+                "registrant_org": "Unknown",
+                "creation_date": "2026-01-06T10:55:26+00:00",
+                "expiration_date": "2027-01-06T10:55:26+00:00",
+                "updated_date": null,
+                "domain_age_days": 231,
+                "days_until_expiry": 133,
+                "is_expired": false,
+                "name_servers": [
+                    "ns1.bdydns.cn",
+                    "ns2.bdydns.cn"
+                ],
+                "status_codes": [
+                    "clientTransferProhibited"
+                ]
+            }
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": true,
+                "reputation_score": 0,
+                "stats": {
+                    "malicious": 11,
+                    "suspicious": 2,
+                    "harmless": 49,
+                    "undetected": 30
+                },
+                "flagged_by": [
+                    "ADMINUSLabs (malicious)",
+                    "Lionic (phishing)",
+                    "alphaMountain.ai (phishing)",
+                    "BitDefender (phishing)",
+                    "Chong Lua Dao (malicious)",
+                    "ESET (suspicious)",
+                    "Fortinet (malware)",
+                    "G-Data (phishing)",
+                    "Gridinsoft (suspicious)",
+                    "SOCRadar (phishing)",
+                    "Sophos (phishing)",
+                    "VIPRE (phishing)",
+                    "Forcepoint ThreatSeeker (phishing)"
+                ],
+                "categories": [
+                    "technology",
+                    "Phishing (alphaMountain.ai)",
+                    "phishing and other frauds",
+                    "phishing and fraud"
+                ],
+                "last_analysis_date": "2026-08-06T20:52:26+00:00",
+                "first_submission_date": "2025-08-16T09:54:15+00:00"
+            }
+        }
+    }
+}

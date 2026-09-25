@@ -1,0 +1,188 @@
+:root {
+  --bg-darker: #06090f;
+  --bg-dark: #0a0f1d;
+  --bg-card: #0f172a;
+  --bg-card-hover: #162038;
+  --bg-card-elevated: #1a2542;
+  
+  --border-subtle: #1e293b;
+  --border-focus: #38bdf8;
+  
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-faint: #64748b;
+  
+  --cyber-blue: #38bdf8;
+  --cyber-glow: rgba(56, 189, 248, 0.15);
+  
+  --risk-critical: #f43f5e;
+  --risk-high: #fb7185;
+  --risk-medium: #fbbf24;
+  --risk-low: #34d399;
+  --risk-unknown: #94a3b8;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color-scheme: dark;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+code, pre, .mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-faint);
+}
+
+/* Base Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background: radial-gradient(circle at 50% 0%, rgba(30, 58, 138, 0.12) 0%, transparent 60%);
+}
+
+.content-body {
+  padding: 24px 32px;
+  flex: 1;
+}
+
+/* Animations */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+.pulsing-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+/* =========================================
+   THEME OVERRIDES FOR DIFFERENT ROLES
+   ========================================= */
+
+/* ADMIN: Deep Purple & Red (Command Center God Mode) */
+.theme-admin {
+  --bg-darker: #05020a;
+  --bg-dark: #0a0514;
+  --bg-card: #150a24;
+  --bg-card-hover: #1f0f35;
+  --bg-card-elevated: #281445;
+  --border-subtle: #3b1e5a;
+  --border-focus: #c084fc;
+  --cyber-blue: #a855f7;
+  --cyber-glow: rgba(168, 85, 247, 0.25);
+  background-image: radial-gradient(circle at top right, rgba(168, 85, 247, 0.1), transparent 40%),
+                    radial-gradient(circle at bottom left, rgba(239, 68, 68, 0.05), transparent 40%);
+  background-attachment: fixed;
+}
+
+/* ANALYST: Hacker/Tactical Green & Amber (Investigator HUD) */
+.theme-analyst {
+  --bg-darker: #020402;
+  --bg-dark: #050a05;
+  --bg-card: #0a140a;
+  --bg-card-hover: #0f1f0f;
+  --bg-card-elevated: #142914;
+  --border-subtle: #164020;
+  --border-focus: #34d399;
+  --cyber-blue: #10b981;
+  --cyber-glow: rgba(16, 185, 129, 0.25);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  background-image: linear-gradient(to right, rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
+}
+.theme-analyst * {
+  font-family: inherit !important;
+}
+
+/* VIEWER: Standard Deep Blue (Corporate / Exec View) */
+.theme-viewer {
+  /* Keeps default variables */
+}
+
+/* Theme-specific main content gradients */
+.theme-admin .main-content {
+  background: radial-gradient(circle at 50% 0%, rgba(107, 33, 168, 0.2) 0%, transparent 60%) !important;
+}
+
+.theme-analyst .main-content {
+  background: radial-gradient(circle at 50% 0%, rgba(6, 78, 59, 0.25) 0%, transparent 60%) !important;
+}
+
+/* Brand Gradients */
+.theme-analyst {
+  --brand-gradient: linear-gradient(135deg, #047857 0%, #064e3b 100%);
+  --brand-glow: 0 0 16px rgba(16, 185, 129, 0.4);
+}
+
+.theme-admin {
+  --brand-gradient: linear-gradient(135deg, #7e22ce 0%, #4c1d95 100%);
+  --brand-glow: 0 0 16px rgba(168, 85, 247, 0.4);
+}
+
+
+/* Select and Option Styling */
+select {
+  background-color: var(--bg-card);
+  color: var(--text-main);
+}
+select:focus {
+  border-color: var(--border-focus);
+}
+option {
+  background-color: var(--bg-darker);
+  color: var(--text-main);
+  padding: 8px;
+}
+
+
+select option {
+  background-color: var(--bg-dark) !important;
+  color: var(--text-main) !important;
+  font-weight: 500;
+}

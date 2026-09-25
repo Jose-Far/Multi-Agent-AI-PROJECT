@@ -1,0 +1,113 @@
+.admin-theme {
+  --bg-darker: #06050a; 
+  --bg-dark: #0a0812;
+  --bg-card: #120e21;
+  --bg-card-hover: #17112b;
+  --bg-card-elevated: #1e163b;
+  
+  --border-subtle: #2d244f;
+  --border-focus: #a78bfa; 
+  
+  --text-main: #f8fafc;
+  --text-muted: #cbd5e1;
+  --text-faint: #64748b;
+  
+  --cyber-blue: #a78bfa; /* Violet branding for Admin */
+  --cyber-glow: rgba(167, 139, 250, 0.15);
+  
+  --risk-critical: #f43f5e;
+  --risk-high: #fb7185;
+  --risk-medium: #fbbf24;
+}
+
+.admin-theme .app-container {
+    background-color: var(--bg-darker);
+    color: var(--text-main);
+    min-height: 100vh;
+    display: flex;
+}
+
+.admin-theme .sidebar {
+    width: 250px;
+    background-color: var(--bg-dark);
+    border-right: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.admin-theme .main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-darker);
+}
+
+.admin-theme .header {
+    height: 70px;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+
+.admin-theme .content-body {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.admin-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* User Management Action Buttons */
+.user-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-muted);
+}
+
+.user-action-btn:hover {
+  background: var(--bg-card-elevated);
+  border-color: var(--text-faint);
+  color: var(--text-main);
+}
+
+.user-action-btn.btn-reset:hover {
+  color: #38bdf8;
+  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.user-action-btn.btn-disable:hover {
+  color: #fbbf24;
+  border-color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+}
+
+.user-action-btn.btn-enable:hover {
+  color: #34d399;
+  border-color: #34d399;
+  background: rgba(52, 211, 153, 0.1);
+}
+
+.user-action-btn.btn-delete:hover {
+  color: #f43f5e;
+  border-color: #f43f5e;
+  background: rgba(244, 63, 94, 0.1);
+}

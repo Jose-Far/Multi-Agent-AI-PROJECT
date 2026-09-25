@@ -1,0 +1,1869 @@
+<!DOCTYPE html><html lang="de"><head>
+<script>
+(function(){var q=[];window.__dclq=q;var dOrig=document.addEventListener.bind(document);var wOrig=window.addEventListener.bind(window);window.__dclOrig=dOrig;window.__dclFlush=function(){var qq=window.__dclq;window.__dclq=null;if(qq){var ev;try{ev=new Event('DOMContentLoaded');}catch(e){ev={type:'DOMContentLoaded',target:document};}for(var i=0;i<qq.length;i++){try{qq[i].fn.call(qq[i].ctx,ev);}catch(e){}}}};function mkPatch(orig,ctx){return function(t,fn,o){if(t==='DOMContentLoaded'&&typeof fn==='function'){if(window.__dclq){window.__dclq.push({fn:fn,ctx:ctx});return;}if(document.readyState!=='loading'){setTimeout(function(){try{fn.call(ctx,{type:'DOMContentLoaded',target:document});}catch(e){}},0);return;}}orig(t,fn,o);};}document.addEventListener=mkPatch(dOrig,document);window.addEventListener=mkPatch(wOrig,window);setTimeout(function(){if(window.__dclq){if(document.readyState==='loading'){dOrig('DOMContentLoaded',window.__dclFlush);}else{window.__dclFlush();}}},4000);})();
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eisenra Flux - KI-Trading &amp; automatisierte Marktanalyse</title>
+  <meta name="description" content="Eisenra Flux - Smarter investieren mit KI-gestützter Marktanalyse. Automatisiertes Trading auf 140+ Märkten. Jetzt Chancen entdecken und klüger handeln.">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <style>
+    /* ===== RESET & NORMALIZE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body { min-height: 100vh; overflow-x: hidden; }
+    img, svg { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    ul, ol { list-style: none; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      /* Colors */
+      --color-bg:            #f2f4f6;
+      --color-bg-alt:        #e8ecef;
+      --color-surface:       #ffffff;
+      --color-dark:          #0d1117;
+      --color-dark-alt:      #161c26;
+      --color-dark-card:     #1a2233;
+
+      --color-teal:          #00b4a6;
+      --color-teal-light:    #00d4c4;
+      --color-teal-dark:     #008a7e;
+      --color-teal-muted:    rgba(0, 180, 166, 0.12);
+
+      --color-text-primary:  #0d1117;
+      --color-text-secondary:#4a5568;
+      --color-text-muted:    #718096;
+      --color-text-light:    #f2f4f6;
+      --color-text-on-dark:  #c8d6e5;
+
+      /* Borders */
+      --border-radius:       0px;
+      --border-color:        #d1d9e0;
+      --border-dark:         rgba(255,255,255,0.08);
+
+      /* Shadows */
+      --shadow-sm:           0 1px 4px rgba(13,17,23,0.08);
+      --shadow-md:           0 4px 16px rgba(13,17,23,0.10);
+      --shadow-lg:           0 8px 32px rgba(13,17,23,0.14);
+      --shadow-teal:         0 4px 24px rgba(0,180,166,0.18);
+
+      /* Glassmorphism */
+      --glass-bg:            rgba(242,244,246,0.72);
+      --glass-blur:          blur(18px);
+      --glass-border:        1px solid rgba(255,255,255,0.55);
+
+      /* Typography */
+      --font-sans:           'Segoe UI', system-ui, -apple-system, sans-serif;
+      --font-size-base:      1rem;
+      --line-height-base:    1.6;
+
+      /* Spacing */
+      --section-pad-y:       4rem;
+      --container-max:       1200px;
+      --container-pad:       1.25rem;
+    }
+
+    /* ===== BASE ===== */
+    body {
+      font-family: var(--font-sans);
+      font-size: var(--font-size-base);
+      line-height: var(--line-height-base);
+      background-color: var(--color-bg);
+      color: var(--color-text-primary);
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin-inline: auto;
+      padding-inline: var(--container-pad);
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-teal);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ===== HEADER ===== */
+    #header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-bottom: var(--glass-border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 64px;
+      flex-wrap: wrap;
+      padding-block: 0.5rem;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--color-dark);
+      white-space: nowrap;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span {
+      color: var(--color-teal);
+    }
+
+    /* Mobile nav toggle */
+    .nav-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      padding: 8px;
+      flex-shrink: 0;
+    }
+
+    .nav-toggle span {
+      display: block;
+      height: 2px;
+      background: var(--color-dark);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Nav */
+    .nav-wrapper {
+      display: none;
+      width: 100%;
+      order: 3;
+      padding-bottom: 0.75rem;
+    }
+
+    .nav-wrapper.open { display: block; }
+
+    .main-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .main-nav a {
+      display: flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+      letter-spacing: 0.02em;
+      transition: color 0.2s, background 0.2s;
+      border-left: 2px solid transparent;
+    }
+
+    .main-nav a:hover {
+      color: var(--color-teal);
+      background: var(--color-teal-muted);
+      border-left-color: var(--color-teal);
+    }
+
+    /* Language switcher */
+    .lang-switcher {
+      position: relative;
+      margin-top: 0.5rem;
+    }
+
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      min-height: 44px;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-text-primary);
+      border: 1px solid var(--border-color);
+      background: var(--color-surface);
+      cursor: pointer;
+      transition: border-color 0.2s, color 0.2s;
+      width: fit-content;
+    }
+
+    .lang-toggle:hover { border-color: var(--color-teal); color: var(--color-teal); }
+
+    .lang-toggle svg { width: 14px; height: 14px; transition: transform 0.2s; }
+    .lang-toggle.open svg { transform: rotate(180deg); }
+
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 4px);
+      left: 0;
+      background: var(--color-surface);
+      border: 1px solid var(--border-color);
+      box-shadow: var(--shadow-md);
+      z-index: 200;
+      min-width: 160px;
+      max-height: 280px;
+      overflow-y: auto;
+    }
+
+    .lang-dropdown.open { display: block; }
+
+    .lang-dropdown a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 36px;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      transition: background 0.15s, color 0.15s;
+    }
+
+    .lang-dropdown a:hover { background: var(--color-teal-muted); color: var(--color-teal); }
+    .lang-dropdown a.active { color: var(--color-teal); font-weight: 700; background: var(--color-teal-muted); }
+
+    /* ===== HERO ===== */
+    #hero {
+      position: relative;
+      min-height: 100svh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #0d1117 0%, #0a2a2a 40%, #003d38 70%, #00b4a6 100%);
+    }
+
+    .hero-grid-overlay {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,180,166,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,180,166,0.06) 1px, transparent 1px);
+      background-size: 48px 48px;
+      pointer-events: none;
+    }
+
+    .hero-glow {
+      position: absolute;
+      width: 60vw;
+      height: 60vw;
+      max-width: 700px;
+      max-height: 700px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(0,180,166,0.22) 0%, transparent 70%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding-block: 5rem 4rem;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--color-teal-light);
+      margin-bottom: 1.25rem;
+      border: 1px solid rgba(0,212,196,0.3);
+      padding: 0.3rem 0.8rem;
+    }
+
+    #hero h1 {
+      font-size: clamp(2rem, 7vw, 4.5rem);
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      color: #ffffff;
+      margin-bottom: 1.25rem;
+    }
+
+    #hero h1 .accent { color: var(--color-teal-light); }
+
+    .hero-sub {
+      font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+      color: var(--color-text-on-dark);
+      max-width: 600px;
+      margin-inline: auto;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0.75rem 2rem;
+      background: var(--color-teal);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover {
+      background: var(--color-teal-dark);
+      box-shadow: var(--shadow-teal);
+      transform: translateY(-1px);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0.75rem 2rem;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--color-teal-light);
+      background: rgba(0,180,166,0.1);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 3.5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .hero-stat {
+      text-align: center;
+    }
+
+    .hero-stat strong {
+      display: block;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 900;
+      color: var(--color-teal-light);
+      letter-spacing: -0.03em;
+    }
+
+    .hero-stat span {
+      font-size: 0.75rem;
+      color: var(--color-text-on-dark);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ===== VISION ===== */
+    #vision {
+      padding-block: var(--section-pad-y);
+      background: var(--color-surface);
+    }
+
+    .vision-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    .vision-text h2 {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      color: var(--color-dark);
+    }
+
+    .vision-text h2 .accent { color: var(--color-teal); }
+
+    .vision-text p {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 1.25rem;
+      max-width: 520px;
+    }
+
+    .vision-pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .pillar-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.85rem 1rem;
+      border-left: 3px solid var(--color-teal);
+      background: var(--color-bg);
+    }
+
+    .pillar-item .pillar-icon {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      color: var(--color-teal);
+      margin-top: 2px;
+    }
+
+    .pillar-item strong {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    .pillar-item p {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      margin: 0;
+    }
+
+    .vision-visual {
+      position: relative;
+      background: linear-gradient(135deg, var(--color-dark) 0%, #003d38 100%);
+      padding: 2.5rem;
+      min-height: 280px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    .vision-visual::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,180,166,0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,180,166,0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    .vision-visual-label {
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--color-teal);
+      font-weight: 700;
+      position: relative;
+      z-index: 1;
+    }
+
+    .vision-metric {
+      position: relative;
+      z-index: 1;
+    }
+
+    .vision-metric strong {
+      display: block;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: -0.05em;
+      line-height: 1;
+    }
+
+    .vision-metric span {
+      font-size: 0.8rem;
+      color: var(--color-text-on-dark);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ===== ECOSYSTEM ===== */
+    #ecosystem {
+      padding-block: var(--section-pad-y);
+      background: var(--color-bg);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: var(--color-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-header h2 .accent { color: var(--color-teal); }
+
+    .section-header p {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      max-width: 540px;
+      margin-inline: auto;
+    }
+
+    /* Bento Grid */
+    .bento-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .bento-card {
+      background: var(--color-surface);
+      border: 1px solid var(--border-color);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+
+    .bento-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .bento-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      background: var(--color-teal);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .bento-card:hover::after { opacity: 1; }
+
+    .bento-card.featured {
+      background: linear-gradient(135deg, var(--color-dark) 0%, #003d38 100%);
+      border-color: transparent;
+    }
+
+    .bento-card.featured::after { opacity: 1; }
+
+    .bento-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--color-teal-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      color: var(--color-teal);
+    }
+
+    .bento-card.featured .bento-icon {
+      background: rgba(0,180,166,0.2);
+    }
+
+    .bento-card h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      color: var(--color-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .bento-card.featured h3 { color: #ffffff; }
+
+    .bento-card p {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+    }
+
+    .bento-card.featured p { color: var(--color-text-on-dark); }
+
+    .bento-tag {
+      display: inline-block;
+      margin-top: 1rem;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-teal);
+      border: 1px solid var(--color-teal);
+      padding: 0.2rem 0.5rem;
+    }
+
+    /* ===== INNOVATION ===== */
+    #innovation {
+      padding-block: var(--section-pad-y);
+      background: var(--color-dark);
+    }
+
+    #innovation .section-header h2 { color: #ffffff; }
+    #innovation .section-header p { color: var(--color-text-on-dark); }
+
+    .feature-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .feature-card {
+      background: var(--color-dark-card);
+      border: 1px solid var(--border-dark);
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .feature-card:hover {
+      border-color: var(--color-teal);
+      box-shadow: 0 0 24px rgba(0,180,166,0.12);
+    }
+
+    .feature-number {
+      font-size: 3rem;
+      font-weight: 900;
+      color: rgba(0,180,166,0.12);
+      line-height: 1;
+      position: absolute;
+      top: 1rem;
+      right: 1.25rem;
+      letter-spacing: -0.05em;
+      pointer-events: none;
+    }
+
+    .feature-card h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-card p {
+      font-size: 0.85rem;
+      color: var(--color-text-on-dark);
+      line-height: 1.6;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-card ul {
+      margin-top: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-card ul li {
+      font-size: 0.8rem;
+      color: var(--color-text-on-dark);
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .feature-card ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--color-teal);
+      font-weight: 700;
+    }
+
+    /* ===== PHILOSOPHY ===== */
+    #philosophy {
+      padding-block: var(--section-pad-y);
+      background: var(--color-surface);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .philosophy-bg-text {
+      position: absolute;
+      font-size: clamp(5rem, 18vw, 14rem);
+      font-weight: 900;
+      color: rgba(0,180,166,0.04);
+      white-space: nowrap;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      letter-spacing: -0.05em;
+      line-height: 1;
+      user-select: none;
+    }
+
+    .philosophy-inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .philosophy-inner h2 {
+      font-size: clamp(1.6rem, 4vw, 2.6rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--color-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .philosophy-inner h2 .accent { color: var(--color-teal); }
+
+    .philosophy-inner > p {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      max-width: 540px;
+      margin-inline: auto;
+      margin-bottom: 2.5rem;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      text-align: left;
+    }
+
+    .value-card {
+      padding: 1.5rem;
+      border: 1px solid var(--border-color);
+      background: var(--color-bg);
+      position: relative;
+    }
+
+    .value-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--color-teal);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .value-card:hover::before { transform: scaleX(1); }
+
+    .value-card h4 {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--color-dark);
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.01em;
+    }
+
+    .value-card p {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    /* ===== FOOTER ===== */
+    #footer {
+      background: var(--color-dark-alt);
+      padding-block: 3rem 1.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand .logo-footer {
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand .logo-footer span { color: var(--color-teal); }
+
+    .footer-brand p {
+      font-size: 0.82rem;
+      color: var(--color-text-on-dark);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h5 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--color-teal);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .footer-col ul li a {
+      font-size: 0.85rem;
+      color: var(--color-text-on-dark);
+      transition: color 0.2s;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-col ul li a:hover { color: var(--color-teal); }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border-dark);
+      padding-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+
+    .footer-copyright {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+    }
+
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+
+    .footer-legal a {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      padding: 0.25rem 0.5rem;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      transition: color 0.2s;
+    }
+
+    .footer-legal a:hover { color: var(--color-teal); }
+
+    .footer-legal a + a::before {
+      content: '—';
+      margin-right: 0.5rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ===== TABLET ===== */
+    @media (min-width: 640px) {
+      :root {
+        --section-pad-y: 5rem;
+        --container-pad: 2rem;
+      }
+
+      .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .feature-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    /* ===== DESKTOP ===== */
+    @media (min-width: 1024px) {
+      :root {
+        --section-pad-y: 6rem;
+        --container-pad: 2.5rem;
+      }
+
+      /* Header desktop */
+      .nav-toggle { display: none; }
+
+      .nav-wrapper {
+        display: flex !important;
+        width: auto;
+        order: 0;
+        padding-bottom: 0;
+        align-items: center;
+        gap: 1.5rem;
+        flex: 1;
+        justify-content: center;
+      }
+
+      .main-nav {
+        flex-direction: row;
+        gap: 0;
+      }
+
+      .main-nav a {
+        padding: 0.5rem 0.85rem;
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        font-size: 0.85rem;
+      }
+
+      .main-nav a:hover {
+        background: transparent;
+        border-left-color: transparent;
+        border-bottom-color: var(--color-teal);
+      }
+
+      .lang-switcher { margin-top: 0; }
+
+      /* Vision split */
+      .vision-inner {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+
+      /* Bento */
+      .bento-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .bento-card.wide {
+        grid-column: span 2;
+      }
+
+      /* Feature cards */
+      .feature-cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      /* Values */
+      .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      /* Footer */
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+      }
+    }
+  </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://eisenrafluxtrade.de/#organization","name":"Eisenra Flux","url":"https://eisenrafluxtrade.de","logo":"https://eisenrafluxtrade.de/assets/img/logo.webp","contactPoint":{"@type":"ContactPoint","email":"support@eisenrafluxtrade.de","contactType":"Kundensupport"}},{"@type":"WebSite","@id":"https://eisenrafluxtrade.de/#website","url":"https://eisenrafluxtrade.de","name":"Eisenra Flux Handelsplattform","publisher":{"@id":"https://eisenrafluxtrade.de/#organization"}},{"@type":"WebPage","@id":"https://eisenrafluxtrade.de/#webpage","url":"https://eisenrafluxtrade.de","name":"Eisenra Flux - KI-Handelsplattform","isPartOf":{"@id":"https://eisenrafluxtrade.de/#website"},"about":{"@id":"https://eisenrafluxtrade.de/#organization"}},{"@type":"Product","@id":"https://eisenrafluxtrade.de/#product","name":"Eisenra Flux Handelsplattform","url":"https://eisenrafluxtrade.de","brand":{"@type":"Brand","name":"Eisenra Flux"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":7336}},{"@type":"SoftwareApplication","name":"Eisenra Flux","applicationCategory":"FinanceApplication","operatingSystem":"Web-basiert","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"aggregateRating":{"@type":"AggregateRating","ratingValue":4.9,"reviewCount":7336}},{"@type":"Service","@id":"https://eisenrafluxtrade.de/#service","name":"Eisenra Flux Automatisierter Krypto-Handelsdienst","serviceType":"Automatisierung des Kryptowährungshandels","provider":{"@id":"https://eisenrafluxtrade.de/#organization"},"areaServed":"Weltweit","brand":{"@id":"https://eisenrafluxtrade.de/#organization"}},{"@type":"BreadcrumbList","@id":"https://eisenrafluxtrade.de/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://eisenrafluxtrade.de/"},{"@type":"ListItem","position":2,"name":"🔥Eisenra Flux✨","item":"https://eisenrafluxtrade.de/#hero-section"}]}]}</script>
+<link rel="alternate" hreflang="x-default" href="https://eisenrafluxtrade.de">
+<link rel="alternate" hreflang="de" href="https://eisenrafluxtrade.de">
+<link rel="alternate" hreflang="cs" href="https://eisenrafluxtrade.de/cs">
+<link rel="alternate" hreflang="el" href="https://eisenrafluxtrade.de/el">
+<link rel="alternate" hreflang="en" href="https://eisenrafluxtrade.de/en">
+<link rel="alternate" hreflang="es" href="https://eisenrafluxtrade.de/es">
+<link rel="alternate" hreflang="et" href="https://eisenrafluxtrade.de/et">
+<link rel="alternate" hreflang="fr" href="https://eisenrafluxtrade.de/fr">
+<link rel="alternate" hreflang="hr" href="https://eisenrafluxtrade.de/hr">
+<link rel="alternate" hreflang="hu" href="https://eisenrafluxtrade.de/hu">
+<link rel="alternate" hreflang="it" href="https://eisenrafluxtrade.de/it">
+<link rel="alternate" hreflang="ja" href="https://eisenrafluxtrade.de/ja">
+<link rel="alternate" hreflang="lv" href="https://eisenrafluxtrade.de/lv">
+<link rel="alternate" hreflang="nl" href="https://eisenrafluxtrade.de/nl">
+<link rel="alternate" hreflang="no" href="https://eisenrafluxtrade.de/no">
+<link rel="alternate" hreflang="pl" href="https://eisenrafluxtrade.de/pl">
+<link rel="alternate" hreflang="pt" href="https://eisenrafluxtrade.de/pt">
+<link rel="alternate" hreflang="ro" href="https://eisenrafluxtrade.de/ro">
+<link rel="alternate" hreflang="sk" href="https://eisenrafluxtrade.de/sk">
+<link rel="alternate" hreflang="sv" href="https://eisenrafluxtrade.de/sv">
+<link rel="alternate" hreflang="tr" href="https://eisenrafluxtrade.de/tr">
+<link rel="alternate" hreflang="zh" href="https://eisenrafluxtrade.de/zh">
+<link rel="canonical" href="https://eisenrafluxtrade.de/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: optional;
+  src: url(/_shared/fonts/9f969458e983.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: optional;
+  src: url(/_shared/fonts/7dd75bb40c95.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: optional;
+  src: url(/_shared/fonts/d569985ece30.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: optional;
+  src: url(/_shared/fonts/bfa3ffdcf253.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 200 700;
+  font-display: optional;
+  src: url(/_shared/fonts/3e17444efcd3.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/d9d22ea7cf17.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/37eb5ba549d8.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/276f626439d0.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/79f35fffde96.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/1422996d36f3.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/c73e67a3c863.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/d4cb602d0a76.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/32b9dde5dfe1.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/1a091b03454f.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/312d19f44981.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/6d4c1d747fc6.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/8c9a50ab73db.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/3df17f0bfeff.woff2) format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* math */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/91fad9c86d4f.woff2) format('woff2');
+  unicode-range: U+0302-0303, U+0305, U+0307-0308, U+0310, U+0312, U+0315, U+031A, U+0326-0327, U+032C, U+032F-0330, U+0332-0333, U+0338, U+033A, U+0346, U+034D, U+0391-03A1, U+03A3-03A9, U+03B1-03C9, U+03D1, U+03D5-03D6, U+03F0-03F1, U+03F4-03F5, U+2016-2017, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+2100-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE, U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-230B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U+25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF;
+}
+/* symbols */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/12c7466943d2.woff2) format('woff2');
+  unicode-range: U+0001-000C, U+000E-001F, U+007F-009F, U+20DD-20E0, U+20E2-20E4, U+2150-218F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219, U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U+2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F32C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F47D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F996, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/da92120872c0.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/0fb06be4e0b4.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: optional;
+  src: url(/_shared/fonts/cb43c05529e9.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<script>(function(){var o=new MutationObserver(function(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1){var els=n.classList&&n.classList.contains('irs-hidden-input')?[n]:n.querySelectorAll?n.querySelectorAll('.irs-hidden-input'):[];for(var i=0;i<els.length;i++)els[i].setAttribute('aria-hidden','true');}});});});o.observe(document.body||document.documentElement,{childList:true,subtree:true});})();</script>
+<link rel="stylesheet" href="/_shared/css/intlTelInput.css?v=23">
+<style>
+.iti__dropdown-content{background:#fff!important;color:#333!important}
+.iti__country-list{background:#fff!important}
+.iti__country{color:#333!important}
+.iti__country-name{color:#333!important}
+.iti__dial-code{color:#888!important}
+.iti__search-input{background:#fff!important;color:#333!important;border:1px solid #ccc!important}
+.iti__search-input::placeholder{color:#999!important}
+.iti__country.iti__highlight{background:#f2f2f2!important}
+</style>
+</head>
+<body>
+
+  
+  <header id="header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+
+        <a href="./" class="logo" aria-label="Eisenra Flux - Startseite">
+          Eisenra Flux<span>.</span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="navWrapper">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-wrapper" id="navWrapper">
+          <nav class="main-nav" aria-label="Hauptnavigation">
+            <a href="about">Über uns</a>
+            <a href="advantages">Vorteile</a>
+            <a href="./#ecosystem">Ökosystem</a>
+            <a href="faq">FAQ</a>
+            <a href="contact">Kontakt</a>
+          </nav>
+
+          <div class="lang-switcher" id="langSwitcher">
+            <button class="lang-toggle" id="langToggle" aria-haspopup="listbox" aria-expanded="false" aria-label="Sprache wählen">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              DE
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Sprachauswahl">
+              <a href="/" class="active" role="option" aria-selected="true" hreflang="de">🇩🇪 Deutsch</a>
+              <a href="/cs" role="option" hreflang="cs">🇨🇿 Čeština</a>
+              <a href="/el" role="option" hreflang="el">🇬🇷 Ελληνικά</a>
+              <a href="/en" role="option" hreflang="en">🇬🇧 English</a>
+              <a href="/es" role="option" hreflang="es">🇪🇸 Español</a>
+              <a href="/et" role="option" hreflang="et">🇪🇪 Eesti</a>
+              <a href="/fr" role="option" hreflang="fr">🇫🇷 Français</a>
+              <a href="/hr" role="option" hreflang="hr">🇭🇷 Hrvatski</a>
+              <a href="/hu" role="option" hreflang="hu">🇭🇺 Magyar</a>
+              <a href="/it" role="option" hreflang="it">🇮🇹 Italiano</a>
+              <a href="/ja" role="option" hreflang="ja">🇯🇵 日本語</a>
+              <a href="/lv" role="option" hreflang="lv">🇱🇻 Latviešu</a>
+              <a href="/nl" role="option" hreflang="nl">🇳🇱 Nederlands</a>
+              <a href="/no" role="option" hreflang="no">🇳🇴 Norsk</a>
+              <a href="/pl" role="option" hreflang="pl">🇵🇱 Polski</a>
+              <a href="/pt" role="option" hreflang="pt">🇵🇹 Português</a>
+              <a href="/ro" role="option" hreflang="ro">🇷🇴 Română</a>
+              <a href="/sv" role="option" hreflang="sv">🇸🇪 Svenska</a>
+              <a href="/sk" role="option" hreflang="sk">🇸🇰 Slovenčina</a>
+              <a href="/tr" role="option" hreflang="tr">🇹🇷 Türkçe</a>
+              <a href="/zh" role="option" hreflang="zh">🇨🇳 中文</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  
+  <section id="hero" aria-labelledby="heroHeading">
+    <div class="hero-grid-overlay" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-eyebrow">Die Evolution der Exzellenz</span>
+        <h1 id="heroHeading">
+          Willkommen in der<br>
+          Ära von <span class="accent">Eisenra Flux</span>
+        </h1>
+        <p class="hero-sub">
+          Wir definieren die Parameter globaler Fortschrittsdynamik neu - durch unübertroffene visionäre Kraft und zukunftssichere Strategien auf Enterprise-Niveau.
+        </p>
+        <div class="hero-cta-group">
+          <a href="./#ecosystem" class="btn-primary">Ökosystem entdecken</a>
+          <a href="about" class="btn-ghost">Über Eisenra Flux</a>
+        </div>
+        <div class="hero-stats" aria-label="Kennzahlen">
+          <div class="hero-stat">
+            <strong>140+</strong>
+            <span>Globale Märkte</span>
+          </div>
+          <div class="hero-stat">
+            <strong>99.9%</strong>
+            <span>Operative Präzision</span>
+          </div>
+          <div class="hero-stat">
+            <strong>AAA</strong>
+            <span>Enterprise-Rating</span>
+          </div>
+          <div class="hero-stat">
+            <strong>∞</strong>
+            <span>Skalierungspotenzial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="vision" aria-labelledby="visionHeading">
+    <div class="container">
+      <div class="vision-inner">
+        <div class="vision-text">
+          <span class="section-label">Globale Synergie-Strategie</span>
+          <h2 id="visionHeading">
+            Die Mission<br>von <span class="accent">Eisenra Flux</span>
+          </h2>
+          <p>
+            Unsere Mission ist die nahtlose Integration komplexer Strukturen in ein harmonisiertes globales Netzwerk für maximale Effizienz.
+          </p>
+          <p>
+            Eisenra Flux orchestriert interdependente Wertströme mit einer Präzision, die Maßstäbe setzt.
+          </p>
+          <div class="vision-pillars">
+            <div class="pillar-item">
+              <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              <div>
+                <strong>Nahtlose Integration</strong>
+                <p>Komplexe Strukturen - harmonisiert in Echtzeit.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+              <div>
+                <strong>Globales Netzwerk</strong>
+                <p>Präsenz in jedem strategischen Markt weltweit.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <svg class="pillar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+              <div>
+                <strong>Maximale Effizienz</strong>
+                <p>Operative Exzellenz als permanenter Standard.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="vision-visual" aria-hidden="true">
+          <span class="vision-visual-label">Eisenra Flux — Global Index</span>
+          <div class="vision-metric">
+            <strong>360°</strong>
+            <span>Synergie-Abdeckung</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="ecosystem" aria-labelledby="ecosystemHeading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Das Ökosystem</span>
+        <h2 id="ecosystemHeading">Das <span class="accent">Eisenra Flux</span> Ökosystem</h2>
+        <p>Ein multidimensionaler Ansatz zur Skalierung von Potenzialen - durch abstrakte Präzision und zukunftssichere Frameworks.</p>
+      </div>
+      <div class="bento-grid">
+
+        <div class="bento-card featured">
+          <div class="bento-icon" aria-hidden="true">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+          </div>
+          <h3>Multi-Layer Framework</h3>
+          <p>Eisenra Flux verbindet strategische Schichten zu einem kohärenten, skalierbaren Gesamtsystem.</p>
+          <span class="bento-tag">Core Architecture</span>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-icon" aria-hidden="true">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+          </div>
+          <h3>Abstrakte Präzision</h3>
+          <p>Hochkomplexe Prozesse - reduziert auf ihre effizienteste Form.</p>
+          <span class="bento-tag">Precision Engine</span>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-icon" aria-hidden="true">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"></path></svg>
+          </div>
+          <h3>Globale Reichweite</h3>
+          <p>Nahtlose Vernetzung über alle relevanten Märkte und Jurisdiktionen.</p>
+          <span class="bento-tag">Global Reach</span>
+        </div>
+
+        <div class="bento-card wide">
+          <div class="bento-icon" aria-hidden="true">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+          </div>
+          <h3>Skalierbare Wertschöpfung durch Eisenra Flux</h3>
+          <p>Von der initialen Konzeption bis zur vollständigen Marktdurchdringung - Eisenra Flux begleitet jeden Schritt mit messbarer Exzellenz und strategischer Tiefe.</p>
+          <span class="bento-tag">Value Creation</span>
+        </div>
+
+        <div class="bento-card">
+          <div class="bento-icon" aria-hidden="true">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Resiliente Strukturen</h3>
+          <p>Zukunftssichere Architekturen - designed für maximale Belastbarkeit.</p>
+          <span class="bento-tag">Resilience</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="innovation" aria-labelledby="innovationHeading">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Zukunftsweisende Paradigmen</span>
+        <h2 id="innovationHeading">Eisenra Flux antizipiert<br><span class="accent">den nächsten Horizont</span></h2>
+        <p>Durch die Antizipation kommender globaler Trends sichern wir den entscheidenden Vorsprung in einer sich stetig wandelnden Weltordnung.</p>
+      </div>
+      <div class="feature-cards">
+
+        <div class="feature-card">
+          <span class="feature-number" aria-hidden="true">01</span>
+          <h3>Trend-Antizipation</h3>
+          <p>Eisenra Flux identifiziert emergente Paradigmen, bevor sie den Mainstream erreichen.</p>
+          <ul>
+            <li>Frühzeitige Signalerfassung</li>
+            <li>Strategische Positionierung</li>
+            <li>Proaktive Adaptation</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-number" aria-hidden="true">02</span>
+          <h3>Adaptive Frameworks</h3>
+          <p>Unsere Strukturen passen sich dynamisch an - ohne Verlust von Präzision oder Kontrolle.</p>
+          <ul>
+            <li>Modulare Architektur</li>
+            <li>Echtzeit-Rekalibrierung</li>
+            <li>Zero-Latency Pivots</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-number" aria-hidden="true">03</span>
+          <h3>Globaler Vorsprung</h3>
+          <p>Eisenra Flux sichert entscheidende Wettbewerbsvorteile durch konsequente Innovationsführerschaft.</p>
+          <ul>
+            <li>First-Mover-Strategien</li>
+            <li>Exklusive Netzwerkeffekte</li>
+            <li>Proprietäre Methodiken</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="philosophy" aria-labelledby="philosophyHeading">
+    <div class="philosophy-bg-text" aria-hidden="true">Eisenra Flux</div>
+    <div class="container">
+      <div class="philosophy-inner">
+        <span class="section-label">Exklusive Wertschöpfungsketten</span>
+        <h2 id="philosophyHeading">Das Fundament<br>von <span class="accent">Eisenra Flux</span></h2>
+        <p>
+          Integrität, Diskretion und operative Exzellenz bilden das Fundament unserer weltweiten Präsenz - und unseres unvergleichlichen Erfolgsmodells.
+        </p>
+        <div class="values-grid">
+          <div class="value-card">
+            <h4>Integrität</h4>
+            <p>Kompromisslose Transparenz gegenüber Partnern und Stakeholdern - auf jedem Niveau.</p>
+          </div>
+          <div class="value-card">
+            <h4>Diskretion</h4>
+            <p>Höchste Vertraulichkeit als strategischer Imperativ - nicht als Option.</p>
+          </div>
+          <div class="value-card">
+            <h4>Operative Exzellenz</h4>
+            <p>Eisenra Flux liefert konsistent auf dem höchsten messbaren Qualitätsniveau.</p>
+          </div>
+          <div class="value-card">
+            <h4>Visionäre Kraft</h4>
+            <p>Langfristige Perspektiven - verankert in einer klaren strategischen Doktrin.</p>
+          </div>
+          <div class="value-card">
+            <h4>Globale Präsenz</h4>
+            <p>Lokale Expertise - skaliert auf ein weltumspannendes Netzwerk.</p>
+          </div>
+          <div class="value-card">
+            <h4>Nachhaltiger Wert</h4>
+            <p>Wertschöpfung, die über kurzfristige Zyklen hinaus Bestand hat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="logo-footer">Eisenra Flux<span>.</span></div>
+          <p>Globale Exzellenz - skaliert auf das nächste Paradigma. Das Eisenra Flux Ökosystem steht für unübertroffene Enterprise-Standards.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="about">Über uns</a></li>
+            <li><a href="advantages">Vorteile</a></li>
+            <li><a href="./#ecosystem">Ökosystem</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Ökosystem</h5>
+          <ul>
+            <li><a href="./#vision">Vision</a></li>
+            <li><a href="./#innovation">Innovation</a></li>
+            <li><a href="./#philosophy">Philosophie</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Sprachen</h5>
+          <ul>
+            <li><a href="/" hreflang="de">Deutsch</a></li>
+            <li><a href="/en" hreflang="en">English</a></li>
+            <li><a href="/fr" hreflang="fr">Français</a></li>
+            <li><a href="/es" hreflang="es">Español</a></li>
+            <li><a href="/zh" hreflang="zh">中文</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 Eisenra Flux Global Enterprise. Alle Rechte vorbehalten.</p>
+        <nav class="footer-legal" aria-label="Rechtliche Links">
+          <a href="impressum">Impressum</a>
+          <a href="datenschutz">Datenschutz</a>
+          <a href="compliance">Compliance</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navWrapper = document.getElementById('navWrapper');
+
+    navToggle.addEventListener('click', function () {
+      const isOpen = navWrapper.classList.toggle('open');
+      navToggle.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.setAttribute('aria-label', isOpen ? 'Navigation schließen' : 'Navigation öffnen');
+    });
+
+    // Language dropdown
+    const langToggle = document.getElementById('langToggle');
+    const langDropdown = document.getElementById('langDropdown');
+
+    langToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      const isOpen = langDropdown.classList.toggle('open');
+      langToggle.classList.toggle('open', isOpen);
+      langToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.addEventListener('click', function () {
+      langDropdown.classList.remove('open');
+      langToggle.classList.remove('open');
+      langToggle.setAttribute('aria-expanded', 'false');
+    });
+
+    langDropdown.addEventListener('click', function (e) {
+      e.stopPropagation();
+    });
+
+    // Close nav on anchor click (mobile)
+    document.querySelectorAll('.main-nav a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navWrapper.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+
+<script>
+(function(){function loadSeq(arr,i,cb){if(i>=arr.length){if(cb)cb();return;}var t=document.createElement('script');t.src=arr[i];t.onload=function(){loadSeq(arr,i+1,cb);};t.onerror=function(){loadSeq(arr,i+1,cb);};document.body.appendChild(t);}var c=["/_shared/js/intlTelInput.min.js?v=23"],d=[];loadSeq(c,0,function(){var fl=window.__dclFlush||function(){};if(document.readyState==='loading'){(window.__dclOrig||document.addEventListener.bind(document))('DOMContentLoaded',fl);}else{fl();}var ric=window.requestIdleCallback||function(cb){setTimeout(cb,50);};ric(function(){loadSeq(d,0);});});})();
+</script><script src="/_shared/js/intlTelInput.min.js?v=23"></script>
+<script>
+(function(){
+var __smsEnabled=false,__smsVerified=false,__savedFormHTML=null,__activeForm=null,__resendTimer=null,__lastSendTime=null;
+fetch('/api/sms-verification-status').then(function(r){return r.json()}).then(function(d){__smsEnabled=d.enabled}).catch(function(){});
+var __i18n={
+'en':{title:'Phone Verification',subtitle:'We will send a verification code to',enterCode:'Enter the code sent to',sendSms:'Send Verification Code',resendIn:'Resend in',resend:'Resend Code',verify:'Verify Code',changePhone:'Change phone number',codePlaceholder:'Enter verification code',sending:'Sending...',verifying:'Verifying...',invalidCode:'Invalid code. Please try again.',smsError:'Failed to send SMS. Try again.',phoneLabel:'Your phone number',back:'Back to form',processing:'Processing your data...',verified:'Phone verified!'},
+'de':{title:'Telefonverifizierung',subtitle:'Wir senden einen Code an',enterCode:'Code eingeben gesendet an',sendSms:'Bestätigungscode senden',resendIn:'Erneut in',resend:'Code erneut senden',verify:'Code bestätigen',changePhone:'Nummer ändern',codePlaceholder:'Bestätigungscode eingeben',sending:'Senden...',verifying:'Prüfung...',invalidCode:'Ungültiger Code. Erneut versuchen.',smsError:'SMS fehlgeschlagen.',phoneLabel:'Telefonnummer',back:'Zurück',processing:'Daten werden verarbeitet...',verified:'Telefon verifiziert!'},
+'fr':{title:'Vérification',subtitle:'Nous enverrons un code au',enterCode:'Entrez le code envoyé au',sendSms:'Envoyer le code',resendIn:'Renvoyer dans',resend:'Renvoyer le code',verify:'Vérifier',changePhone:'Changer numéro',codePlaceholder:'Entrez le code',sending:'Envoi...',verifying:'Vérification...',invalidCode:'Code invalide. Réessayez.',smsError:'Échec SMS.',phoneLabel:'Numéro',back:'Retour',processing:'Traitement en cours...',verified:'Téléphone vérifié!'},
+'es':{title:'Verificación',subtitle:'Enviaremos un código a',enterCode:'Ingrese el código enviado a',sendSms:'Enviar código',resendIn:'Reenviar en',resend:'Reenviar código',verify:'Verificar',changePhone:'Cambiar número',codePlaceholder:'Ingrese el código',sending:'Enviando...',verifying:'Verificando...',invalidCode:'Código inválido.',smsError:'Error al enviar.',phoneLabel:'Número',back:'Volver',processing:'Procesando datos...',verified:'Teléfono verificado!'},
+'it':{title:'Verifica',subtitle:'Invieremo un codice a',enterCode:'Inserisci il codice inviato a',sendSms:'Invia codice',resendIn:'Rinvia tra',resend:'Rinvia codice',verify:'Verifica',changePhone:'Cambia numero',codePlaceholder:'Inserisci codice',sending:'Invio...',verifying:'Verifica...',invalidCode:'Codice non valido.',smsError:'Invio fallito.',phoneLabel:'Numero',back:'Indietro',processing:'Elaborazione dati...',verified:'Telefono verificato!'},
+'nl':{title:'Verificatie',subtitle:'We sturen een code naar',enterCode:'Voer de code in verzonden naar',sendSms:'Verificatiecode versturen',resendIn:'Opnieuw over',resend:'Code opnieuw versturen',verify:'Verifiëren',changePhone:'Nummer wijzigen',codePlaceholder:'Voer code in',sending:'Verzenden...',verifying:'Verifiëren...',invalidCode:'Ongeldige code.',smsError:'Verzenden mislukt.',phoneLabel:'Nummer',back:'Terug',processing:'Gegevens verwerken...',verified:'Telefoon geverifieerd!'},
+'no':{title:'Verifisering',subtitle:'Vi sender en kode til',enterCode:'Skriv inn koden sendt til',sendSms:'Send kode',resendIn:'Send igjen om',resend:'Send kode igjen',verify:'Bekreft',changePhone:'Endre nummer',codePlaceholder:'Skriv inn kode',sending:'Sender...',verifying:'Verifiserer...',invalidCode:'Ugyldig kode.',smsError:'Feil ved sending.',phoneLabel:'Nummer',back:'Tilbake',processing:'Behandler data...',verified:'Telefon verifisert!'},
+'pl':{title:'Weryfikacja',subtitle:'Wyślemy kod na',enterCode:'Wpisz kod wysłany na',sendSms:'Wyślij kod',resendIn:'Ponownie za',resend:'Wyślij kod ponownie',verify:'Zweryfikuj',changePhone:'Zmień numer',codePlaceholder:'Wpisz kod',sending:'Wysyłanie...',verifying:'Weryfikacja...',invalidCode:'Nieprawidłowy kod.',smsError:'Błąd wysyłania.',phoneLabel:'Numer',back:'Wstecz',processing:'Przetwarzanie danych...',verified:'Telefon zweryfikowany!'},
+'cs':{title:'Ověření',subtitle:'Pošleme kód na',enterCode:'Zadejte kód zaslaný na',sendSms:'Odeslat kód',resendIn:'Znovu za',resend:'Odeslat znovu',verify:'Ověřit',changePhone:'Změnit číslo',codePlaceholder:'Zadejte kód',sending:'Odesílání...',verifying:'Ověřování...',invalidCode:'Neplatný kód.',smsError:'Chyba odeslání.',phoneLabel:'Číslo',back:'Zpět',processing:'Zpracování dat...',verified:'Telefon ověřen!'},
+'hr':{title:'Verifikacija',subtitle:'Poslat ćemo kod na',enterCode:'Unesite kod poslan na',sendSms:'Pošalji kod',resendIn:'Ponovno za',resend:'Pošalji ponovno',verify:'Potvrdi',changePhone:'Promijeni broj',codePlaceholder:'Unesite kod',sending:'Slanje...',verifying:'Provjera...',invalidCode:'Neispravan kod.',smsError:'Greška slanja.',phoneLabel:'Broj',back:'Natrag',processing:'Obrada podataka...',verified:'Telefon verificiran!'},
+'ja':{title:'電話確認',subtitle:'確認コードを送信します',enterCode:'送信されたコードを入力',sendSms:'確認コード送信',resendIn:'再送信',resend:'コード再送信',verify:'確認',changePhone:'番号変更',codePlaceholder:'確認コード入力',sending:'送信中...',verifying:'確認中...',invalidCode:'無効なコード',smsError:'送信失敗',phoneLabel:'電話番号',back:'戻る',processing:'データ処理中...',verified:'電話確認済み!'},
+'sv':{title:'Verifiering',subtitle:'Vi skickar en kod till',enterCode:'Ange koden skickad till',sendSms:'Skicka kod',resendIn:'Skicka igen om',resend:'Skicka kod igen',verify:'Verifiera',changePhone:'Ändra nummer',codePlaceholder:'Ange kod',sending:'Skickar...',verifying:'Verifierar...',invalidCode:'Ogiltig kod.',smsError:'Kunde inte skicka.',phoneLabel:'Nummer',back:'Tillbaka',processing:'Bearbetar data...',verified:'Telefon verifierad!'},
+'da':{title:'Bekræftelse',subtitle:'Vi sender en kode til',enterCode:'Indtast koden sendt til',sendSms:'Send kode',resendIn:'Send igen om',resend:'Send kode igen',verify:'Bekræft',changePhone:'Skift nummer',codePlaceholder:'Indtast kode',sending:'Sender...',verifying:'Bekræfter...',invalidCode:'Ugyldig kode.',smsError:'Kunne ikke sende.',phoneLabel:'Nummer',back:'Tilbage',processing:'Behandler data...',verified:'Telefon bekræftet!'},
+'fi':{title:'Vahvistus',subtitle:'Lähetämme koodin numeroon',enterCode:'Syötä koodi lähetetty numeroon',sendSms:'Lähetä koodi',resendIn:'Uudelleen',resend:'Lähetä koodi uudelleen',verify:'Vahvista',changePhone:'Vaihda numero',codePlaceholder:'Syötä koodi',sending:'Lähetetään...',verifying:'Vahvistetaan...',invalidCode:'Virheellinen koodi.',smsError:'Lähetys epäonnistui.',phoneLabel:'Numero',back:'Takaisin',processing:'Käsitellään tietoja...',verified:'Puhelin vahvistettu!'}
+};
+function __getT(){var l=(document.documentElement.lang||'en').toLowerCase().substring(0,2);return __i18n[l]||__i18n['en'];}
+function __injectStyles(){
+if(document.getElementById('sms-inline-styles'))return;
+var st=document.createElement('style');st.id='sms-inline-styles';
+st.textContent=[
+'.sms-inline-wrap{padding:8px 0;animation:smsFadeIn 0.3s ease}',
+'@keyframes smsFadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}',
+'.sms-inline-title{font-size:18px;font-weight:700;margin:0 0 6px}',
+'.sms-inline-sub{font-size:13px;opacity:0.7;margin-bottom:12px}',
+'.sms-inline-phone{font-weight:600;font-size:15px;text-align:center;margin-bottom:12px;opacity:0.9}',
+'.sms-inline-error{color:#ff6b6b;font-size:12px;text-align:center;margin:6px 0;min-height:18px}',
+'.sms-inline-success{color:#51cf66;font-size:14px;text-align:center;margin:6px 0;font-weight:600}',
+'.sms-inline-timer{text-align:center;opacity:0.5;font-size:12px;margin:4px 0}',
+'.sms-inline-btn-link{background:none;border:none;opacity:0.6;font-size:12px;cursor:pointer;padding:6px;text-decoration:underline;display:block;text-align:center;width:100%}',
+'.sms-inline-btn-link:hover{opacity:1}',
+'@keyframes smsSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}',
+'.sms-loader-spinner{width:44px;height:44px;border:3px solid rgba(255,255,255,0.15);border-top-color:#F79E1C;border-radius:50%;animation:smsSpinner 0.8s linear infinite;margin:0 auto 16px}',
+'@keyframes smsPulse{0%,100%{opacity:0.6}50%{opacity:1}}',
+'.sms-loader-text{animation:smsPulse 1.5s ease-in-out infinite}'
+].join('\n');
+document.head.appendChild(st);
+}
+function __showInForm(form,phone,phonecc,onVerified,onClose){
+__injectStyles();
+var t=__getT();
+var inpStyle='',btnStyle='',btnHtml='',formColor='#fff';
+var origInput=form.querySelector('input[type="text"],input[type="email"],input[type="tel"]');
+var origBtn=form.querySelector('.submit-btn,button[type="submit"],input[type="submit"]');
+function detectFormColor(){
+var el=form;while(el){try{var bg=window.getComputedStyle(el).backgroundColor;if(bg&&bg!=='rgba(0, 0, 0, 0)'&&bg!=='transparent'){var m=bg.match(/d+/g);if(m){var lum=(parseInt(m[0])*299+parseInt(m[1])*587+parseInt(m[2])*114)/1000;return lum<128?'#fff':'#1a1a2e';}}}catch(e){}el=el.parentElement;}return '#fff';}
+formColor=detectFormColor();
+if(origInput){
+var cs=window.getComputedStyle(origInput);
+inpStyle='width:100%;padding:'+cs.padding+';border:'+cs.border+';border-radius:'+cs.borderRadius+';font-size:'+cs.fontSize+';background:'+cs.backgroundColor+';color:'+cs.color+';box-sizing:border-box;outline:none;font-family:'+cs.fontFamily;
+}else{
+inpStyle='width:100%;padding:12px 14px;border:1px solid rgba(255,255,255,0.2);border-radius:8px;font-size:16px;background:rgba(255,255,255,0.08);color:#fff;box-sizing:border-box;outline:none';
+}
+if(origBtn){
+var bs=window.getComputedStyle(origBtn);
+btnStyle='width:100%;padding:'+bs.padding+';border:'+bs.border+';border-radius:'+bs.borderRadius+';font-size:'+bs.fontSize+';font-weight:'+bs.fontWeight+';background:'+bs.background+';color:'+bs.color+';cursor:pointer;transition:opacity 0.2s;margin-bottom:8px;font-family:'+bs.fontFamily+';text-transform:'+bs.textTransform+';letter-spacing:'+bs.letterSpacing;
+}else{
+btnStyle='width:100%;padding:13px;border:none;border-radius:8px;font-size:15px;font-weight:600;background:linear-gradient(135deg,#f5a623,#e8941e);color:#fff;cursor:pointer;transition:opacity 0.2s;margin-bottom:8px';
+}
+var __origForm=form;
+var __formParent=form.parentNode;
+var __formNextSibling=form.nextSibling;
+var __cleanForm=form.cloneNode(false);
+__cleanForm.setAttribute('onsubmit','return false;');
+__cleanForm.setAttribute('action','javascript:void(0)');
+if(__formParent){__formParent.replaceChild(__cleanForm,form);}
+form=__cleanForm;
+__savedFormHTML='';
+__activeForm=form;
+var __smsSubmitGuard=function(ev){ev.preventDefault();ev.stopImmediatePropagation();ev.stopPropagation();var ci=document.getElementById('sms-code');if(ci&&ci.value&&ci.value.trim().length>=4){doVerify();}return false;};
+form.addEventListener('submit',__smsSubmitGuard,true);
+var curPhone=phone,curPcc=phonecc,sent=false;
+var phoneSvg='<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F79E1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>';
+var shieldSvg='<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#38a169" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 12 15 16 10" style="stroke:#38a169"/></svg>';
+var editSvg='<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#F79E1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>';
+var phoneBoxStyle='display:flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:10px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);margin-bottom:16px;font-size:18px;font-weight:600;color:'+formColor+';letter-spacing:1px';
+var linkStyle='background:none;border:none;color:'+formColor+';opacity:0.75;font-size:13px;cursor:pointer;padding:4px 12px;transition:opacity 0.2s;display:inline-block';
+var dividerStyle='width:40px;height:2px;background:#F79E1C;opacity:0.5;margin:0 auto 16px;border-radius:1px';
+function renderSend(){
+sent=false;
+form.innerHTML='<div class="sms-inline-wrap" style="text-align:center;padding:10px 0">'+
+'<div style="margin-bottom:14px">'+phoneSvg+'</div>'+
+'<div style="'+dividerStyle+'"></div>'+
+'<div style="font-size:14px;color:'+formColor+';opacity:0.85;margin-bottom:14px">'+t.subtitle+'</div>'+
+'<div style="'+phoneBoxStyle+'">'+
+'<span>'+curPcc+' '+curPhone+'</span>'+
+'</div>'+
+'<div class="sms-inline-error" id="sms-err"></div>'+
+'<button type="button" id="sms-send" style="'+btnStyle+'">'+t.sendSms+'</button>'+
+'<div style="margin-top:10px;display:flex;justify-content:center;gap:6px">'+
+'<button type="button" style="'+linkStyle+'" id="sms-edit">'+t.changePhone+'</button>'+
+'<span style="color:'+formColor+';opacity:0.45">|</span>'+
+'<button type="button" style="'+linkStyle+'" id="sms-back">'+t.back+'</button>'+
+'</div>'+
+'</div>';
+document.getElementById('sms-send').onclick=doSend;
+document.getElementById('sms-edit').onclick=renderEdit;
+document.getElementById('sms-back').onclick=function(){restoreForm();if(onClose)onClose();};
+}
+function renderCode(){
+form.innerHTML='<div class="sms-inline-wrap" style="text-align:center;padding:10px 0">'+
+'<div style="margin-bottom:14px">'+shieldSvg+'</div>'+
+'<div style="'+dividerStyle+'"></div>'+
+'<div style="font-size:14px;color:'+formColor+';opacity:0.85;margin-bottom:8px">'+t.enterCode+'</div>'+
+'<div style="'+phoneBoxStyle+';margin-bottom:14px;font-size:15px;padding:8px 14px">'+
+'<span>'+curPcc+' '+curPhone+'</span>'+
+'</div>'+
+'<input type="text" id="sms-code" maxlength="6" autocomplete="one-time-code" inputmode="numeric" pattern="[0-9]*" placeholder="------" style="'+inpStyle+';text-align:center;letter-spacing:12px;font-size:26px;font-weight:700;margin-bottom:12px">'+
+'<div class="sms-inline-error" id="sms-err"></div>'+
+'<div class="sms-inline-success" id="sms-ok"></div>'+
+'<button type="button" id="sms-verify" style="'+btnStyle+'">'+t.verify+'</button>'+
+'<div id="sms-resend" style="text-align:center;color:'+formColor+';opacity:0.7;font-size:13px;margin:8px 0;cursor:default">'+t.resend+' (60)</div>'+
+'<div style="margin-top:10px;display:flex;justify-content:center;gap:6px">'+
+'<button type="button" style="'+linkStyle+'" id="sms-edit">'+t.changePhone+'</button>'+
+'<span style="color:'+formColor+';opacity:0.45">|</span>'+
+'<button type="button" style="'+linkStyle+'" id="sms-back">'+t.back+'</button>'+
+'</div>'+
+'</div>';
+document.getElementById('sms-verify').onclick=doVerify;
+document.getElementById('sms-edit').onclick=renderEdit;
+document.getElementById('sms-back').onclick=function(){restoreForm();if(onClose)onClose();};
+var ci=document.getElementById('sms-code');
+if(ci){ci.focus();ci.addEventListener('input',function(){this.value=this.value.replace(/[^0-9]/g,'');});}
+startTimer();
+}
+function renderEdit(){
+form.innerHTML='<div class="sms-inline-wrap" style="text-align:center;padding:10px 0">'+
+'<div style="margin-bottom:14px">'+editSvg+'</div>'+
+'<div style="'+dividerStyle+'"></div>'+
+'<div style="font-size:14px;color:'+formColor+';opacity:0.85;margin-bottom:12px">'+t.phoneLabel+'</div>'+
+'<input type="tel" id="sms-newphone" value="'+curPhone+'" style="'+inpStyle+';margin-bottom:14px;text-align:center;font-size:18px;letter-spacing:1px">'+
+'<div class="sms-inline-error" id="sms-err"></div>'+
+'<button type="button" id="sms-apply" style="'+btnStyle+'">'+t.sendSms+'</button>'+
+'<div style="text-align:center;color:'+formColor+';opacity:0.7;font-size:12px;margin:6px 0" id="sms-edit-timer"></div>'+
+'<div style="margin-top:10px">'+
+'<button type="button" style="'+linkStyle+'" id="sms-back2">'+t.back+'</button>'+
+'</div>'+
+'</div>';
+var applyBtn=document.getElementById('sms-apply');
+var editTimerEl=document.getElementById('sms-edit-timer');
+if(__lastSendTime){var elapsed=Math.floor((Date.now()-__lastSendTime)/1000);var remaining=60-elapsed;if(remaining>0){applyBtn.disabled=true;applyBtn.style.opacity='0.5';editTimerEl.textContent=t.resendIn+' '+remaining+'s';var eti=setInterval(function(){remaining--;if(editTimerEl)editTimerEl.textContent=t.resendIn+' '+remaining+'s';if(remaining<=0){clearInterval(eti);if(applyBtn){applyBtn.disabled=false;applyBtn.style.opacity='1';}if(editTimerEl)editTimerEl.textContent='';}},1000);}}
+applyBtn.onclick=function(){var np=document.getElementById('sms-newphone');if(np)curPhone=np.value.replace(/[^0-9]/g,'');doSend();};
+document.getElementById('sms-back2').onclick=function(){sent?renderCode():renderSend();};
+}
+function startTimer(){
+var cd=60,rb=document.getElementById('sms-resend');
+if(rb){rb.style.opacity='0.4';rb.style.cursor='default';rb.textContent=t.resend+' (60)';rb.onclick=null;}
+if(__resendTimer)clearInterval(__resendTimer);
+__resendTimer=setInterval(function(){cd--;if(rb)rb.textContent=t.resend+' ('+cd+')';if(cd<=0){clearInterval(__resendTimer);__resendTimer=null;if(rb){rb.style.opacity='0.7';rb.style.cursor='pointer';rb.style.textDecoration='underline';rb.textContent=t.resend;rb.onclick=doSend;}}},1000);
+}
+function doSend(){
+var btn=document.getElementById('sms-send')||document.getElementById('sms-resend')||document.getElementById('sms-apply');
+var err=document.getElementById('sms-err');
+if(btn){btn.disabled=true;btn.textContent=t.sending;}
+if(err)err.textContent='';
+fetch('/api/sms/send',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({phone:curPhone,phonecc:curPcc,domain:window.location.hostname})})
+.then(function(r){return r.json()})
+.then(function(d){if(d.success){sent=true;__lastSendTime=Date.now();renderCode();}else{if(err)err.textContent=d.error||t.smsError;if(btn){btn.disabled=false;btn.textContent=t.sendSms;}}})
+.catch(function(){if(err)err.textContent=t.smsError;if(btn){btn.disabled=false;btn.textContent=t.sendSms;}});
+}
+function doVerify(){
+var ci=document.getElementById('sms-code'),code=ci?ci.value.trim():'';
+if(!code||code.length<4)return;
+var vb=document.getElementById('sms-verify'),err=document.getElementById('sms-err'),ok=document.getElementById('sms-ok');
+if(vb){vb.disabled=true;vb.textContent=t.verifying;}
+if(err)err.textContent='';
+fetch('/api/sms/verify',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({phone:curPhone,phonecc:curPcc,code:code})})
+.then(function(r){return r.json()})
+.then(function(d){if(d.success&&d.verified){__smsVerified=true;if(ok){ok.textContent='✓ '+t.verified;}if(__resendTimer){clearInterval(__resendTimer);__resendTimer=null;}setTimeout(function(){showLoader();onVerified(curPhone,curPcc);},800);}else{if(err)err.textContent=d.error||t.invalidCode;if(vb){vb.disabled=false;vb.textContent=t.verify;}}})
+.catch(function(){if(err)err.textContent=t.invalidCode;if(vb){vb.disabled=false;vb.textContent=t.verify;}});
+}
+function showLoader(){
+if(__resendTimer){clearInterval(__resendTimer);__resendTimer=null;}
+var checkSvg='<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#38a169" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+form.innerHTML='<div class="sms-inline-wrap" style="text-align:center;padding:30px 10px">'+
+'<div style="margin-bottom:6px">'+checkSvg+'</div>'+
+'<div style="font-size:14px;color:#38a169;font-weight:600;margin-bottom:20px">'+t.verified+'</div>'+
+'<div class="sms-loader-spinner"></div>'+
+'<div class="sms-loader-text" style="font-size:15px;color:'+formColor+';font-weight:500">'+t.processing+'</div>'+
+'</div>';
+}
+function restoreForm(){
+if(__resendTimer){clearInterval(__resendTimer);__resendTimer=null;}
+try{form.removeEventListener('submit',__smsSubmitGuard,true);}catch(e){}
+try{if(__origForm&&form&&form.parentNode){form.parentNode.replaceChild(__origForm,form);}}catch(e){}
+}
+renderSend();
+}
+window.__smsCheckBeforeSubmit=function(phone,phonecc,form,cb,closeCb){
+if(!__smsEnabled||__smsVerified){cb(phone,phonecc);return;}
+__showInForm(form,phone,phonecc,cb,closeCb);
+};
+window.__isSmsEnabled=function(){return __smsEnabled;};
+window.__isSmsVerified=function(){return __smsVerified;};
+})();
+</script>
+
+</body></html>

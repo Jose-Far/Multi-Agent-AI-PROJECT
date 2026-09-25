@@ -1,0 +1,257 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "execution_time_sec": 17.153,
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://amazon.in",
+            "final_url": "https://www.amazon.in/",
+            "domain_resolved": "www.amazon.in",
+            "response_time_sec": 2.0253,
+            "status_code": 202,
+            "redirect_count": 1,
+            "redirect_history": [
+                {
+                    "url": "https://amazon.in/",
+                    "status_code": 301,
+                    "headers": {
+                        "Server": "Server",
+                        "Date": "Fri, 14 Aug 2026 15:05:21 GMT",
+                        "Content-Type": "text/html",
+                        "Transfer-Encoding": "chunked",
+                        "Connection": "keep-alive",
+                        "Location": "https://www.amazon.in/",
+                        "x-amz-rid": "RXS2Z95XNVMR1ZFX10SS",
+                        "Vary": "User-Agent,Accept-Encoding"
+                    },
+                    "is_https": true
+                }
+            ],
+            "headers": {
+                "Server": "CloudFront",
+                "Date": "Fri, 14 Aug 2026 15:05:22 GMT",
+                "Content-Length": "2008",
+                "Connection": "keep-alive",
+                "x-amzn-waf-action": "challenge",
+                "Cache-Control": "no-store, max-age=0",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Max-Age": "86400",
+                "Access-Control-Allow-Methods": "OPTIONS,GET,POST",
+                "Access-Control-Expose-Headers": "x-amzn-waf-action",
+                "X-Cache": "Error from cloudfront",
+                "Via": "1.1 407a013ff304e7d46556bea842860694.cloudfront.net (CloudFront)",
+                "X-Amz-Cf-Pop": "PNQ50-P2",
+                "Alt-Svc": "h3=\":443\"; ma=86400",
+                "X-Amz-Cf-Id": "9wn8ETXXhOa0mHZ6cJ-JafgElvCA1RWaQ0mZ2HVEhX2FbmXppK2ezg=="
+            },
+            "cookies_dropped": {},
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": null,
+                "favicon_url": "https://www.amazon.in/favicon.ico",
+                "html_length_bytes": 2008,
+                "form_count": 0,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "cross_domain_form_actions": 0,
+                "iframe_count": 0,
+                "invisible_iframes": 0,
+                "iframe_sources": [],
+                "script_count": 3,
+                "external_scripts_count": 1,
+                "suspicious_inline_scripts": 0,
+                "total_links": 0,
+                "external_links_count": 0,
+                "empty_links_count": 0,
+                "hidden_elements_count": 0,
+                "right_click_disabled": false,
+                "has_meta_refresh": false,
+                "html_comments_count": 0
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_www.amazon.in_1786719935.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAPYCAIAAACdeU7aAAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png",
+                "timestamp": 1786719935
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "tls_version": "TLSv1.3",
+                "cipher_suite": "TLS_AES_128_GCM_SHA256",
+                "cipher_strength_bits": 128,
+                "issuer_organization": "Amazon",
+                "issuer_common_name": "Amazon RSA 2048 M04",
+                "issuer_country": "US",
+                "subject_common_name": "*.cy.peg.a2z.com",
+                "subject_alt_names": [
+                    "*.cy.peg.a2z.com",
+                    "www.amazon.co.in",
+                    "p-y3-www-amazon-in-kalias.amazon.in",
+                    "p-yo-www-amazon-in-kalias.amazon.in",
+                    "origin-www.amazon.in",
+                    "amazon.in",
+                    "edgeflow-dp.aero.c95e7e602-frontier.amazon.in",
+                    "amazon.co.in",
+                    "edgeflow.aero.c95e7e602-frontier.amazon.in",
+                    "p-nt-www-amazon-in-kalias.amazon.in",
+                    "www.amazon.in"
+                ],
+                "not_before": "2026-08-11T00:00:00+00:00",
+                "not_after": "2027-02-24T23:59:59+00:00",
+                "cert_age_days": 3,
+                "days_until_expiry": 194,
+                "is_expired": false,
+                "is_self_signed": false,
+                "is_free_ca": false
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "queried_domain": "amazon.in",
+                "records": {
+                    "A": [
+                        "3.253.176.101",
+                        "3.253.170.100",
+                        "3.253.168.43"
+                    ],
+                    "AAAA": [],
+                    "MX": [
+                        {
+                            "preference": 10,
+                            "exchange": "amazon-smtp.amazon.com"
+                        }
+                    ],
+                    "TXT": [
+                        "TS1760027",
+                        "MS=ms27803002",
+                        "MS=ms65650497",
+                        "v=spf1 include:amazon.com -all",
+                        "spf2.0/pra include:amazon.com -all",
+                        "canva-site-verification=hbDzfqg-Yto5mQswKAEatA",
+                        "google-gws-recovery-domain-verification=69979608",
+                        "google-gws-recovery-domain-verification=70440648",
+                        "docker-verification=18325118-b0dc-40bd-81c5-d6aafedf278c",
+                        "facebook-domain-verification=hgfnhz04meuxr62da6b00kwas2n4md",
+                        "google-site-verification=ABRnURlPVtQRBIMqadgOhBTXsxY_HxEn04unYT9D0J4",
+                        "google-site-verification=GsLI5kBVqu0oRPMAr-bFqvv3FRTlCiHyYQ2VUGDNwHM",
+                        "google-site-verification=xTaP4clXFdYM8wMNQRgr5Ezb9b9STzHgq4tmVyZrDEI",
+                        "google-site-verification=xibV-ooZgBwkpinWNuETXl-tasUI80Q4nxnNQVqE8cw",
+                        "liveramp-site-verification=jZJKgMEQ_1mdjMhKj02iqNACZ-NJHRWhCEQdQ_OuCMo",
+                        "adobe-idp-site-verification=b6bcd3e5aaffc63607c8bf75744d9a0d1febc50dd7f389428e2ae476c9ba8814",
+                        "atlassian-domain-verification=ZT4AapXgobCpXIWoNcd7gtMjZyOUdr4EDFMnFUWrqqqgdaQVbDvoGpRaIwj/tgPH"
+                    ],
+                    "NS": [
+                        "ns1.amzndns.co.uk",
+                        "ns1.amzndns.com",
+                        "ns1.amzndns.net",
+                        "ns1.amzndns.org",
+                        "ns2.amzndns.co.uk",
+                        "ns2.amzndns.com",
+                        "ns2.amzndns.net",
+                        "ns2.amzndns.org"
+                    ],
+                    "CNAME": [],
+                    "SOA": [
+                        {
+                            "mname": "dns-external-master.amazon.com",
+                            "rname": "root.amazon.com",
+                            "serial": 2008041791,
+                            "refresh": 600,
+                            "retry": 300,
+                            "expire": 604800,
+                            "minimum": 900
+                        }
+                    ]
+                },
+                "ttl_statistics": {
+                    "A_TTL": 703,
+                    "MX_TTL": 900,
+                    "TXT_TTL": 900,
+                    "NS_TTL": 2378
+                },
+                "record_counts": {
+                    "a_count": 3,
+                    "mx_count": 1,
+                    "ns_count": 8,
+                    "txt_count": 17
+                }
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "domain": "amazon.in",
+                "registrar": "MarkMonitor, Inc.",
+                "registrant_country": "US",
+                "registrant_org": "Unknown",
+                "creation_date": "2005-02-11T11:14:14.378000+00:00",
+                "expiration_date": "2027-02-11T11:14:14.378000+00:00",
+                "updated_date": "2026-01-15T10:06:24.260000+00:00",
+                "domain_age_days": 7854,
+                "days_until_expiry": 180,
+                "is_expired": false,
+                "name_servers": [
+                    "ns2.amzndns.net",
+                    "ns1.amzndns.co.uk",
+                    "ns1.amzndns.net",
+                    "ns1.amzndns.com",
+                    "ns2.amzndns.org",
+                    "ns2.amzndns.com",
+                    "ns2.amzndns.co.uk",
+                    "ns1.amzndns.org"
+                ],
+                "status_codes": [
+                    "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+                    "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+                    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+                    "clientUpdateProhibited (https://www.icann.org/epp#clientUpdateProhibited)",
+                    "clientTransferProhibited (https://www.icann.org/epp#clientTransferProhibited)",
+                    "clientDeleteProhibited (https://www.icann.org/epp#clientDeleteProhibited)"
+                ]
+            }
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": false,
+                "reputation_score": 1,
+                "stats": {
+                    "malicious": 0,
+                    "suspicious": 0,
+                    "harmless": 61,
+                    "undetected": 31
+                },
+                "flagged_by": [],
+                "categories": [
+                    "online shopping",
+                    "onlineshop",
+                    "shopping"
+                ],
+                "last_analysis_date": "2026-08-14T14:44:09+00:00",
+                "first_submission_date": "2013-06-05T09:11:23+00:00"
+            }
+        }
+    }
+}

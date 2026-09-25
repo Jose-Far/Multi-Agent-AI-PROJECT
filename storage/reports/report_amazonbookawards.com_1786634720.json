@@ -1,0 +1,200 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "execution_time_sec": 20.736,
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://amazonbookawards.com/",
+            "final_url": "https://amazonbookawards.com/",
+            "domain_resolved": "amazonbookawards.com",
+            "response_time_sec": 1.4042,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "Server": "nginx",
+                "Date": "Thu, 13 Aug 2026 15:25:01 GMT",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Content-Length": "9193",
+                "Connection": "keep-alive",
+                "Vary": "Accept-Encoding",
+                "Content-Encoding": "gzip"
+            },
+            "cookies_dropped": {},
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": "The Amazon Book Awards: Honoring the Best in Literature",
+                "favicon_url": "https://amazonbookawards.com/assets/images/favicon.png",
+                "html_length_bytes": 71356,
+                "form_count": 1,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "cross_domain_form_actions": 0,
+                "iframe_count": 0,
+                "invisible_iframes": 0,
+                "iframe_sources": [],
+                "script_count": 9,
+                "external_scripts_count": 8,
+                "suspicious_inline_scripts": 0,
+                "total_links": 20,
+                "external_links_count": 6,
+                "empty_links_count": 1,
+                "hidden_elements_count": 6,
+                "right_click_disabled": false,
+                "has_meta_refresh": false,
+                "html_comments_count": 26
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_amazonbookawards.com_1786634717.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAPYCAIAAACdeU7aAAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png",
+                "timestamp": 1786634717
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "tls_version": "TLSv1.3",
+                "cipher_suite": "TLS_AES_256_GCM_SHA384",
+                "cipher_strength_bits": 256,
+                "issuer_organization": "Let's Encrypt",
+                "issuer_common_name": "YE1",
+                "issuer_country": "US",
+                "subject_common_name": "amazonbookawards.com",
+                "subject_alt_names": [
+                    "amazonbookawards.com",
+                    "www.amazonbookawards.com"
+                ],
+                "not_before": "2026-07-28T06:30:44+00:00",
+                "not_after": "2026-10-26T06:30:43+00:00",
+                "cert_age_days": 16,
+                "days_until_expiry": 73,
+                "is_expired": false,
+                "is_self_signed": false,
+                "is_free_ca": true
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "queried_domain": "amazonbookawards.com",
+                "records": {
+                    "A": [
+                        "167.71.241.128"
+                    ],
+                    "AAAA": [],
+                    "MX": [],
+                    "TXT": [
+                        "google-site-verification=7HT-UsU7MEhbarOVT6FQ0FVuurFFIRYCUNjoUVfF0XI"
+                    ],
+                    "NS": [
+                        "dns1.registrar-servers.com",
+                        "dns2.registrar-servers.com"
+                    ],
+                    "CNAME": [],
+                    "SOA": [
+                        {
+                            "mname": "dns1.registrar-servers.com",
+                            "rname": "hostmaster.registrar-servers.com",
+                            "serial": 1763764661,
+                            "refresh": 43200,
+                            "retry": 3600,
+                            "expire": 604800,
+                            "minimum": 3601
+                        }
+                    ]
+                },
+                "ttl_statistics": {
+                    "A_TTL": 1799,
+                    "TXT_TTL": 1799,
+                    "NS_TTL": 1800
+                },
+                "record_counts": {
+                    "a_count": 1,
+                    "mx_count": 0,
+                    "ns_count": 2,
+                    "txt_count": 1
+                }
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "domain": "amazonbookawards.com",
+                "registrar": "NameCheap, Inc.",
+                "registrant_country": "Unknown",
+                "registrant_org": "Unknown",
+                "creation_date": "2022-06-07T20:32:41+00:00",
+                "expiration_date": "2027-06-07T20:32:41+00:00",
+                "updated_date": "2026-05-08T06:09:21+00:00",
+                "domain_age_days": 1527,
+                "days_until_expiry": 298,
+                "is_expired": false,
+                "name_servers": [
+                    "dns1.registrar-servers.com",
+                    "dns2.registrar-servers.com"
+                ],
+                "status_codes": [
+                    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited"
+                ]
+            }
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": true,
+                "reputation_score": 0,
+                "stats": {
+                    "malicious": 15,
+                    "suspicious": 2,
+                    "harmless": 44,
+                    "undetected": 31
+                },
+                "flagged_by": [
+                    "ADMINUSLabs (malicious)",
+                    "Lionic (phishing)",
+                    "alphaMountain.ai (phishing)",
+                    "BitDefender (phishing)",
+                    "Certego (suspicious)",
+                    "Chong Lua Dao (malicious)",
+                    "CRDF (malicious)",
+                    "ESET (suspicious)",
+                    "Fortinet (malware)",
+                    "G-Data (phishing)",
+                    "Gridinsoft (phishing)",
+                    "Kaspersky (phishing)",
+                    "Rising (phishing)",
+                    "SOCRadar (phishing)",
+                    "Sophos (phishing)",
+                    "VIPRE (phishing)",
+                    "Webroot (malicious)"
+                ],
+                "categories": [
+                    "phishing and fraud",
+                    "Entertainment, Phishing (alphaMountain.ai)",
+                    "Phishing and Other Frauds"
+                ],
+                "last_analysis_date": "2026-07-28T08:23:49+00:00",
+                "first_submission_date": "2020-09-08T16:23:07+00:00"
+            }
+        }
+    }
+}

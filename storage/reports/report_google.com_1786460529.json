@@ -1,0 +1,164 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://google.com",
+            "final_url": "https://www.google.com/",
+            "response_time_sec": 0.660699,
+            "status_code": 200,
+            "redirect_count": 1,
+            "redirect_history": [
+                {
+                    "url": "https://google.com/",
+                    "status_code": 301,
+                    "headers": {
+                        "Location": "https://www.google.com/",
+                        "Content-Type": "text/html; charset=UTF-8",
+                        "Content-Security-Policy-Report-Only": "object-src 'none';base-uri 'self';script-src 'nonce-E9IdcPNd_RogOsAytc72ig' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp",
+                        "Date": "Tue, 11 Aug 2026 15:01:14 GMT",
+                        "Expires": "Thu, 10 Sep 2026 15:01:14 GMT",
+                        "Cache-Control": "public, max-age=2592000",
+                        "Server": "gws",
+                        "Content-Length": "220",
+                        "X-XSS-Protection": "0",
+                        "X-Frame-Options": "SAMEORIGIN",
+                        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+                    }
+                }
+            ],
+            "headers": {
+                "Content-Type": "text/html; charset=UTF-8",
+                "Date": "Tue, 11 Aug 2026 15:01:15 GMT",
+                "Expires": "-1",
+                "Cache-Control": "private, max-age=0",
+                "Content-Security-Policy-Report-Only": "object-src 'none';base-uri 'self';script-src 'nonce-ElrSbeYK7AWhoa4CkedFIA' 'strict-dynamic' 'report-sample' 'unsafe-eval' 'unsafe-inline' https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp",
+                "Accept-CH": "Sec-CH-Prefers-Color-Scheme",
+                "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+                "Content-Encoding": "gzip",
+                "Server": "gws",
+                "X-XSS-Protection": "0",
+                "X-Frame-Options": "SAMEORIGIN",
+                "Set-Cookie": "__Secure-STRP=ANmZwa3EiJWpMlArKb02iOMISUXWSBr65cTgyoQBtB3C1E0DMeZe8DlYFHHjkubelRdJzlXrRBTMXAlmp_fxOiUbhFGMX57ReA; expires=Tue, 11-Aug-2026 15:06:15 GMT; path=/; domain=.google.com; Secure; SameSite=strict, AEC=AdJVEavH1Ms7wYLzGivC735UhUZKzzKntM_tfMmKEFwB8QnSqCepMSMOcU8; expires=Sun, 07-Feb-2027 15:01:15 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, NID=533=jAiYwCTE8ucsBD3BH1A9T_cxsJQ2fG5VqaVE5td5o34vqrA7VsC-z1XQzoWioDRYHn9reT3OFiSBC7wZKo20LNJrFFl0y6JYrGiB3n6CqpVTq0J9K_KH6EEvCDZxg2tuZFQytZjilJ0uX2AIeSsWdz6ggRDv-43HebWMUxmoNRyb5S_PMeGyZfZP0aa8UjbLdtmtqtmNam9-9h_Abk18ItY; expires=Wed, 10-Feb-2027 15:01:14 GMT; path=/; domain=.google.com; HttpOnly",
+                "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+                "Transfer-Encoding": "chunked"
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": "Google",
+                "html_length_bytes": 210759,
+                "form_count": 1,
+                "has_password_field": false,
+                "hidden_input_count": 4,
+                "iframe_count": 0,
+                "iframe_sources": [],
+                "script_count": 13,
+                "external_scripts_count": 2,
+                "suspicious_inline_scripts": 4,
+                "total_links": 26,
+                "hidden_elements_count": 25
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_www.google.com_1786460520.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAOgCAIAAAB6CMF2AAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png"
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "issuer_organization": "Google Trust Services",
+                "issuer_common_name": "WE2",
+                "subject_common_name": "www.google.com",
+                "not_before": "2026-07-20T18:08:36",
+                "not_after": "2026-10-12T18:08:35",
+                "cert_age_days": 21,
+                "days_until_expiry": 62,
+                "is_expired": false
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "A": [
+                    "142.251.42.238"
+                ],
+                "MX": [
+                    "smtp.google.com"
+                ],
+                "TXT": [
+                    "google-site-verification=TV9-DBe4R80X4v0M4U_bd_J9cpOJM0nikft0jAgjmsQ",
+                    "docusign=05958488-4752-4ef2-95eb-aa7ba8a3bd0e",
+                    "globalsign-smime-dv=CDYX+XFHUw2wml6/Gb8+59BsH31KzUr6c1l2BPvqKX8=",
+                    "v=spf1 include:_spf.google.com ~all",
+                    "onetrust-domain-verification=0d477fe608074e6f9c12bca7826035cc",
+                    "docusign=1b0a6754-49b1-4db5-8540-d2c12664b289",
+                    "google-site-verification=wD8N7i1JTNTkezJ49swvWW48f8_9xveREV4oB-0Hf5o",
+                    "cisco-ci-domain-verification=47c38bc8c4b74b7233e9053220c1bbe76bcc1cd33c7acf7acd36cd6a5332004b",
+                    "google-site-verification=4ibFUgB-wXLQ_S7vsXVomSTVamuOXBiVAzpR5IZ87D0",
+                    "Z29vZ2xl",
+                    "facebook-domain-verification=22rm551cu4k0ab0bxsw536tlds4h95",
+                    "MS=E4A68B9AB2BB9670BCE15412F62916164C0B20BB",
+                    "apple-domain-verification=30afIBcvSuDV2PLX",
+                    "work-accounts-domain-verification=Tcj6JjIMZOw2KsSEw2Nt2rLae89tN6",
+                    "onetrust-domain-verification=6d685f1d41a94696ad7ef771f68993e0"
+                ],
+                "NS": [
+                    "ns1.google.com",
+                    "ns3.google.com",
+                    "ns2.google.com",
+                    "ns4.google.com"
+                ]
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "data": {
+                "domain": "google.com",
+                "registrar": "MarkMonitor, Inc.",
+                "creation_date": "1997-09-15T04:00:00",
+                "expiration_date": "2028-09-14T04:00:00",
+                "updated_date": "2019-09-09T15:39:04",
+                "domain_age_days": 10557,
+                "name_servers": [
+                    "ns1.google.com",
+                    "ns2.google.com",
+                    "ns3.google.com",
+                    "ns4.google.com"
+                ]
+            },
+            "error": null
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": false,
+                "stats": {
+                    "malicious": 0,
+                    "suspicious": 0,
+                    "harmless": 65,
+                    "undetected": 27
+                },
+                "last_analysis_date": 1786460346,
+                "reputation_score": 408
+            }
+        }
+    }
+}

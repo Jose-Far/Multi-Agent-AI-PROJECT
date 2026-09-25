@@ -1,0 +1,194 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "execution_time_sec": 189.255,
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://bollyflixs.online/",
+            "final_url": "https://bollyflixs.online/",
+            "domain_resolved": "bollyflixs.online",
+            "response_time_sec": 1.6116,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "Date": "Fri, 14 Aug 2026 14:41:18 GMT",
+                "Content-Type": "text/html; charset=UTF-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "x-powered-by": "PHP/8.3.30",
+                "link": "<https://bollyflixs.online/wp-json/>; rel=\"https://api.w.org/\"",
+                "Cache-Control": "public, max-age=604800",
+                "expires": "Mon, 17 Aug 2026 13:13:34 GMT",
+                "etag": "\"15843-1786367614;br\"",
+                "x-litespeed-cache": "hit",
+                "Content-Encoding": "br",
+                "platform": "hostinger",
+                "panel": "hpanel",
+                "content-security-policy": "upgrade-insecure-requests",
+                "Age": "349346",
+                "Server": "hcdn",
+                "alt-svc": "h3=\":443\"; ma=86400",
+                "x-hcdn-request-id": "bdbce4368a614cf9bb4e1f58c56ce843-mum-edge9",
+                "x-hcdn-cache-status": "HIT"
+            },
+            "cookies_dropped": {},
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": null,
+                "favicon_url": "https://bollyflixs.online/favicon.ico",
+                "html_length_bytes": 27650,
+                "form_count": 0,
+                "has_password_field": false,
+                "hidden_input_count": 0,
+                "cross_domain_form_actions": 0,
+                "iframe_count": 0,
+                "invisible_iframes": 0,
+                "iframe_sources": [],
+                "script_count": 0,
+                "external_scripts_count": 0,
+                "suspicious_inline_scripts": 0,
+                "total_links": 0,
+                "external_links_count": 0,
+                "empty_links_count": 0,
+                "hidden_elements_count": 0,
+                "right_click_disabled": false,
+                "has_meta_refresh": false,
+                "html_comments_count": 1
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_bollyflixs.online_1786718645.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAPYCAIAAACdeU7aAAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png",
+                "timestamp": 1786718645
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "tls_version": "TLSv1.3",
+                "cipher_suite": "TLS_AES_256_GCM_SHA384",
+                "cipher_strength_bits": 256,
+                "issuer_organization": "ZeroSSL GmbH",
+                "issuer_common_name": "ZeroSSL RSA DV SSL CA 2",
+                "issuer_country": "AT",
+                "subject_common_name": "bollyflixs.online",
+                "subject_alt_names": [
+                    "bollyflixs.online",
+                    "www.bollyflixs.online"
+                ],
+                "not_before": "2026-07-12T00:00:00+00:00",
+                "not_after": "2026-10-10T23:59:59+00:00",
+                "cert_age_days": 33,
+                "days_until_expiry": 57,
+                "is_expired": false,
+                "is_self_signed": false,
+                "is_free_ca": true
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "queried_domain": "bollyflixs.online",
+                "records": {
+                    "A": [
+                        "88.222.222.29",
+                        "2.57.91.46"
+                    ],
+                    "AAAA": [
+                        "2a02:4780:84:598b:fff4:db1c:b1e4:a136",
+                        "2a02:4780:84:13a1:ab8b:2fed:4a18:f826"
+                    ],
+                    "MX": [],
+                    "TXT": [],
+                    "NS": [
+                        "orbit.dns-parking.com",
+                        "horizon.dns-parking.com"
+                    ],
+                    "CNAME": [],
+                    "SOA": [
+                        {
+                            "mname": "orbit.dns-parking.com",
+                            "rname": "dns.hostinger.com",
+                            "serial": 2026081301,
+                            "refresh": 10000,
+                            "retry": 2400,
+                            "expire": 604800,
+                            "minimum": 600
+                        }
+                    ]
+                },
+                "ttl_statistics": {
+                    "A_TTL": 60,
+                    "AAAA_TTL": 60,
+                    "NS_TTL": 86400
+                },
+                "record_counts": {
+                    "a_count": 2,
+                    "mx_count": 0,
+                    "ns_count": 2,
+                    "txt_count": 0
+                }
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "domain": "bollyflixs.online",
+                "registrar": "HOSTINGER operations, UAB",
+                "registrant_country": "Unknown",
+                "registrant_org": "Unknown",
+                "creation_date": "2026-07-12T17:15:47.829000+00:00",
+                "expiration_date": "2027-07-12T17:15:47.829000+00:00",
+                "updated_date": "2026-07-17T17:16:40.142000+00:00",
+                "domain_age_days": 32,
+                "days_until_expiry": 332,
+                "is_expired": false,
+                "name_servers": [
+                    "orbit.dns-parking.com",
+                    "horizon.dns-parking.com"
+                ],
+                "status_codes": [
+                    "clientTransferProhibited https://icann.org/epp#clientTransferProhibited"
+                ]
+            }
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": false,
+                "reputation_score": 0,
+                "stats": {
+                    "malicious": 0,
+                    "suspicious": 0,
+                    "harmless": 55,
+                    "undetected": 37
+                },
+                "flagged_by": [],
+                "categories": [
+                    "media_and_entertainment"
+                ],
+                "last_analysis_date": "2026-07-13T12:36:16+00:00",
+                "first_submission_date": "2026-07-13T12:36:16+00:00"
+            }
+        }
+    }
+}

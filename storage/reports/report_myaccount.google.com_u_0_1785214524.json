@@ -1,0 +1,255 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://myaccount.google.com/u/0/?utm_source=YouTubeWeb&tab=rk&utm_medium=act&gar=WzgwLCIyMzMzODciXQ&tab=rk&hl=en-GB",
+            "final_url": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%2Fgeneral-light&dsh=S-536718337%3A1785214508692172&followup=https%3A%2F%2Fmyaccount.google.com%2Fgeneral-light&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=Ac50bxt_F0mmdBXdDPs_NFBE5HbC0KHWnRLHEaZ9k7v0w9Yo6bjPRDpAtnWEXw1ys3Zk-Ed2WS2Zxg",
+            "response_time_sec": 0.143869,
+            "status_code": 200,
+            "redirect_count": 5,
+            "redirect_history": [
+                {
+                    "url": "https://myaccount.google.com/u/0/?utm_source=YouTubeWeb&tab=rk&utm_medium=act&gar=WzgwLCIyMzMzODciXQ&tab=rk&hl=en-GB",
+                    "status_code": 302,
+                    "headers": {
+                        "Content-Type": "application/binary",
+                        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                        "Pragma": "no-cache",
+                        "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+                        "Date": "Tue, 28 Jul 2026 04:55:07 GMT",
+                        "Location": "https://myaccount.google.com/u/0/intro?utm_source=YouTubeWeb&tab=rk&utm_medium=act&gar=WzgwLCIyMzMzODciXQ&tab=rk&hl=en-GB",
+                        "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+                        "Strict-Transport-Security": "max-age=31536000",
+                        "Server": "ESF",
+                        "Content-Length": "0",
+                        "X-XSS-Protection": "0",
+                        "X-Frame-Options": "SAMEORIGIN",
+                        "X-Content-Type-Options": "nosniff",
+                        "Set-Cookie": "NID=533=ad8ic8WMBfN2OpMn2F9sGrwmv2aIYBjvOEh8TAQARLwuB5Dcv1dbN5rbOt4rZNIBUdDffgzrhPyRxtD9gehvb_jQYsEkuCU79QXPpjOXM2-UuE-_2BgC5uqRS1b5D_sVstaRJ6DLvETCgsIYAX8xQx3RG0zMkvOaEMjB6ipOsvgWpCLLeFiybaBCusImxXmrnfFGyLo; expires=Wed, 27-Jan-2027 04:55:07 GMT; path=/; domain=.google.com; HttpOnly",
+                        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+                    }
+                },
+                {
+                    "url": "https://myaccount.google.com/u/0/intro?utm_source=YouTubeWeb&tab=rk&utm_medium=act&gar=WzgwLCIyMzMzODciXQ&tab=rk&hl=en-GB",
+                    "status_code": 302,
+                    "headers": {
+                        "Content-Type": "application/binary",
+                        "Vary": "Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site",
+                        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                        "Pragma": "no-cache",
+                        "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+                        "Date": "Tue, 28 Jul 2026 04:55:08 GMT",
+                        "Location": "https://myaccount.google.com/general-light",
+                        "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+                        "Strict-Transport-Security": "max-age=31536000",
+                        "Cross-Origin-Opener-Policy": "same-origin-allow-popups",
+                        "Content-Security-Policy": "require-trusted-types-for 'script';report-uri /_/AccountSettingsUi/cspreport, script-src 'report-sample' 'nonce-DNdGTbbMzc2qlIdH_QeOFw' 'unsafe-inline' 'unsafe-eval';object-src 'none';base-uri 'self';report-uri /_/AccountSettingsUi/cspreport;worker-src 'self' blob:",
+                        "Permissions-Policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*",
+                        "Cross-Origin-Resource-Policy": "same-site",
+                        "Accept-CH": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version",
+                        "Server": "ESF",
+                        "Content-Length": "0",
+                        "X-XSS-Protection": "0",
+                        "X-Frame-Options": "SAMEORIGIN",
+                        "X-Content-Type-Options": "nosniff",
+                        "Set-Cookie": "NID=533=EssD4HdUJk20jPgeAzWcVwc45NLNIJKJKM5g_XRQ8ca99aCVios390dLhFoGEXFQAPQeEK6uwg1Kdl5CGT6_F2Ldh3yS_SW646xS2pTFqSagQJ_GXMvGQrLWLIieONFvLukjZW8pUvqGjHRfDJphnlfRhYRuAPF_WM7kTCOEdCxT39poeACF0jk149IwWexHAwZxi44; expires=Wed, 27-Jan-2027 04:55:07 GMT; path=/; domain=.google.com; HttpOnly",
+                        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+                    }
+                },
+                {
+                    "url": "https://myaccount.google.com/general-light",
+                    "status_code": 302,
+                    "headers": {
+                        "Content-Type": "application/binary",
+                        "Vary": "Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site",
+                        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                        "Pragma": "no-cache",
+                        "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+                        "Date": "Tue, 28 Jul 2026 04:55:08 GMT",
+                        "Location": "https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://myaccount.google.com/general-light&followup=https://myaccount.google.com/general-light",
+                        "Strict-Transport-Security": "max-age=31536000",
+                        "Permissions-Policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*",
+                        "Accept-CH": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version",
+                        "Cross-Origin-Resource-Policy": "same-site",
+                        "Content-Security-Policy": "require-trusted-types-for 'script';report-uri /_/AccountSettingsLightUi/cspreport, script-src 'report-sample' 'nonce-JZc8erz4ptMEBGB5pV_bZw' 'unsafe-inline' 'unsafe-eval';object-src 'none';base-uri 'self';report-uri /_/AccountSettingsLightUi/cspreport;worker-src 'self'",
+                        "Cross-Origin-Opener-Policy": "same-origin",
+                        "Server": "ESF",
+                        "Content-Length": "0",
+                        "X-XSS-Protection": "0",
+                        "X-Frame-Options": "SAMEORIGIN",
+                        "X-Content-Type-Options": "nosniff",
+                        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+                    }
+                },
+                {
+                    "url": "https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://myaccount.google.com/general-light&followup=https://myaccount.google.com/general-light",
+                    "status_code": 302,
+                    "headers": {
+                        "Content-Type": "application/binary",
+                        "Set-Cookie": "__Host-GAPS=1:ppcQNB3dooRyG9ksA4trscPRZvDDQA:k5JQdZjQMo2ufl1o; Expires=Thu, 27-Jul-2028 04:55:08 GMT; Path=/; Secure; HttpOnly; Priority=HIGH",
+                        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                        "Pragma": "no-cache",
+                        "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+                        "Date": "Tue, 28 Jul 2026 04:55:08 GMT",
+                        "Location": "https://accounts.google.com/InteractiveLogin?continue=https://myaccount.google.com/general-light&followup=https://myaccount.google.com/general-light&osid=1&passive=1209600&dsh=S-536718337:1785214508692172",
+                        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+                        "Permissions-Policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*",
+                        "Content-Security-Policy": "script-src 'report-sample' 'nonce-Y2qM5oIAenCsgQ0zffNyAQ' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /_/AccountsSigninPassiveLoginHttp/cspreport;worker-src 'self', require-trusted-types-for 'script';report-uri /_/AccountsSigninPassiveLoginHttp/cspreport",
+                        "Cross-Origin-Resource-Policy": "cross-origin",
+                        "Accept-CH": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version",
+                        "Cross-Origin-Opener-Policy": "unsafe-none",
+                        "Server": "ESF",
+                        "Content-Length": "0",
+                        "X-XSS-Protection": "0",
+                        "X-Content-Type-Options": "nosniff",
+                        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+                    }
+                },
+                {
+                    "url": "https://accounts.google.com/InteractiveLogin?continue=https://myaccount.google.com/general-light&followup=https://myaccount.google.com/general-light&osid=1&passive=1209600&dsh=S-536718337:1785214508692172",
+                    "status_code": 302,
+                    "headers": {
+                        "Content-Type": "text/html; charset=UTF-8",
+                        "X-Frame-Options": "DENY",
+                        "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                        "Pragma": "no-cache",
+                        "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+                        "Date": "Tue, 28 Jul 2026 04:55:08 GMT",
+                        "Location": "https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmyaccount.google.com%2Fgeneral-light&dsh=S-536718337%3A1785214508692172&followup=https%3A%2F%2Fmyaccount.google.com%2Fgeneral-light&osid=1&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&ifkv=Ac50bxt_F0mmdBXdDPs_NFBE5HbC0KHWnRLHEaZ9k7v0w9Yo6bjPRDpAtnWEXw1ys3Zk-Ed2WS2Zxg",
+                        "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+                        "Report-To": "{\"group\":\"coop_gse_qebhlk\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/gse_qebhlk\"}]}",
+                        "Cross-Origin-Opener-Policy-Report-Only": "same-origin; report-to=\"coop_gse_qebhlk\"",
+                        "Content-Security-Policy": "script-src 'report-sample' 'nonce-tyTAnrPlGDVkD2u8OXGYRw' 'unsafe-inline' 'unsafe-eval';object-src 'none';base-uri 'self';report-uri /cspreport, require-trusted-types-for 'script';report-uri /cspreport",
+                        "Content-Encoding": "gzip",
+                        "X-Content-Type-Options": "nosniff",
+                        "X-XSS-Protection": "1; mode=block",
+                        "Server": "GSE",
+                        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+                        "Transfer-Encoding": "chunked"
+                    }
+                }
+            ],
+            "headers": {
+                "Content-Type": "text/html; charset=utf-8",
+                "X-Frame-Options": "DENY",
+                "Vary": "Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site",
+                "x-auto-login": "realm=com.google&args=continue%3Dhttps://myaccount.google.com/general-light",
+                "x-ua-compatible": "IE=edge",
+                "Cache-Control": "no-cache, no-store, max-age=0, must-revalidate",
+                "Pragma": "no-cache",
+                "Expires": "Mon, 01 Jan 1990 00:00:00 GMT",
+                "Date": "Tue, 28 Jul 2026 04:55:09 GMT",
+                "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+                "Cross-Origin-Resource-Policy": "same-site",
+                "Report-To": "{\"group\":\"AccountsSignInUi\",\"max_age\":2592000,\"endpoints\":[{\"url\":\"https://csp.withgoogle.com/csp/report-to/AccountsSignInUi\"}]}",
+                "Accept-CH": "Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factors, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version",
+                "Cross-Origin-Opener-Policy-Report-Only": "same-origin; report-to=\"AccountsSignInUi\"",
+                "Permissions-Policy": "ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factors=*, ch-ua-platform=*, ch-ua-platform-version=*",
+                "Content-Security-Policy": "require-trusted-types-for 'script';report-uri /v3/signin/_/AccountsSignInUi/cspreport, script-src 'report-sample' 'nonce-4kY8OgDcKXWRoMcjS-OHEA' 'unsafe-inline';object-src 'none';base-uri 'self';report-uri /v3/signin/_/AccountsSignInUi/cspreport;worker-src 'self'",
+                "reporting-endpoints": "default=\"/v3/signin/_/AccountsSignInUi/web-reports?context=eJwNw1tIk2EABuAx_F7CCnSdZEGFELRgOofNoG4kQtZO__j3bRXFUlw4qP26_RseIlPTC4uw8ADroogkLayIqBCqm6IsLHKDllnddJIZVqQUGPU-8BSOFGwtNBucW8yGB6XjxuqDH427eXDFrDHN3W9eiAHWL70UJ7mX09xw6JU4whWbpkQ1a-kpkWB3KCMUjpdkRSdbtmeFlR9ZcuIp_2zNCVNbTuxazIkaXjv9Vph5IjsjJnml950o5qUTThg6nPha48Ic689daOZ27uKFDy784dtWN-7xlYwb5z67MciWMg-svJjwALoH-R4v5vnagBc3uOqsDzv4-h0fbnHBNx_MfgUbeDNb2M4OHu1SMMbT_J5jdxXE-fFrBRN8-YwfI6w99CPB39eo-MVFJSpW8w-HigXes1OFl69KFZ9qVczyb17iVXUq1vHeYRUH-MtfFXlO_VPRGA5A5zZuZ-1YAO6hAFqLJY5zziQxw8NSYpRTUQlns8SFFglbj0Ql509JzHNlv0TTE4kk905K9IWC6OfoviCOcsf9ILr5NPfxEJ_n4PoQ9rNp-bKxuYsZFN181rmxtLxOawpH6yMxPaq3HI5rMT0Sq69N6g3JaCIST0XiYbvN7rBV2SvKbNvCjbb_QbfgLw\"",
+                "Content-Encoding": "gzip",
+                "Server": "ESF",
+                "X-XSS-Protection": "0",
+                "X-Content-Type-Options": "nosniff",
+                "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+                "Transfer-Encoding": "chunked"
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "page_title": "Sign in - Google Accounts",
+                "html_length_bytes": 868608,
+                "form_count": 2,
+                "has_password_field": true,
+                "hidden_input_count": 9,
+                "iframe_count": 0,
+                "iframe_sources": [],
+                "script_count": 8,
+                "external_scripts_count": 0,
+                "suspicious_inline_scripts": 3,
+                "total_links": 6,
+                "hidden_elements_count": 2
+            }
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_accounts.google.com_1785214519.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAOgCAIAAAB6CMF2AAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png"
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "issuer_organization": "Google Trust Services",
+                "issuer_common_name": "WR2",
+                "subject_common_name": "accounts.google.com",
+                "not_before": "2026-06-29T08:40:14",
+                "not_after": "2026-09-21T08:40:13",
+                "cert_age_days": 28,
+                "days_until_expiry": 55,
+                "is_expired": false
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "A": [
+                    "192.178.211.84"
+                ],
+                "MX": [
+                    "alt2.gmr-smtp-in.l.google.com",
+                    "alt1.gmr-smtp-in.l.google.com",
+                    "alt4.gmr-smtp-in.l.google.com",
+                    "alt3.gmr-smtp-in.l.google.com",
+                    "gmr-smtp-in.l.google.com"
+                ],
+                "TXT": [
+                    "google-site-verification=vK4ovh56lkrEBc4GqA6djmGEyFWtcujz3MuRk-wO9cc",
+                    "v=spf1 redirect=_spf.google.com"
+                ],
+                "NS": []
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "data": {
+                "domain": "google.com",
+                "registrar": "MarkMonitor, Inc.",
+                "creation_date": "1997-09-15T04:00:00",
+                "expiration_date": "2028-09-14T04:00:00",
+                "updated_date": "2019-09-09T15:39:04",
+                "domain_age_days": 10543,
+                "name_servers": [
+                    "ns1.google.com",
+                    "ns2.google.com",
+                    "ns3.google.com",
+                    "ns4.google.com"
+                ]
+            },
+            "error": null
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": false,
+                "blacklisted": false,
+                "threat_feed": "VirusTotal (v3)",
+                "message": "URL not found in VirusTotal database (potential new/unknown target)."
+            }
+        }
+    }
+}

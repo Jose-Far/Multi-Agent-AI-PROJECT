@@ -1,0 +1,112 @@
+{
+    "status": "success",
+    "message": "Data collection pass completed successfully.",
+    "data": {
+        "url_analysis": {
+            "success": true,
+            "status": "success",
+            "initial_url": "https://sp0m.net/",
+            "final_url": "https://sp0m.net/",
+            "response_time_sec": 1.57279,
+            "status_code": 200,
+            "redirect_count": 0,
+            "redirect_history": [],
+            "headers": {
+                "Date": "Tue, 11 Aug 2026 16:35:58 GMT",
+                "Content-Type": "text/html;charset=utf-8",
+                "Transfer-Encoding": "chunked",
+                "Connection": "keep-alive",
+                "x-powered-by": "Nuxt",
+                "cf-cache-status": "DYNAMIC",
+                "Nel": "{\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}",
+                "Report-To": "{\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=tR9L1bXYzDjzvvrY8xl50m%2B%2FWUck2%2BQIFtqe40Exj2LXBcNv1WkB1UAVBCwo29U4pGEX9RBbzqyC9EBIW3%2FpMjwq%2BUWMbON48%2BjQ3vQdXk34fCvb5p7oYFZ86A%3D%3D\"}]}",
+                "Content-Encoding": "zstd",
+                "Server": "cloudflare",
+                "CF-RAY": "a298a80f2dcf83c3-BOS",
+                "alt-svc": "h3=\":443\"; ma=86400"
+            },
+            "error": null
+        },
+        "html_analysis": {
+            "success": false,
+            "error": "('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))",
+            "data": {}
+        },
+        "screenshot_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "screenshot_path": "storage/screenshots\\screenshot_sp0m.net_1786466179.png",
+                "base64_image_preview": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB24AAAOgCAIAAAB6CMF2AAAQAE...[TRUNCATED]",
+                "resolution": "1920x1080",
+                "format": "png"
+            }
+        },
+        "ssl_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "has_ssl": true,
+                "issuer_organization": "Google Trust Services",
+                "issuer_common_name": "WE1",
+                "subject_common_name": "sp0m.net",
+                "not_before": "2026-06-26T01:47:37",
+                "not_after": "2026-09-24T02:43:41",
+                "cert_age_days": 46,
+                "days_until_expiry": 43,
+                "is_expired": false
+            }
+        },
+        "dns_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "A": [
+                    "104.21.39.217",
+                    "172.67.148.232"
+                ],
+                "MX": [],
+                "TXT": [
+                    "google-site-verification=kEf7RDSEYZp7vIxE3fwnE6NYQZyz5DM5Do7W4enPFt4"
+                ],
+                "NS": [
+                    "josh.ns.cloudflare.com",
+                    "mckinley.ns.cloudflare.com"
+                ]
+            }
+        },
+        "whois_analysis": {
+            "success": true,
+            "data": {
+                "domain": "sp0m.net",
+                "registrar": "GoDaddy.com, LLC",
+                "creation_date": "2025-06-09T17:46:41",
+                "expiration_date": "2027-06-09T17:46:41",
+                "updated_date": "2026-03-23T13:17:03",
+                "domain_age_days": 428,
+                "name_servers": [
+                    "josh.ns.cloudflare.com",
+                    "mckinley.ns.cloudflare.com"
+                ]
+            },
+            "error": null
+        },
+        "threat_analysis": {
+            "success": true,
+            "error": null,
+            "data": {
+                "is_listed": true,
+                "threat_feed": "VirusTotal (v3)",
+                "blacklisted": true,
+                "stats": {
+                    "malicious": 9,
+                    "suspicious": 2,
+                    "harmless": 47,
+                    "undetected": 34
+                },
+                "last_analysis_date": 1785568791,
+                "reputation_score": 0
+            }
+        }
+    }
+}
