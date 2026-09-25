@@ -1,0 +1,65 @@
+# Dependabot configuration for PhishDec
+# Multi-Agent AI Cybersecurity Analyst
+#
+# This file enables GitHub Dependabot to automatically check
+# Python dependencies for available updates.
+
+version: 2
+
+updates:
+
+  # ---------------------------------------------------------
+  # Python Dependencies
+  # ---------------------------------------------------------
+  # Dependabot checks requirements.txt for outdated packages.
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+    # Limit the number of simultaneous pull requests
+    # created by Dependabot.
+    open-pull-requests-limit: 10
+
+    # Group minor and patch updates where possible.
+    groups:
+      python-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+    # Add labels to Dependabot pull requests.
+    labels:
+      - "dependencies"
+      - "python"
+
+    # Prefix Dependabot commit messages.
+    commit-message:
+      prefix: "deps"
+
+    # Rebase Dependabot pull requests when needed.
+    rebase-strategy: "auto"
+
+    # Allow Dependabot to update dependencies within
+    # the current major version.
+    versioning-strategy: "increase"
+
+  # ---------------------------------------------------------
+  # GitHub Actions
+  # ---------------------------------------------------------
+  # Keeps GitHub Actions used by the project updated.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+    open-pull-requests-limit: 5
+
+    labels:
+      - "dependencies"
+      - "github-actions"
+
+    commit-message:
+      prefix: "ci"
